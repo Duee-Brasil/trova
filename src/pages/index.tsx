@@ -1,10 +1,17 @@
-import React, { FC } from "react"
+import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { About, Characteristic, Contact, Hero, Inspiration, Products } from "../sessions"
+import {
+  About,
+  Characteristic,
+  Contact,
+  Hero,
+  Inspiration,
+  Products,
+} from "../sessions"
 
-const Home: FC = () => (
+const Index = () => (
   <Layout>
     <Seo title="Trova Brasil" />
     <Hero />
@@ -16,4 +23,4 @@ const Home: FC = () => (
   </Layout>
 )
 
-export default Home
+export default Index
