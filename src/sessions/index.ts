@@ -1,0 +1,6 @@
+export * from "./about"
+export * from "./characteristic"
+export * from "./contact"
+export * from "./hero"
+export * from "./inspiration"
+export * from "./products"
