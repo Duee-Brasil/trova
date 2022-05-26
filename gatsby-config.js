@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Trova Brasil`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `@pistoletzzz`,
+    siteUrl: `https://letgodoy.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `TrovaBrasil`,
-        short_name: `starter`,
+        short_name: `trova`,
         start_url: `/`,
         background_color: `#4c6f9c`,
         // This will impact how browsers show your PWA/website
