@@ -38,7 +38,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby clean && gatsby build && git checkout gh-pages && git --work-tree public add --all && git --work-tree public commit -m 'gh-pages' && git push origin HEAD:gh-pages --force && git checkout -f main"
+    "deploy": "gatsby clean && gatsby build && git add . && git commit --amend --no-edit && git push -f && git checkout gh-pages && git --work-tree public add --all && git --work-tree public commit -m 'gh-pages' && git push origin HEAD:gh-pages --force && git checkout -f main"
   },
   "repository": {
     "type": "git",
