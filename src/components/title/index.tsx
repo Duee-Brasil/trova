@@ -2,7 +2,6 @@ import React, { FC } from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +41,7 @@ export const Title: FC<{ title: string }> = ({ title }) => {
   return (
     <Container>
       <SupDraw />
-      <Text>{title}</Text>
+      <Text className="destaque">{title}</Text>
       <InfDraw />
     </Container>
   )

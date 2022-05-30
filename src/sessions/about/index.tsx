@@ -1,16 +1,9 @@
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Title } from "../../components"
-
-const Container = styled.div`
-  width: 100%;
-  padding: 2rem 3rem;
-`
+import { Container, Title } from "../../components"
 
 const Content = styled.div`
-  width: 100%;
-  max-width: 1440px;
   margin-top: 4rem;
   display: flex;
   flex-direction: row;
@@ -32,13 +25,46 @@ const Column = styled.div`
   }
 
   @media (min-width: 992px) { //maior que laptops
-    flex: 33%;
+    flex: 30%;
   }
 
   @media (min-width: 1200px) { //maior que desktops
-    flex: 33%;
+    flex: 30%;
   }
 `
+
+const BarContent = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+`
+
+const BarText = styled.div`
+  border-top: 2px solid #4c6f9c;
+  flex-grow: 1;
+  text-transform: uppercase;
+`
+
+const BarPercentage = styled.div`
+  border: 2px solid #4c6f9c;
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  background-color: #ebebeb;
+  padding-left: 3px;
+  padding-right: 3px;
+`
+
+const Bar = ({ text, percentage }: { text: string, percentage: string }) => {
+  return <BarContent>
+    <BarText>{text}</BarText>
+    <BarPercentage>{percentage}%</BarPercentage>
+  </BarContent>
+}
 
 export const About: FC = () => (
   <Container>
@@ -61,15 +87,9 @@ export const About: FC = () => (
         </p>
       </Column>
       <Column>
-        <p>
-          alta qualidade 100%
-        </p>
-        <p>
-          escolhido a mão 100%
-        </p>
-        <p>
-          revestimento para seu projeto 100%
-        </p>
+        <Bar text="alta qualidade" percentage="100" />
+        <Bar text="escolhido a mão" percentage="100" />
+        <Bar text="revestimento para seu projeto" percentage="100" />
       </Column>
     </Content>
   </Container>

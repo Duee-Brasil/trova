@@ -2,12 +2,7 @@
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Title, Image } from "../../components"
-
-const Container = styled.div`
-  width: 100%;
-  padding: 2rem 3rem;
-`
+import { Title, Image, Container } from "../../components"
 
 const Content = styled.div`
   width: 100%;
@@ -32,15 +27,17 @@ const ProductContainer = styled.div`
   border-bottom: 1px solid rgba(76, 111, 156, 0.2);
 
   div:first-child {
-    flex: 25%;
+    flex: 24%;
+    justify-content: center;
 
     p {
       text-transform: uppercase;
+      text-align: center;
     }
   }
 
   div:last-child {
-    flex: 75%
+    flex: 74%
   }
 
   @media (min-width: 576px) { //maior que phones
@@ -48,23 +45,23 @@ const ProductContainer = styled.div`
   }
 
   @media (min-width: 768px) { //maior que tablets
-    flex: 50%;
+    flex: 45%;
   }
 
   @media (min-width: 992px) { //maior que laptops
-    flex: 50%;
+    flex: 45%;
   }
 
   @media (min-width: 1200px) { //maior que desktops
-    flex: 50%;
+    flex: 45%;
   }
 `
 
 const Product = ({ icon, name, photo }: { icon: string, name: string, photo: string }) => {
   return <ProductContainer>
     <div>
-      <Image src={icon} alt={name} style={{ width: "100%" }} />
-      {/* <p>{name}</p> */}
+      <Image src={icon} alt={name} style={{ width: "60px", margin: "auto" }} />
+      <p>{name}</p>
     </div>
     <div>
       <Image src={photo} alt={name} style={{ width: "100%" }} />

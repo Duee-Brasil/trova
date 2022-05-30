@@ -20,6 +20,17 @@ const LinksContainer = styled.div`
   margin: 1rem 2rem;
 `
 
+const LinksText = styled.a`
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &:visited {
+    color: white;
+  }
+`
+
 const Header = () => (
   <Container>
     <LogoContainer>
@@ -32,7 +43,7 @@ const Header = () => (
     </LogoContainer>
     <LinksContainer>
       {menuLinks.map(link => {
-        return <a href={link.link}>{link.name}</a>
+        return <LinksText href={link.link}>{link.name}</LinksText>
       })}
     </LinksContainer>
   </Container>

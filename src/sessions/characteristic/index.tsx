@@ -1,12 +1,7 @@
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Image, Title } from "../../components"
-
-const Container = styled.div`
-  width: 100%;
-  padding: 2rem 3rem;
-`
+import { Container, Image, Title } from "../../components"
 
 const Content = styled.div`
   width: 100%;
@@ -27,15 +22,15 @@ flex: 100%;
   }
 
   @media (min-width: 768px) { //maior que tablets
-    flex: 50%;
+    flex: 47%;
   }
 
   @media (min-width: 992px) { //maior que laptops
-    flex: 33%;
+    flex: 30%;
   }
 
   @media (min-width: 1200px) { //maior que desktops
-    flex: 25%;
+    flex: 21%;
   }
 `
 
