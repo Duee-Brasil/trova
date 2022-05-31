@@ -71,9 +71,18 @@ function Seo({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-</Helmet>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      />
+
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </Helmet>
   )
 }
 

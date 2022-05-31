@@ -3,6 +3,8 @@ import styled, { createGlobalStyle } from "styled-components"
 import Header from "../header"
 import React, { FC, ReactElement } from "react"
 
+import "swiper/css/bundle";
+
 const GlobalStyle = createGlobalStyle`
 
   @font-face {
@@ -26,14 +28,16 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lato', sans-serif;
     font-stretch: expanded;
     color: #606060;
+    font-size: 1.1rem;
   }
 
   .destaque {
     font-family: 'Sequoia', sans-serif;
   }
 
-  h2 {
+  h1, h2, h3, h4, h5, h6, button, strong {
     font-family: 'Sequoia', sans-serif;
+    font-weight: normal;
   }
 `
 
@@ -48,7 +52,7 @@ export const Container = styled.div`
   margin: auto;
 `
 
-const Layout: FC<{ children: ReactElement }> = ({ children }) => {
+const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children }) => {
 
   return (
     <>

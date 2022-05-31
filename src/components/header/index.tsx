@@ -43,7 +43,7 @@ const Header = () => (
     </LogoContainer>
     <LinksContainer>
       {menuLinks.map(link => {
-        return <LinksText href={link.link}>{link.name}</LinksText>
+        return <LinksText href={link.link} key={link.name}>{link.name}</LinksText>
       })}
     </LinksContainer>
   </Container>
