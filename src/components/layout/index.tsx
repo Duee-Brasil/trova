@@ -1,9 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-import Header from "../header"
 import React, { FC, ReactElement } from "react"
-
-import "swiper/css/bundle";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -43,7 +40,6 @@ const GlobalStyle = createGlobalStyle`
 
 const Main = styled.main`
   min-height: 100vh;
-  padding: 2rem;
 `
 
 export const Container = styled.div`
@@ -57,7 +53,6 @@ const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children
   return (
     <>
       <GlobalStyle />
-      <Header />
 
       <Main>
         {children}

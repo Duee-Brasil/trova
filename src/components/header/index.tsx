@@ -10,6 +10,10 @@ const Container = styled.header`
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 `
 
 const LogoContainer = styled.div`
