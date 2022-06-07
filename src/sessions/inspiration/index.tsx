@@ -45,15 +45,15 @@ const ProductContainer = styled.div`
   }
 
   @media (min-width: 768px) { //maior que tablets
-    flex: 45%;
+    flex: 40%;
   }
 
   @media (min-width: 992px) { //maior que laptops
-    flex: 45%;
+    flex: 40%;
   }
 
   @media (min-width: 1200px) { //maior que desktops
-    flex: 45%;
+    flex: 40%;
   }
 `
 

@@ -4,6 +4,8 @@ import styled from "styled-components"
 import { Button, Container, Title } from "../../components"
 
 const Content = styled.div`
+  width: 100%;
+  max-width: 1440px;
   margin-top: 4rem;
   display: flex;
   flex-direction: row;
@@ -14,7 +16,7 @@ const Content = styled.div`
 
 const Column = styled.div`
   flex: 100%;
-  padding: 1rem;
+  padding: 2rem;
 
   @media (min-width: 576px) { //maior que phones
     flex: 100%;
@@ -25,16 +27,15 @@ const Column = styled.div`
   }
 
   @media (min-width: 992px) { //maior que laptops
-    flex: 47%;
+    flex: 40%;
   }
 
   @media (min-width: 1200px) { //maior que desktops
-    flex: 47%;
+    flex: 40%;
   }
 `
 
 const InputContainer = styled.div`
-  float: left;
   width: 100%;
   margin: 1rem 0;
   position: relative;
@@ -53,12 +54,13 @@ const InputLabel = styled.label`
 `
 
 const fieldProperties = `
-  padding: 30px;
+  padding: 2rem;
   border: 1px solid rgba(76, 111, 156, 0.6);
   width: 100%;
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 2px;
+  box-sizing: border-box;
 
   &::placeholder {
     color: transparent;
@@ -140,7 +142,7 @@ window.location.href = link;
         </p>
       </Column>
       <Column>
-        <form name="contact" method="POST" target="_blank" data-netlify="true" onSubmit={handleSubmit}>
+        <form name="contact" method="POST" target="_blank" data-netlify="true" onSubmit={handleSubmit} style={{ width: "100%" }}>
           <InputContainer>
             <InputField type="text" name="name" required pattern=".*\S.*" placeholder="Nome completo:" />
             <InputLabel>Nome completo:</InputLabel>
