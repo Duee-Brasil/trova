@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 import styled from "styled-components";
+import HeroVideo from "../../images/Home Trova_1.mp4"
 
 import { Image } from "../../components"
 // Import Swiper React components
@@ -12,6 +13,11 @@ import "swiper/css";
 import { Autoplay } from "swiper";
 
 const Container = styled.div`
+
+display: flex;
+justify-content: center;
+align-items: center;
+max-height: 100vh;
 
 .swiper {
   width: 100vw;
@@ -31,14 +37,23 @@ const Container = styled.div`
   object-fit: cover;
 }
 
+`
 
+const Video = styled.video`
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-top: -30px;
 `
 
 export const Hero: FC = () => {
 
   return (
-    <Container>
-      <Swiper
+    <Container id="inicio">
+      <Video controls={false} autoPlay muted loop>
+        <source src={HeroVideo} type="video/mp4" />
+      </Video>
+      {/* <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -53,7 +68,7 @@ export const Hero: FC = () => {
         <SwiperSlide><Image src={photo} alt={name} style={{ width: "100%" }} /></SwiperSlide>
         <SwiperSlide><Image src={photo} alt={name} style={{ width: "100%" }} /></SwiperSlide>
         <SwiperSlide><Image src={photo} alt={name} style={{ width: "100%" }} /></SwiperSlide> */}
-      </Swiper>
+      {/* </Swiper> */}
     </Container>
   );
 }

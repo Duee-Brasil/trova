@@ -105,7 +105,19 @@ export const Contact: FC = () => {
 
     let formData = new FormData(e.currentTarget);
 
-    console.log(formData.get("name"))
+    const message = `
+      Nome: ${formData.get("name")}
+      Telefone: ${formData.get("phone")}
+      E-mail: ${formData.get("email")}
+      Mensagem: ${formData.get("message")}
+    `
+
+    var link = "mailto:contato@trovabrasil.com"
+    + "?subject=" + encodeURIComponent("Contato pelo site")
+    + "&body=" + encodeURIComponent(message)
+;
+
+window.location.href = link;
 
     // fetch("/", {
     //   method: "POST",
@@ -116,7 +128,7 @@ export const Contact: FC = () => {
     //   .catch((error) => alert(error));
   };
 
-  return <Container>
+  return <Container id="contato">
     <Title title={"Entre em contato"} />
     <Content>
       <Column>
@@ -128,7 +140,7 @@ export const Contact: FC = () => {
         </p>
       </Column>
       <Column>
-        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+        <form name="contact" method="POST" target="_blank" data-netlify="true" onSubmit={handleSubmit}>
           <InputContainer>
             <InputField type="text" name="name" required pattern=".*\S.*" placeholder="Nome completo:" />
             <InputLabel>Nome completo:</InputLabel>

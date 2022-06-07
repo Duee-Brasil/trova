@@ -8,6 +8,7 @@ const Styled = styled.button`
     padding: 0.7rem 1.3rem;
     transition: 0.25s;
     color: #4c6f9c;
+    cursor: pointer;
 
     &:hover,
     &:focus {

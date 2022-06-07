@@ -54,7 +54,7 @@ const BarPercentage = styled.div`
   position: absolute;
   right: 0;
   bottom: 45%;
-  background-color: #ebebeb;
+  background-color: #fff;
   padding-left: 3px;
   padding-right: 3px;
 `
@@ -67,7 +67,7 @@ const Bar = ({ text, percentage }: { text: string, percentage: string }) => {
 }
 
 export const About: FC = () => (
-  <Container>
+  <Container id="sobreatrova">
     <Title title={"Sobre a Trova"} />
     <Content>
       <Column>

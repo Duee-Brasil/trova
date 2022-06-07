@@ -76,7 +76,7 @@ const ProductTitle = ({ text }: { text: string }) => {
 }
 
 export const Products: FC = () => (
-  <Container>
+  <Container id="produtos">
     <Title title={"Nossos produtos"} />
     <Content>
       <p>A TROVA trabalha com o travertino Romano PREMIUM e o Navona, pois são os melhores travertinos encontrados na natureza, por causa da sua composição e formação geológica. Ambos têm procedência da mesma região.</p>

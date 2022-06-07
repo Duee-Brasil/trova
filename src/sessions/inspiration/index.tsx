@@ -70,7 +70,7 @@ const Product = ({ icon, name, photo }: { icon: string, name: string, photo: str
 }
 
 export const Inspiration: FC = () => (
-  <Container>
+  <Container id="inspirese">
     <Title title={"Inspire-se"} />
     <Content>
       <Product

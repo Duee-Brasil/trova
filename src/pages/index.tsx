@@ -27,7 +27,7 @@ const Index = () => {
   return (
     <Layout>
       <Seo title="Trova Brasil" />
-      <div style={{ marginTop: "80px"}}>
+      {/* <div style={{ marginTop: "80px"}}> */}
       {/* <ReactPageScroller
         pageOnChange={handlePageChange}
         onBeforePageScroll={handleBeforePageChange}
@@ -40,7 +40,7 @@ const Index = () => {
         <Inspiration />
         <Contact />
       {/* </ReactPageScroller> */}
-      </div>
+      {/* </div> */}
       <Header />
     </Layout>
   )

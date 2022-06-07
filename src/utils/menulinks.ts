@@ -1,26 +1,26 @@
 export const menuLinks = [
   {
     name: "Home",
-    link: "#home",
+    link: "#inicio",
   },
   {
     name: "Sobre a trova",
-    link: "#about",
+    link: "#sobreatrova",
   },
   {
     name: "Produtos",
-    link: "#products",
+    link: "#produtos",
   },
   {
     name: "Inspire-se",
-    link: "#inspiration",
+    link: "#inspirese",
   },
-  {
-    name: "Onde encontrar",
-    link: "#find",
-  },
+  // {
+  //   name: "Onde encontrar",
+  //   link: "#ondeencontrar",
+  // },
   {
     name: "Contato",
-    link: "#contact",
+    link: "#contato",
   },
 ]
