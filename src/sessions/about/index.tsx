@@ -45,7 +45,7 @@ const BarContent = styled.div`
 
 const BarText = styled.div`
   border-top: 2px solid #4c6f9c;
-  flex-grow: 1;
+  width: 95%;
   text-transform: uppercase;
 `
 
@@ -61,8 +61,8 @@ const BarPercentage = styled.div`
 
 const Bar = ({ text, percentage }: { text: string, percentage: string }) => {
   return <BarContent>
-    <BarText>{text}</BarText>
-    <BarPercentage>{percentage}%</BarPercentage>
+    <BarText className="destaque">{text}</BarText>
+    <BarPercentage className="destaque">{percentage}%</BarPercentage>
   </BarContent>
 }
 

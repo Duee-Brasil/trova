@@ -25,19 +25,22 @@ const ProductContainer = styled.div`
   row-gap: 1rem;
   column-gap: 1rem;
   border-bottom: 1px solid rgba(76, 111, 156, 0.2);
+  font-size: 0.7rem;
 
   div:first-child {
-    flex: 24%;
+    width: 24%;
     justify-content: center;
 
     p {
       text-transform: uppercase;
       text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
 
   div:last-child {
-    flex: 74%
+    width: 76%;
   }
 
   @media (min-width: 576px) { //maior que phones
@@ -46,10 +49,12 @@ const ProductContainer = styled.div`
 
   @media (min-width: 768px) { //maior que tablets
     flex: 40%;
+    font-size: 0.8rem;
   }
 
   @media (min-width: 992px) { //maior que laptops
     flex: 40%;
+    font-size: initial;
   }
 
   @media (min-width: 1200px) { //maior que desktops
@@ -60,7 +65,7 @@ const ProductContainer = styled.div`
 const Product = ({ icon, name, photo }: { icon: string, name: string, photo: string }) => {
   return <ProductContainer>
     <div>
-      <Image src={icon} alt={name} style={{ width: "60px", margin: "auto" }} />
+      <Image src={icon} alt={name} style={{ width: "50%" ,maxWidth: "60px", margin: "auto" }} />
       <p>{name}</p>
     </div>
     <div>

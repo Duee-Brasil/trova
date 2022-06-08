@@ -2,14 +2,13 @@ import styled, { createGlobalStyle } from "styled-components"
 
 import React, { FC, ReactElement } from "react"
 
+import Sequoia from "../../fonts/Sequoia.woff2"
+
 const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Sequoia';
-    src: url('../../fonts/Sequoia Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
+    src: url(${Sequoia});
   }
 
   body {
@@ -25,14 +24,13 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lato', sans-serif;
     font-stretch: expanded;
     color: #606060;
-    font-size: 1.1rem;
   }
 
   .destaque {
     font-family: 'Sequoia', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6, button, strong {
+  h1, h2, h3, h4, h5, h6, button, strong, a {
     font-family: 'Sequoia', sans-serif;
     font-weight: normal;
   }

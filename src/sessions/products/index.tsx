@@ -30,7 +30,7 @@ const ProductDescription = styled.div`
   }
 
   @media (min-width: 576px) { //maior que phones
-    flex: 100%;
+    flex: 50%;
   }
 
   @media (min-width: 768px) { //maior que tablets
@@ -47,9 +47,10 @@ const ProductDescription = styled.div`
 `
 
 const imagesSize = {
-  flex: "16%",
+  width: "15%",
   border: "2px solid rgb(76, 111, 156)",
-  height: "auto"
+  height: "auto",
+  minWidth: "100px",
 }
 
 const ProductTileContent = styled.div`
@@ -70,7 +71,7 @@ const ProductTileLine = styled.div`
 
 const ProductTitle = ({ text }: { text: string }) => {
   return <ProductTileContent>
-    <ProductTileText>{text}</ProductTileText>
+    <ProductTileText className="destaque">{text}</ProductTileText>
     <ProductTileLine></ProductTileLine>
   </ProductTileContent>
 }

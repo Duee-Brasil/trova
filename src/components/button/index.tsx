@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Styled = styled.button`
     background-color: transparent;
     border: 3px solid #4c6f9c;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 0.7rem 1.3rem;
     transition: 0.25s;
     color: #4c6f9c;
