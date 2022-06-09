@@ -3,6 +3,11 @@ import styled from "styled-components"
 
 import { Container, Image, Title } from "../../components"
 
+import Charc1 from "../../images/_icones caracteristicas/01.png"
+import Charc2 from "../../images/_icones caracteristicas/02.png"
+import Charc3 from "../../images/_icones caracteristicas/03.png"
+import Charc4 from "../../images/_icones caracteristicas/04.png"
+
 const Content = styled.div`
   width: 100%;
   margin-top: 4rem;
@@ -49,10 +54,10 @@ export const Characteristic: FC = () => (
   <Container>
     <Title title={"Características"} />
     <Content>
-      <Attribute text={"O Travertino é atérmico, sendo perfeito para projetos que precisam ser arejados, áreas internas, externas e, claro, fogos de chão e lareiras."} image={"_icones caracteristicas/01.png"} />
-      <Attribute text={"É antiderrapante, sendo indicado para áreas como piscinas, degraus e banheiros; garantindo segurança."} image={"_icones caracteristicas/02.png"} />
-      <Attribute text={"Além da qualidade superior, o travertino da Trova é versátil, elegante, seguro e durável. Podendo ser aplicados de forma natural, bruta, sem brilho, resina ou qualquer outro produto."} image={"_icones caracteristicas/03.png"} />
-      <Attribute text={"Garantimos a uniformidade e homogeneidade do projeto, entregando peças em ladrilhos, com a mesma padronagem de cor e de veios."} image={"_icones caracteristicas/04.png"} />
+      <Attribute text={"O Travertino é atérmico, sendo perfeito para projetos que precisam ser arejados, áreas internas, externas e, claro, fogos de chão e lareiras."} image={Charc1} />
+      <Attribute text={"É antiderrapante, sendo indicado para áreas como piscinas, degraus e banheiros; garantindo segurança."} image={Charc2} />
+      <Attribute text={"Além da qualidade superior, o travertino da Trova é versátil, elegante, seguro e durável. Podendo ser aplicados de forma natural, bruta, sem brilho, resina ou qualquer outro produto."} image={Charc3} />
+      <Attribute text={"Garantimos a uniformidade e homogeneidade do projeto, entregando peças em ladrilhos, com a mesma padronagem de cor e de veios."} image={Charc4} />
     </Content>
   </Container>
 )

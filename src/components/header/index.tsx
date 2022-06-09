@@ -4,6 +4,8 @@ import styled from "styled-components"
 import { menuLinks } from "../../utils/menulinks"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
+import Logo from "../../images/_logos/logo_white.png"
+
 const Container = styled.header`
   background-color: #4c6f9c;
   display: flex;
@@ -39,13 +41,9 @@ const LinksText = styled.a`
 `
 
 const Header = () => (
-  <Container
-  data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease"
-  >
+  <Container>
     <LogoContainer>
-      <Image src={"_logos/logo_white.png"} alt={"Trova logo"} style={{ width: "132px", position: "absolute" }} />
+      <Image src={Logo} alt={"Trova logo"} style={{ width: "132px", position: "absolute" }} />
     </LogoContainer>
     <LinksContainer>
       {menuLinks.map(link => {

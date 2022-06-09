@@ -4,6 +4,7 @@ import React, { FC, ReactElement } from "react"
 
 import Sequoia from "../../fonts/Sequoia.woff2"
 import Footer from "../footer"
+import Header from "../header"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -65,6 +66,8 @@ const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children
       </Main>
 
       <Footer />
+
+      <Header />
     </>
   )
 }

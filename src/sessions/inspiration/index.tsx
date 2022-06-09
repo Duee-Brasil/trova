@@ -4,6 +4,36 @@ import styled from "styled-components"
 
 import { Title, Image, Container } from "../../components"
 
+import PisoExternoI from "../../images/_inspire-se/01_Piso Externo/icone.png"
+import PisoExternoP from "../../images/_inspire-se/01_Piso Externo/foto.jpg"
+
+import EscadaExternaI from "../../images/_inspire-se/02_Escada Externa/icone.png"
+import EscadaExternaP from "../../images/_inspire-se/02_Escada Externa/foto.jpg"
+
+import LavaboI from "../../images/_inspire-se/03_lavabo/icone.png"
+import LavaboP from "../../images/_inspire-se/03_lavabo/foto.jpg"
+
+import RevestPisoI from "../../images/_inspire-se/04_Revestimento de Piso/icone.png"
+import RevestPisoP from "../../images/_inspire-se/04_Revestimento de Piso/foto.jpg"
+
+import RevestExtI from "../../images/_inspire-se/05_revestimento externo/icone.png"
+import RevestExtP from "../../images/_inspire-se/05_revestimento externo/foto.jpg"
+
+import RevestPiscinaI from "../../images/_inspire-se/06_Revestimento Piscina/icone.png"
+import RevestPiscinaP from "../../images/_inspire-se/06_Revestimento Piscina/foto.jpg"
+
+import RevestFogoChaoI from "../../images/_inspire-se/07_Revestimento Fogo de chao/icone.png"
+import RevestFogoChaoP from "../../images/_inspire-se/07_Revestimento Fogo de chao/foto.jpg"
+
+import RevestParedeI from "../../images/_inspire-se/08_Revestimento de Parede/icone.png"
+import RevestParedeP from "../../images/_inspire-se/08_Revestimento de Parede/foto.jpg"
+
+import BancadaBanheiroI from "../../images/_inspire-se/09_Bancada de Banheiro/icone.png"
+import BancadaBanheiroP from "../../images/_inspire-se/09_Bancada de Banheiro/foto.jpg"
+
+import LareiraI from "../../images/_inspire-se/10_Lareira/icone.png"
+import LareiraP from "../../images/_inspire-se/10_Lareira/foto.jpg"
+
 const Content = styled.div`
   width: 100%;
   max-width: 1440px;
@@ -30,6 +60,7 @@ const ProductContainer = styled.div`
   div:first-child {
     width: 24%;
     justify-content: center;
+    text-align: center;
 
     p {
       text-transform: uppercase;
@@ -79,54 +110,54 @@ export const Inspiration: FC = () => (
     <Title title={"Inspire-se"} />
     <Content>
       <Product
-        icon="_inspire-se/01_Piso Externo/icone.png"
+        icon={PisoExternoI}
         name="piso externo"
-        photo="_inspire-se/01_Piso Externo/foto.jpg"
+        photo={PisoExternoP}
       />
       <Product
-        icon="_inspire-se/02_Escada Externa/icone.png"
+        icon={EscadaExternaI}
         name="escada externa"
-        photo="_inspire-se/02_Escada Externa/foto.jpg"
+        photo={EscadaExternaP}
       />
       <Product
-        icon="_inspire-se/03_lavabo/icone.png"
+        icon={LavaboI}
         name="lavabo"
-        photo="_inspire-se/03_lavabo/foto.jpg"
+        photo={LavaboP}
       />
       <Product
-        icon="_inspire-se/04_Revestimento de Piso/icone.png"
+        icon={RevestPisoI}
         name="Revestimento de Piso"
-        photo="_inspire-se/04_Revestimento de Piso/foto.jpg"
+        photo={RevestPisoP}
       />
       <Product
-        icon="_inspire-se/05_revestimento externo/icone.png"
+        icon={RevestExtI}
         name="revestimento externo"
-        photo="_inspire-se/05_revestimento externo/foto.jpg"
+        photo={RevestExtP}
       />
       <Product
-        icon="_inspire-se/06_Revestimento Piscina/icone.png"
+        icon={RevestPiscinaI}
         name="Revestimento Piscina"
-        photo="_inspire-se/06_Revestimento Piscina/foto.jpg"
+        photo={RevestPiscinaP}
       />
       <Product
-        icon="_inspire-se/07_Revestimento Fogo de chao/icone.png"
+        icon={RevestFogoChaoI}
         name="Revestimento Fogo de Chão"
-        photo="_inspire-se/07_Revestimento Fogo de chao/foto.jpg"
+        photo={RevestFogoChaoP}
       />
       <Product
-        icon="_inspire-se/08_Revestimento de Parede/icone.png"
+        icon={RevestParedeI}
         name="Revestimento de Parede"
-        photo="_inspire-se/08_Revestimento de Parede/foto.jpg"
+        photo={RevestParedeP}
       />
       <Product
-        icon="_inspire-se/09_Bancada de Banheiro/icone.png"
+        icon={BancadaBanheiroI}
         name="Bancada de Banheiro"
-        photo="_inspire-se/09_Bancada de Banheiro/foto.jpg"
+        photo={BancadaBanheiroP}
       />
       <Product
-        icon="_inspire-se/10_Lareira/icone.png"
+        icon={LareiraI}
         name="Lareira"
-        photo="_inspire-se/10_Lareira/foto.jpg"
+        photo={LareiraP}
       />
     </Content>
   </Container>

@@ -25,10 +25,7 @@ module.exports = {
         short_name: `trova`,
         start_url: `/`,
         background_color: `#4c6f9c`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#4c6f9c`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/_logos/logo_blue.png`, // This path is relative to the root of the site.
       },
     },

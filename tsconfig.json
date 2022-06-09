@@ -1,19 +1,6 @@
 {
   "compilerOptions": {
       "baseUrl": ".",
-      "paths": {
-        "@assets": ["./src/assets"],
-        "@components": ["./src/components"],
-        "@containers": ["./src/containers"],
-        "@contents": ["./src/contents"],
-        "@style": ["./src/style/*"],
-        "@globals": ["./src/globals.ts"],
-        "@assets/*": ["./src/assets/*"],
-        "@components/*": ["./src/components/*"],
-        "@containers/*": ["./src/containers/*"],
-        "@contents/*": ["./src/contents/*"],
-        "@style/*": ["./src/style/*"]
-      },
       "sourceMap": true,
       "noImplicitAny": true,
       "module": "commonjs",

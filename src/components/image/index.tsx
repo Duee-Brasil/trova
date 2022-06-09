@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img, { GatsbyImageProps } from 'gatsby-image';
+import { StaticImage } from "gatsby-plugin-image"
 
 type nodeImage = {
     relativePath?: string
@@ -14,35 +14,35 @@ type allFile = {
 }
 
 
-export const Image = ({ src, ...rest }: any) => {
-    const data = useStaticQuery(graphql`
-    query {
-        images: allFile(filter: { internal: { mediaType: { regex: "/image/" } } }) {
-            edges {
-                node {
-                    relativePath
-                    extension
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 400) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
-        }
-        }
-    `);
+export const Image = (props: any) => {
+    // const data = useStaticQuery(graphql`
+    // query {
+    //     images: allFile(filter: { internal: { mediaType: { regex: "/image/" } } }) {
+    //         edges {
+    //             node {
+    //                 relativePath
+    //                 extension
+    //                 publicURL
+    //                 childImageSharp {
+    //                     fluid(maxWidth: 600) {
+    //                         ...GatsbyImageSharpFluid
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     }
+    // `);
 
-    const match: allFile = useMemo(() => data.images.edges.find(({ node }: allFile) => src === node.relativePath), [data, src]);
+    // const match: allFile = useMemo(() => data.images.edges.find(({ node }: allFile) => src === node.relativePath), [data, src]);
 
-    if (!match) return null;
+    // if (!match) return null;
 
-    const { node: { childImageSharp, publicURL, extension } = {} } = match;
+    // const { node: { childImageSharp, publicURL, extension } = {} } = match;
 
-    if (extension === 'svg' || !childImageSharp) {
-        return <img src={publicURL} {...rest} />;
-    }
+    // if (extension === 'svg' || !childImageSharp) {
+    //     return <img src={publicURL} {...rest} />;
+    // }
 
-    return <Img fluid={childImageSharp.fluid} {...rest} />;
+    return <img {...props} />;
 };
