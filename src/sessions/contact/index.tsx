@@ -1,3 +1,6 @@
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { FC } from "react"
 import styled from "styled-components"
 
@@ -17,6 +20,21 @@ const Content = styled.div`
 const Column = styled.div`
   flex: 100%;
   padding: 2rem;
+
+  p {
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+
+      &:visited {
+        color: inherit;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+      }
+    }
+
+  }
 
   @media (min-width: 576px) { //maior que phones
     flex: 100%;
@@ -115,11 +133,11 @@ export const Contact: FC = () => {
     `
 
     var link = "mailto:contato@trovabrasil.com"
-    + "?subject=" + encodeURIComponent("Contato pelo site")
-    + "&body=" + encodeURIComponent(message)
-;
+      + "?subject=" + encodeURIComponent("Contato pelo site")
+      + "&body=" + encodeURIComponent(message)
+      ;
 
-window.location.href = link;
+    window.location.href = link;
 
     // fetch("/", {
     //   method: "POST",
@@ -135,10 +153,10 @@ window.location.href = link;
     <Content>
       <Column>
         <p>
-          +55 11 97069-3793 / +55 11 2532-7158
+          <a href="https://api.whatsapp.com/send?phone=5511970693793"><FontAwesomeIcon icon={faWhatsapp} style={{ margin: "auto 0.5rem" }} /> +55 11 97069-3793</a> / <a href="tel:1125327158"><FontAwesomeIcon icon={faPhone} style={{ margin: "auto 0.5rem" }} /> +55 11 2532-7158</a>
         </p>
         <p>
-          contato@trovabrasil.com
+          <a href="mailto:contato@trovabrasil.com"><FontAwesomeIcon icon={faEnvelope} style={{ margin: "auto 0.5rem" }} /> contato@trovabrasil.com</a>
         </p>
       </Column>
       <Column>

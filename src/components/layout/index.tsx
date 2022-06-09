@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from "styled-components"
 import React, { FC, ReactElement } from "react"
 
 import Sequoia from "../../fonts/Sequoia.woff2"
+import Footer from "../footer"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -11,19 +12,25 @@ const GlobalStyle = createGlobalStyle`
     src: url(${Sequoia});
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 100vw;
     min-height: 100vh;
     background-color: #fff;
+    color: #606060;
+    font-family: 'Lato', sans-serif;
+    font-stretch: expanded;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
   }
 
   * {
-    font-family: 'Lato', sans-serif;
-    font-stretch: expanded;
-    color: #606060;
+    box-sizing: border-box;
   }
 
   .destaque {
@@ -44,6 +51,7 @@ export const Container = styled.div`
   padding: 2rem 3rem;
   max-width: 1440px;
   margin: auto;
+  scroll-snap-align: center;
 `
 
 const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children }) => {
@@ -56,16 +64,7 @@ const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children
         {children}
       </Main>
 
-      <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <Footer />
     </>
   )
 }

@@ -47,6 +47,12 @@ const BarText = styled.div`
   border-top: 2px solid #4c6f9c;
   width: 95%;
   text-transform: uppercase;
+  transition: 0.25s;
+
+  &:before {
+        /* box-shadow: inset 6.5em 0 0 0 #4c6f9c; */
+        border-top: 2px solid #4c6f9c;
+    }
 `
 
 const BarPercentage = styled.div`

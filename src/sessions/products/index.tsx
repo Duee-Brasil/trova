@@ -21,6 +21,7 @@ const ProductLine = styled.div`
   flex-wrap: wrap;
   width: 100%;
   margin: 2rem 1rem;
+  justify-content: center;
 `
 
 const ProductDescription = styled.div`
@@ -51,6 +52,7 @@ const imagesSize = {
   border: "2px solid rgb(76, 111, 156)",
   height: "auto",
   minWidth: "100px",
+  objectFit: "cover"
 }
 
 const ProductTileContent = styled.div`

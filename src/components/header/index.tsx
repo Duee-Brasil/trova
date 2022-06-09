@@ -2,6 +2,7 @@ import { Image } from "../../components"
 import React from "react"
 import styled from "styled-components"
 import { menuLinks } from "../../utils/menulinks"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Container = styled.header`
   background-color: #4c6f9c;
@@ -30,6 +31,7 @@ const LinksText = styled.a`
   text-decoration: none;
   margin-left: 1rem;
   margin-right: 1rem;
+  cursor: pointer;
 
   &:visited {
     color: white;
@@ -37,13 +39,17 @@ const LinksText = styled.a`
 `
 
 const Header = () => (
-  <Container>
+  <Container
+  data-sal="slide-up"
+  data-sal-delay="300"
+  data-sal-easing="ease"
+  >
     <LogoContainer>
       <Image src={"_logos/logo_white.png"} alt={"Trova logo"} style={{ width: "132px", position: "absolute" }} />
     </LogoContainer>
     <LinksContainer>
       {menuLinks.map(link => {
-        return <LinksText href={link.link} key={link.name}>{link.name}</LinksText>
+        return <LinksText onClick={() => scrollTo(link.link)} key={link.name}>{link.name}</LinksText>
       })}
     </LinksContainer>
   </Container>
