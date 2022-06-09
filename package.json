@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.25",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.6.2"
   },
   "keywords": [
@@ -47,7 +48,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby clean && gatsby build && git add . && git commit --amend --no-edit && git push -f && git checkout gh-pages && git add --all && git commit -m 'gh-pages' && git push origin HEAD:gh-pages --force && git checkout -f main"
+    "deploy": "gatsby clean && gatsby build && git add . && git commit --amend --no-edit && git push -f && git checkout gh-pages && git add --all && git commit -m 'gh-pages' && git push origin HEAD:gh-pages --force && git checkout -f main",
+    "ghpages": "gatsby clean && gatsby build && gh-pages -d public -b main"
   },
   "repository": {
     "type": "git",
