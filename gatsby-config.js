@@ -5,7 +5,6 @@ module.exports = {
     author: `@pistoletzzz`,
     siteUrl: `https://letgodoy.com`,
   },
-  pathPrefix: "/trova",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
