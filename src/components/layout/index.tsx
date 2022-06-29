@@ -6,6 +6,8 @@ import Sequoia from "../../fonts/Sequoia.woff2"
 import Footer from "../footer"
 import Header from "../header"
 
+import Wpp from "../../images/whatsapp.svg"
+
 const GlobalStyle = createGlobalStyle`
 
   @font-face {
@@ -55,6 +57,24 @@ export const Container = styled.div`
   scroll-snap-align: center;
 `
 
+const Wppbutton = styled.a`
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  font-size: 3em;
+  color: #25d366;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  text-shadow: 0 0 5px gray;
+  z-index: 100000;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+`
+
 const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children }) => {
 
   return (
@@ -66,6 +86,14 @@ const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children
       </Main>
 
       <Footer />
+
+      <Wppbutton
+        href="https://api.whatsapp.com/send?phone=5511970693793"
+        target="_blank"
+        id="whatsapp_button"
+      >
+        <img src={Wpp} />
+      </Wppbutton>
 
       <Header />
     </>

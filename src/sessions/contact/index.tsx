@@ -160,7 +160,7 @@ export const Contact: FC = () => {
         </p>
       </Column>
       <Column>
-        <form name="contact" method="POST" target="_blank" data-netlify="true" onSubmit={handleSubmit} style={{ width: "100%" }}>
+        <form name="contact" method="POST" target="_blank" data-netlify="true" onSubmit={handleSubmit} style={{ width: "100%" }} id="contact_form">
           <InputContainer>
             <InputField type="text" name="name" required pattern=".*\S.*" placeholder="Nome completo:" />
             <InputLabel>Nome completo:</InputLabel>
@@ -178,7 +178,7 @@ export const Contact: FC = () => {
             <InputLabel>Insira sua mensagem: </InputLabel>
           </InputContainer>
           <InputContainer>
-            <Button type="submit">Enviar</Button>
+            <Button type="submit" id="send_form">Enviar</Button>
           </InputContainer>
         </form>
       </Column>
