@@ -82,6 +82,8 @@ function Seo({ description, lang, meta, title }) {
       />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+      <meta name="facebook-domain-verification" content="za65m80ibiardiepk5vq60o4m8sw2l" />
     </Helmet>
   )
 }
