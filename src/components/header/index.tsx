@@ -85,6 +85,11 @@ const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  const blockLink = (e: any, link: any) => {
+      e.preventDefault()
+      scrollTo(link)
+  }
+
   return (
     <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
       <LogoContainer>
@@ -92,7 +97,7 @@ const Header = () => {
       </LogoContainer>
       <LinksContainer isOpen={isOpen}>
         {menuLinks.map(link => {
-          return <LinksText onClick={() => scrollTo(link.link)} href={"https://trovabrasil.com/#" + link.name.toLowerCase().replace(" ", "").replace("-", "")} key={link.name}>{link.name}</LinksText>
+          return <LinksText onClick={(e) => blockLink(e, link.link)} href={"https://trovabrasil.com/#" + link.name.toLowerCase().replace(" ", "").replace("-", "")} key={link.name}>{link.name}</LinksText>
         })}
       </LinksContainer>
     </Container>
