@@ -98,20 +98,20 @@ export const Products: FC = () => (
           <ProductTitle text="nanova" />
           <p>Sua cor é mais clara, chamada “cor de osso”. Possui veios ondulados e mais discretos. Com menos espaços ocos e mais uniforme, esse tipo possui caráter mais exclusivo e raro.</p>
         </ProductDescription>
-        <Image src={Nanova1} style={imagesSize} />
-        <Image src={Nanova2} style={imagesSize} />
-        <Image src={Nanova3} style={imagesSize} />
-        <Image src={Nanova4} style={imagesSize} />
+        <Image src={Nanova1} alt="travertino nanova" style={imagesSize} />
+        <Image src={Nanova2} alt="travertino nanova" style={imagesSize} />
+        <Image src={Nanova3} alt="travertino nanova" style={imagesSize} />
+        <Image src={Nanova4} alt="travertino nanova" style={imagesSize} />
       </ProductLine>
       <ProductLine>
         <ProductDescription>
           <ProductTitle text="Romano Premium" />
           <p>São pedras com tonalidade clara e homogênea, entre palha e areia, possui veios sutis e furinhos mais discretos.</p>
         </ProductDescription>
-        <Image src={Romano1} style={imagesSize} />
-        <Image src={Romano2} style={imagesSize} />
-        <Image src={Romano3} style={imagesSize} />
-        <Image src={Romano4} style={imagesSize} />
+        <Image src={Romano1} alt="travertino romano" style={imagesSize} />
+        <Image src={Romano2} alt="travertino romano" style={imagesSize} />
+        <Image src={Romano3} alt="travertino romano" style={imagesSize} />
+        <Image src={Romano4} alt="travertino romano" style={imagesSize} />
       </ProductLine>
       <p>Podem ser aplicados na sua forma natural, bruta, sem brilho, resina ou quaisquer outros produtos, sendo colocados em áreas internas ou externas. Uma das principais características do nosso travertino é que ele é atérmico, ou seja, é indicado especialmente para áreas de lazer,  pois, mesmo sob o sol intenso, não absorve calor.</p>
       <p>Sua textura especial torna os produtos antiderrapantes. Além dos benefícios térmicos, são muito mais resistentes e duráveis que qualquer produto cimentício, deixando seu ambiente bonito e sofisticado por muito mais tempo.</p>

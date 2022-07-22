@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Trova Brasil`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `
+    Trova - Poesia Scolpita in Pietra - Travertinos importados com rigoroso controle de qualidade, garantia de segurança e durabilidade.`,
     author: `@pistoletzzz`,
     siteUrl: `https://letgodoy.com`,
   },
@@ -26,7 +27,7 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/_logos/logo_blue.png`, // This path is relative to the root of the site.
         short_name: `Trova`,
-        description: `A Trova é especializada exclusivamente na importação do travertino romano.`,
+        description: `Trova - Poesia Scolpita in Pietra - Travertinos importados com rigoroso controle de qualidade, garantia de segurança e durabilidade.`,
         lang: `pt-br`,
         theme_color: `#fff`,
       },
