@@ -92,7 +92,7 @@ const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children
         target="_blank"
         id="whatsapp_button"
       >
-        <img src={Wpp} />
+        <img src={Wpp} alt="contato por Whatsapp" />
       </Wppbutton>
 
       <Header />

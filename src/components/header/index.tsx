@@ -92,7 +92,7 @@ const Header = () => {
       </LogoContainer>
       <LinksContainer isOpen={isOpen}>
         {menuLinks.map(link => {
-          return <LinksText onClick={() => scrollTo(link.link)} href={"https://trovabrasil.com/" + link.name} key={link.name}>{link.name}</LinksText>
+          return <LinksText onClick={() => scrollTo(link.link)} href={"https://trovabrasil.com/#" + link.name.toLowerCase().replace(" ", "").replace("-", "")} key={link.name}>{link.name}</LinksText>
         })}
       </LinksContainer>
     </Container>
