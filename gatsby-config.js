@@ -20,12 +20,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `TrovaBrasil`,
-        short_name: `trova`,
+        name: `Trova Brasil`,
         start_url: `/`,
         background_color: `#4c6f9c`,
         display: `standalone`,
         icon: `src/images/_logos/logo_blue.png`, // This path is relative to the root of the site.
+        short_name: `Trova`,
+        description: `A Trova é especializada exclusivamente na importação do travertino romano.`,
+        lang: `pt-br`,
+        theme_color: `#fff`,
       },
     },
     `gatsby-plugin-styled-components`,
