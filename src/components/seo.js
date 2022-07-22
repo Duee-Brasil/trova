@@ -80,7 +80,7 @@ function Seo({ title }) {
         content="za65m80ibiardiepk5vq60o4m8sw2l"
       />
       <script type="application/ld+json">
-        {{
+        {`{
           "@context": "http://schema.org",
           "@type": "Organization",
           name: "Trova Brasil",
@@ -91,7 +91,7 @@ function Seo({ title }) {
             "https://instagram.com/trovatravertino",
             "https://br.pinterest.com/trovatravertino/_created/",
           ],
-        }}
+        }`}
       </script>
       <meta name="description" content={metaDescription}></meta>
       <meta name="copyright"content="@letgodoy"></meta>
