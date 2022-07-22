@@ -1,16 +1,8 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+function Seo({ title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,16 +17,16 @@ function Seo({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: "pt-br"
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s / ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s / Poesia Scolpita in Pietra` : null}
       meta={[
         {
           name: `description`,
@@ -68,7 +60,7 @@ function Seo({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]}
     >
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -83,23 +75,31 @@ function Seo({ description, lang, meta, title }) {
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-      <meta name="facebook-domain-verification" content="za65m80ibiardiepk5vq60o4m8sw2l" />
+      <meta
+        name="facebook-domain-verification"
+        content="za65m80ibiardiepk5vq60o4m8sw2l"
+      />
+      <script type="application/ld+json">
+        {{
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          name: "Trova Brasil",
+          url: "https://trovabrasil.com",
+          address: "contato@trovabrasil.com",
+          sameAs: [
+            "https://facebook.com/trovabrasil",
+            "https://instagram.com/trovatravertino",
+            "https://br.pinterest.com/trovatravertino/_created/",
+          ],
+        }}
+      </script>
       <meta name="description" content={metaDescription}></meta>
+      <meta name="copyright"content="@letgodoy"></meta>
+      <meta name="url" content="https://trovabrasil.com"></meta>
+      <meta name="identifier-URL" content="https://trovabrasil.com"></meta>
+      <meta http-equiv="cache-control" content="no-cache" />
     </Helmet>
   )
-}
-
-Seo.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-Seo.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default Seo
