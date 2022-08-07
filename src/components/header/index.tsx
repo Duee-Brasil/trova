@@ -86,8 +86,17 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const blockLink = (e: any, link: any) => {
-      e.preventDefault()
-      scrollTo(link)
+      
+
+      const userAgent = navigator.userAgent;
+      console.log(userAgent)
+
+      // if(userAgent.match(/safari/i)){
+        
+      // } else {
+        e.preventDefault()
+        scrollTo(link)
+      // }
   }
 
   return (

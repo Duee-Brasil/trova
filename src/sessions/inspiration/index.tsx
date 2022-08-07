@@ -37,6 +37,7 @@ import LareiraP from "../../images/_inspire-se/10_Lareira/foto.jpg"
 const Content = styled.div`
   width: 100%;
   max-width: 1440px;
+  margin: 0;
   margin-top: 4rem;
   display: flex;
   flex-direction: row;
@@ -48,7 +49,7 @@ const Content = styled.div`
 const ProductContainer = styled.div`
   flex: 100%;
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;

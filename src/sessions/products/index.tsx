@@ -41,11 +41,11 @@ const ProductDescription = styled.div`
   }
 
   @media (min-width: 576px) { //maior que phones
-    flex: 50%;
+    flex: 100%;
   }
 
   @media (min-width: 768px) { //maior que tablets
-    flex: 50%;
+    flex: 100%;
   }
 
   @media (min-width: 992px) { //maior que laptops
@@ -57,13 +57,32 @@ const ProductDescription = styled.div`
   }
 `
 
-const imagesSize = {
-  width: "15%",
-  border: "2px solid rgb(76, 111, 156)",
-  height: "auto",
-  minWidth: "100px",
-  objectFit: "cover"
-}
+const ProductImg = styled.img`
+  border: 2px solid rgb(76, 111, 156);
+  height: auto;
+  min-width: 100px;
+  object-fit: cover;
+
+  @media (min-width: 576px) { //maior que phones
+    width: 100%;
+    margin: 5px;
+  }
+
+  @media (min-width: 768px) { //maior que tablets
+    width: 45%;
+    margin: 5px;
+  }
+
+  @media (min-width: 992px) { //maior que laptops
+    width: 15%;
+    margin: 0;
+  }
+
+  @media (min-width: 1200px) { //maior que desktops
+    width: 15%;
+    margin: 0;
+  }
+`
 
 const ProductTileContent = styled.div`
   display: flex;
@@ -98,20 +117,20 @@ export const Products: FC = () => (
           <ProductTitle text="nanova" />
           <p>Sua cor é mais clara, chamada “cor de osso”. Possui veios ondulados e mais discretos. Com menos espaços ocos e mais uniforme, esse tipo possui caráter mais exclusivo e raro.</p>
         </ProductDescription>
-        <Image src={Nanova1} alt="travertino nanova" style={imagesSize} />
-        <Image src={Nanova2} alt="travertino nanova" style={imagesSize} />
-        <Image src={Nanova3} alt="travertino nanova" style={imagesSize} />
-        <Image src={Nanova4} alt="travertino nanova" style={imagesSize} />
+        <ProductImg src={Nanova1} alt="travertino nanova" />
+        <ProductImg src={Nanova2} alt="travertino nanova" />
+        <ProductImg src={Nanova3} alt="travertino nanova" />
+        <ProductImg src={Nanova4} alt="travertino nanova" />
       </ProductLine>
       <ProductLine>
         <ProductDescription>
           <ProductTitle text="Romano Premium" />
           <p>São pedras com tonalidade clara e homogênea, entre palha e areia, possui veios sutis e furinhos mais discretos.</p>
         </ProductDescription>
-        <Image src={Romano1} alt="travertino romano" style={imagesSize} />
-        <Image src={Romano2} alt="travertino romano" style={imagesSize} />
-        <Image src={Romano3} alt="travertino romano" style={imagesSize} />
-        <Image src={Romano4} alt="travertino romano" style={imagesSize} />
+        <ProductImg src={Romano1} alt="travertino romano" />
+        <ProductImg src={Romano2} alt="travertino romano" />
+        <ProductImg src={Romano3} alt="travertino romano" />
+        <ProductImg src={Romano4} alt="travertino romano" />
       </ProductLine>
       <p>Podem ser aplicados na sua forma natural, bruta, sem brilho, resina ou quaisquer outros produtos, sendo colocados em áreas internas ou externas. Uma das principais características do nosso travertino é que ele é atérmico, ou seja, é indicado especialmente para áreas de lazer,  pois, mesmo sob o sol intenso, não absorve calor.</p>
       <p>Sua textura especial torna os produtos antiderrapantes. Além dos benefícios térmicos, são muito mais resistentes e duráveis que qualquer produto cimentício, deixando seu ambiente bonito e sofisticado por muito mais tempo.</p>

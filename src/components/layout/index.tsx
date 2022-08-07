@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lato', sans-serif;
     font-stretch: expanded;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
   }
 
   * {
@@ -51,7 +50,7 @@ const Main = styled.main`
 `
 
 export const Container = styled.div`
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   max-width: 1440px;
   margin: auto;
   scroll-snap-align: center;

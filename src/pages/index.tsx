@@ -11,6 +11,8 @@ import {
   Products,
 } from "../sessions"
 
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 const Index = () => {
 
   return (
