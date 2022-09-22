@@ -6,6 +6,7 @@ import {
   About,
   Characteristic,
   Contact,
+  Find,
   Hero,
   Inspiration,
   Products,
@@ -23,6 +24,7 @@ const Index = () => {
       <Products />
       <Characteristic />
       <Inspiration />
+      <Find />
       <Contact />
     </Layout>
   )

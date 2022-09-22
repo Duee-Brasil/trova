@@ -15,10 +15,10 @@ export const menuLinks = [
     name: "Inspire-se",
     link: "#inspirese",
   },
-  // {
-  //   name: "Onde encontrar",
-  //   link: "#ondeencontrar",
-  // },
+  {
+    name: "Onde encontrar",
+    link: "#ondeencontrar",
+  },
   {
     name: "Contato",
     link: "#contato",

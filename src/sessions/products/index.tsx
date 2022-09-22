@@ -4,10 +4,10 @@ import styled from "styled-components"
 
 import { Title, Image, Container } from "../../components"
 
-import Nanova1 from "../../images/_fotos Navona/01.png"
-import Nanova2 from "../../images/_fotos Navona/02.png"
-import Nanova3 from "../../images/_fotos Navona/03.png"
-import Nanova4 from "../../images/_fotos Navona/04.png"
+import Navona1 from "../../images/_fotos Navona/01.png"
+import Navona2 from "../../images/_fotos Navona/02.png"
+import Navona3 from "../../images/_fotos Navona/03.png"
+import Navona4 from "../../images/_fotos Navona/04.png"
 
 import Romano1 from "../../images/_fotos Romano Premium/05.png"
 import Romano2 from "../../images/_fotos Romano Premium/06.png"
@@ -114,13 +114,13 @@ export const Products: FC = () => (
       <p>A TROVA trabalha com o travertino Romano PREMIUM e o Navona, pois são os melhores travertinos encontrados na natureza, por causa da sua composição e formação geológica. Ambos têm procedência da mesma região.</p>
       <ProductLine>
         <ProductDescription>
-          <ProductTitle text="nanova" />
+          <ProductTitle text="navona" />
           <p>Sua cor é mais clara, chamada “cor de osso”. Possui veios ondulados e mais discretos. Com menos espaços ocos e mais uniforme, esse tipo possui caráter mais exclusivo e raro.</p>
         </ProductDescription>
-        <ProductImg src={Nanova1} alt="travertino nanova" />
-        <ProductImg src={Nanova2} alt="travertino nanova" />
-        <ProductImg src={Nanova3} alt="travertino nanova" />
-        <ProductImg src={Nanova4} alt="travertino nanova" />
+        <ProductImg src={Navona1} alt="travertino navona" />
+        <ProductImg src={Navona2} alt="travertino navona" />
+        <ProductImg src={Navona3} alt="travertino navona" />
+        <ProductImg src={Navona4} alt="travertino navona" />
       </ProductLine>
       <ProductLine>
         <ProductDescription>
