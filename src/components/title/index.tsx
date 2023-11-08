@@ -37,9 +37,9 @@ const Text = styled.h2`
   font-weight: normal;
 `
 
-export const Title: FC<{ title: string }> = ({ title }) => {
+export const Title: FC<{ title: string, style?: any }> = ({ title, style }) => {
   return (
-    <Container>
+    <Container style={{...style}}>
       <SupDraw />
       <Text className="destaque">{title}</Text>
       <InfDraw />

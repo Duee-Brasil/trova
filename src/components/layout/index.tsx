@@ -74,7 +74,7 @@ const Wppbutton = styled.a`
   }
 `
 
-const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children }) => {
+const Layout: FC<{ type?: "common" | "lp", children: ReactElement | Array<ReactElement> }> = ({ type = "common", children }) => {
 
   return (
     <>
@@ -94,7 +94,7 @@ const Layout: FC<{ children: ReactElement | Array<ReactElement> }> = ({ children
         <img src={Wpp} alt="contato por Whatsapp" />
       </Wppbutton>
 
-      <Header />
+      <Header type={type} />
     </>
   )
 }

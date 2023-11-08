@@ -1,5 +1,5 @@
 import { Image } from "../../components"
-import React, { useCallback, useState } from "react"
+import React, { FC, useCallback, useState } from "react"
 import styled from "styled-components"
 import { menuLinks } from "../../utils/menulinks"
 import scrollTo from 'gatsby-plugin-smoothscroll';
@@ -81,7 +81,7 @@ const LinksText = styled.a`
   }
 `
 
-const Header = () => {
+const Header: FC<{ type: "common" | "lp" }> = ({ type }) => {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -100,15 +100,15 @@ const Header = () => {
   }
 
   return (
-    <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
-      <LogoContainer>
-        <Image src={Logo} alt={"Trova logo"} style={{ width: "132px", position: "absolute" }} />
+    <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} style={type === "lp" ? {justifyContent: 'center', textAlign: 'center'} : undefined}>
+      <LogoContainer style={type === "lp" ? { justifyContent: 'center', textAlign: 'center', justifySelf: 'center' } : undefined}>
+        <Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} />
       </LogoContainer>
-      <LinksContainer isOpen={isOpen}>
+      {type === "common" ? <LinksContainer isOpen={isOpen}>
         {menuLinks.map(link => {
           return <LinksText onClick={(e) => blockLink(e, link.link)} href={"https://trovabrasil.com/#" + link.name.toLowerCase().replace(" ", "").replace("-", "")} key={link.name}>{link.name}</LinksText>
         })}
-      </LinksContainer>
+      </LinksContainer> : null}
     </Container>
   )
 }
