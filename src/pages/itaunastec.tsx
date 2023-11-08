@@ -9,14 +9,14 @@ import {
   RolloutProductCharacteristicItaunasTec,
   RolloutProductTitle,
 } from "../sessions"
-import AboutProductImg from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 1.jpg'
-import ApplyProductImg1 from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 2.jpg'
-import ApplyProductImg2 from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 3.jpg'
-import ApplyProductImg3 from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 4.jpg'
-import ApplyProductImg4 from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 5.jpg'
-import ApplyProductImg5 from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 6.jpg'
-import ApplyProductImg6 from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 7.jpg'
-import ApplyProductImg7 from '../images/_fotos Itaunas Tec/Fotos_Itaúnas Tec - Foto 8.jpg'
+import AboutProductImg from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 1.jpg'
+import ApplyProductImg1 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 2.jpg'
+import ApplyProductImg2 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 3.jpg'
+import ApplyProductImg3 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 4.jpg'
+import ApplyProductImg4 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 5.jpg'
+import ApplyProductImg5 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 6.jpg'
+import ApplyProductImg6 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 7.jpg'
+import ApplyProductImg7 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 8.jpg'
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
