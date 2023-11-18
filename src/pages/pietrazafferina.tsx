@@ -37,9 +37,9 @@ const PietraZafferina = () => {
         <p>A beleza da Pietra Zafferina não apenas encanta, mas também cria uma sensação de tranquilidade e proximidade com a natureza. Sua resistência à dilatação garante segurança a sua capacidade de absorção do calor proporciona uma experiência ainda mais agradável, mantendo a superfície aquecida e criando um equilíbrio térmico ideal para sua piscina.</p>
         <p>A Pietra Zafferina é a escolha inteligente para elevar o seu projeto, oferecendo uma combinação incomparável de beleza, sofisticação e funcionalidade. Sua capacidade de transformar o ambiente a torna uma opção excepcional para aqueles que buscam qualidade e elegância.</p>
       </>} />
-      <RolloutProductCompare />
       <RolloutProductApply images={applyImages} />
       <RolloutProductCharacteristicPietraZafferina />
+      <RolloutProductCompare />
       <Contact />
     </Layout>
   )
