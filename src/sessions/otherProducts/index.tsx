@@ -135,33 +135,32 @@ const ProductTitle = ({ text }: { text: string }) => {
   </ProductTileContent>
 }
 
-export const Products: FC = () => (
-  <Container id="produtos">
-    <Title title={"Nossos produtos"} />
+export const OtherProducts: FC = () => (
+  <Container id="outrosprodutos">
+    <Title title={"Outros produtos"} />
     <Content>
-      <p>A TROVA trabalha com o travertino Romano PREMIUM e o Navona, pois são os melhores travertinos encontrados na natureza, por causa da sua composição e formação geológica. Ambos têm procedência da mesma região.</p>
       <ProductLine>
         <ProductDescription>
-          <ProductTitle text="navona" />
-          <p>Sua cor é mais clara, chamada “cor de osso”. Possui veios ondulados e mais discretos. Com menos espaços ocos e mais uniforme, esse tipo possui caráter mais exclusivo e raro.</p>
+          <ProductTitle text="Pietra Zafferina" />
+          <p>Sua textura única, tons de verde variando entre o claro e o escuro e o efeito vibrante quando em contato com a água são características que garantem sofisticação e exclusividade para seu projeto.</p>
+          <LinkButton to="/pietrazafferina">Saber mais</LinkButton>
         </ProductDescription>
-        <ProductImg src={Navona1} alt="travertino navona" />
-        <ProductImg src={Navona2} alt="travertino navona" />
-        <ProductImg src={Navona3} alt="travertino navona" />
-        <ProductImg src={Navona4} alt="travertino navona" />
+        <ProductImg src={PietraZafferina1} alt="pietra zafferina" />
+        <ProductImg src={PietraZafferina2} alt="pietra zafferina" />
+        <ProductImg src={PietraZafferina3} alt="pietra zafferina" />
+        <ProductImg src={PietraZafferina4} alt="pietra zafferina" />
       </ProductLine>
       <ProductLine>
         <ProductDescription>
-          <ProductTitle text="Romano Premium" />
-          <p>São pedras com tonalidade clara e homogênea, entre palha e areia, possui veios sutis e furinhos mais discretos.</p>
+          <ProductTitle text="Itaúnas Tec" />
+          <p>Sua composição clara, granulada e homogênea permite a aplicação do Itaúnas Innovare em diferentes projetos de decoração, trazendo sofisticação e sutileza aos ambientes.</p>
+          <LinkButton to="/itaunastec">Saber mais</LinkButton>
         </ProductDescription>
-        <ProductImg src={Romano1} alt="travertino romano" />
-        <ProductImg src={Romano2} alt="travertino romano" />
-        <ProductImg src={Romano3} alt="travertino romano" />
-        <ProductImg src={Romano4} alt="travertino romano" />
+        <ProductImg src={ItaunasTec1} alt="itaunas tec" />
+        <ProductImg src={ItaunasTec2} alt="itaunas tec" />
+        <ProductImg src={ItaunasTec3} alt="itaunas tec" />
+        <ProductImg src={ItaunasTec4} alt="itaunas tec" />
       </ProductLine>
-      <p>Podem ser aplicados na sua forma natural, bruta, sem brilho, resina ou quaisquer outros produtos, sendo colocados em áreas internas ou externas. Uma das principais características do nosso travertino é que ele é atérmico, ou seja, é indicado especialmente para áreas de lazer,  pois, mesmo sob o sol intenso, não absorve calor.</p>
-      <p>Sua textura especial torna os produtos antiderrapantes. Além dos benefícios térmicos, são muito mais resistentes e duráveis que qualquer produto cimentício, deixando seu ambiente bonito e sofisticado por muito mais tempo.</p>
-    </Content>
+      </Content>
   </Container>
 )

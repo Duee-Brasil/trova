@@ -9,6 +9,7 @@ import {
   Find,
   Hero,
   Inspiration,
+  OtherProducts,
   Products,
 } from "../sessions"
 
@@ -23,6 +24,7 @@ const Index = () => {
       <About />
       <Products />
       <Characteristic />
+      <OtherProducts />
       <Inspiration />
       <Find />
       <Contact />

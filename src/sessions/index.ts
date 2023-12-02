@@ -4,6 +4,7 @@ export * from "./contact"
 export * from "./hero"
 export * from "./inspiration"
 export * from "./products"
+export * from "./otherProducts"
 export * from "./find"
 export * from './rolloutProductTitle'
 export * from "./rolloutProductAbout"
