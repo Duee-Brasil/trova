@@ -37,7 +37,7 @@ const Footer = () => {
 
     const scriptElement = document.createElement('script');
 
-    scriptElement.textContent = " const todasAsImagens = document.querySelectorAll('img'); todasAsImagens.forEach((imagem) => { const largura = imagem.clientWidth; const altura = imagem.clientHeight; imagem.setAttribute('width', largura.toString()); imagem.setAttribute('height', altura.toString()); }); ";
+    scriptElement.textContent = " const todasAsImagens = document.querySelectorAll('img'); todasAsImagens.forEach((imagem) => { const largura = imagem.clientWidth; const altura = imagem.clientHeight; imagem.setAttribute('width', largura.toString()+'px'); imagem.setAttribute('height', altura.toString()+'px'); }); ";
 
     document.body.appendChild(scriptElement);
 
