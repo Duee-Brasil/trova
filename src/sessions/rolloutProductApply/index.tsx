@@ -35,7 +35,7 @@ export const RolloutProductApply: FC<{images: Array<string>}> = ({images}) => (
     <Title title={"Aplicações"} />
     <Content>
       {images.map((image, i) => {
-        return <AttributeContainer><img src={image} alt={i.toString()} /></AttributeContainer>
+        return <AttributeContainer><img src={image} alt={i.toString()} loading="lazy" /></AttributeContainer>
       })}
     </Content>
   </Container>

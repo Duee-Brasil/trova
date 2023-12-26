@@ -91,7 +91,7 @@ const Layout: FC<{ type?: "common" | "lp", children: ReactElement | Array<ReactE
         target="_blank"
         id="whatsapp_button"
       >
-        <img src={Wpp} alt="contato por Whatsapp" />
+        <img src={Wpp} alt="contato por Whatsapp" loading="lazy" />
       </Wppbutton>
 
       <Header type={type} />
