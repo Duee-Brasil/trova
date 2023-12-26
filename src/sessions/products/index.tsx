@@ -145,20 +145,20 @@ export const Products: FC = () => (
           <ProductTitle text="navona" />
           <p>Sua cor é mais clara, chamada “cor de osso”. Possui veios ondulados e mais discretos. Com menos espaços ocos e mais uniforme, esse tipo possui caráter mais exclusivo e raro.</p>
         </ProductDescription>
-        <ProductImg src={Navona1} alt="travertino navona" />
-        <ProductImg src={Navona2} alt="travertino navona" />
-        <ProductImg src={Navona3} alt="travertino navona" />
-        <ProductImg src={Navona4} alt="travertino navona" />
+        <ProductImg src={Navona1} alt="travertino navona" loading="lazy" />
+        <ProductImg src={Navona2} alt="travertino navona" loading="lazy" />
+        <ProductImg src={Navona3} alt="travertino navona" loading="lazy" />
+        <ProductImg src={Navona4} alt="travertino navona" loading="lazy" />
       </ProductLine>
       <ProductLine>
         <ProductDescription>
           <ProductTitle text="Romano Premium" />
           <p>São pedras com tonalidade clara e homogênea, entre palha e areia, possui veios sutis e furinhos mais discretos.</p>
         </ProductDescription>
-        <ProductImg src={Romano1} alt="travertino romano" />
-        <ProductImg src={Romano2} alt="travertino romano" />
-        <ProductImg src={Romano3} alt="travertino romano" />
-        <ProductImg src={Romano4} alt="travertino romano" />
+        <ProductImg src={Romano1} alt="travertino romano" loading="lazy" />
+        <ProductImg src={Romano2} alt="travertino romano" loading="lazy" />
+        <ProductImg src={Romano3} alt="travertino romano" loading="lazy" />
+        <ProductImg src={Romano4} alt="travertino romano" loading="lazy" />
       </ProductLine>
       <p>Podem ser aplicados na sua forma natural, bruta, sem brilho, resina ou quaisquer outros produtos, sendo colocados em áreas internas ou externas. Uma das principais características do nosso travertino é que ele é atérmico, ou seja, é indicado especialmente para áreas de lazer,  pois, mesmo sob o sol intenso, não absorve calor.</p>
       <p>Sua textura especial torna os produtos antiderrapantes. Além dos benefícios térmicos, são muito mais resistentes e duráveis que qualquer produto cimentício, deixando seu ambiente bonito e sofisticado por muito mais tempo.</p>
