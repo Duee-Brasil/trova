@@ -16,8 +16,6 @@ import ApplyProductImg2 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zff
 import ApplyProductImg3 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4 - 250 364.png'
 import ApplyProductImg4 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5 - 250 364.png'
 
-import scrollTo from 'gatsby-plugin-smoothscroll';
-
 const PietraZafferina = () => {
 
   const applyImages = [
