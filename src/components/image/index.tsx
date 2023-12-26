@@ -44,5 +44,5 @@ export const Image = (props: any) => {
     //     return <img src={publicURL} {...rest} />;
     // }
 
-    return <img {...props} />;
+    return <img {...props} loading="lazy" />;
 };
