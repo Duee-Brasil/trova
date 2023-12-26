@@ -72,7 +72,7 @@ function Seo({ title }) {
         rel="stylesheet"
         href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
       />
-      <link rel="canonical" href="https://trovabrasil.com/" /></link>
+      <link rel="canonical" href="https://trovabrasil.com/" />
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
       <meta
