@@ -20,10 +20,10 @@ import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra 
 import PietraZafferina3 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4.png'
 import PietraZafferina4 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5.png'
 
-import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 4.jpg'
-import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 6.jpg'
-import ItaunasTec3 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 7.jpg'
-import ItaunasTec4 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 8.jpg'
+import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 4.jpg'
+import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 6.jpg'
+import ItaunasTec3 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 7.jpg'
+import ItaunasTec4 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 8.jpg'
 
 const Content = styled.div`
   width: 100%;
