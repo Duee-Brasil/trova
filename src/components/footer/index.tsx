@@ -33,7 +33,7 @@ const Paragraph = styled.p`
 
 const Footer = () => {
 
-  useEffect(() => {
+  /* useEffect(() => {
 
     const scriptElement = document.createElement('script');
 
@@ -44,7 +44,7 @@ const Footer = () => {
     return () => {
       document.body.removeChild(scriptElement);
     };
-  }, []); 
+  }, []); */
   
   return (
   <Container>
