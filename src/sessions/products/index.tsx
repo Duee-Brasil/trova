@@ -145,10 +145,10 @@ export const Products: FC = () => (
           <ProductTitle text="navona" />
           <p>Sua cor é mais clara, chamada “cor de osso”. Possui veios ondulados e mais discretos. Com menos espaços ocos e mais uniforme, esse tipo possui caráter mais exclusivo e raro.</p>
         </ProductDescription>
-        <ProductImg src={Navona1} alt="travertino navona" loading="lazy" />
-        <ProductImg src={Navona2} alt="travertino navona" loading="lazy" />
-        <ProductImg src={Navona3} alt="travertino navona" loading="lazy" />
-        <ProductImg src={Navona4} alt="travertino navona" loading="lazy" />
+        <ProductImg src={Navona1} alt="travertino navona" loading="lazy" data-id="larguraAltura" />
+        <ProductImg src={Navona2} alt="travertino navona" loading="lazy" data-id="larguraAltura" />
+        <ProductImg src={Navona3} alt="travertino navona" loading="lazy" data-id="larguraAltura" />
+        <ProductImg src={Navona4} alt="travertino navona" loading="lazy" data-id="larguraAltura" />
       </ProductLine>
       <ProductLine>
         <ProductDescription>
