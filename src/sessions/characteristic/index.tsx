@@ -45,7 +45,7 @@ const Text = styled.p`
 
 const Attribute = ({text, image}: {text: string, image: string}) => {
   return <AttributeContainer>
-    <Image src={image} alt={text} style={{ width: "40px" }}/>
+    <Image src={image} alt={text} style={{ width: "40px" }} data-id="larguraAltura" />
     <Text>{text}</Text>
   </AttributeContainer>
 }
