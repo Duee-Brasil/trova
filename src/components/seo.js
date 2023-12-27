@@ -62,18 +62,26 @@ function Seo({ title }) {
         },
       ]}
     >
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.googleapis.com"  />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet"
+        as="style"
+        type="text/css"
+        media="all"
       />
       <link
         rel="stylesheet"
         href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        as="style"
+        type="text/css"
+        media="all"
       />
       <link rel="canonical" href="https://trovabrasil.com/" />
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" as="script"
+        type="text/javascript"
+        defer></script>
 
       <meta
         name="facebook-domain-verification"
