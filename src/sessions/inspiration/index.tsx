@@ -114,51 +114,61 @@ export const Inspiration: FC = () => (
         icon={PisoExternoI}
         name="piso externo"
         photo={PisoExternoP}
+        data-id="larguraAltura"
       />
       <Product
         icon={EscadaExternaI}
         name="escada externa"
         photo={EscadaExternaP}
+        data-id="larguraAltura"
       />
       <Product
         icon={LavaboI}
         name="lavabo"
         photo={LavaboP}
+        data-id="larguraAltura"
       />
       <Product
         icon={RevestPisoI}
         name="Revestimento de Piso"
         photo={RevestPisoP}
+        data-id="larguraAltura"
       />
       <Product
         icon={RevestExtI}
         name="revestimento externo"
         photo={RevestExtP}
+        data-id="larguraAltura"
       />
       <Product
         icon={RevestPiscinaI}
         name="Revestimento Piscina"
         photo={RevestPiscinaP}
+        data-id="larguraAltura"
       />
       <Product
         icon={RevestFogoChaoI}
         name="Revestimento Fogo de Chão"
         photo={RevestFogoChaoP}
+        data-id="larguraAltura"
       />
       <Product
         icon={RevestParedeI}
         name="Revestimento de Parede"
         photo={RevestParedeP}
+        data-id="larguraAltura"
       />
       <Product
         icon={BancadaBanheiroI}
         name="Bancada de Banheiro"
         photo={BancadaBanheiroP}
+        data-id="larguraAltura"
       />
       <Product
         icon={LareiraI}
         name="Lareira"
         photo={LareiraP}
+        data-id="larguraAltura"
       />
     </Content>
   </Container>

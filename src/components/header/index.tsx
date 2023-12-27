@@ -102,7 +102,7 @@ const Header: FC<{ type: "common" | "lp" }> = ({ type }) => {
   return (
     <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} style={type === "lp" ? {justifyContent: 'center', textAlign: 'center'} : undefined}>
       <LogoContainer style={type === "lp" ? { justifyContent: 'center', textAlign: 'center', justifySelf: 'center' } : undefined}>
-        <Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} />
+        <Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} data-id="larguraAltura" />
       </LogoContainer>
       {type === "common" ? <LinksContainer isOpen={isOpen}>
         {menuLinks.map(link => {
