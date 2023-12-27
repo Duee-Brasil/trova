@@ -97,11 +97,11 @@ const ProductContainer = styled.div`
 const Product = ({ icon, name, photo }: { icon: string, name: string, photo: string }) => {
   return <ProductContainer>
     <div>
-      <Image src={icon} alt={name} style={{ width: "50%" ,maxWidth: "60px", margin: "auto" }} />
+      <Image src={icon} alt={name} style={{ width: "50%" ,maxWidth: "60px", margin: "auto" }} data-id="larguraAltura" />
       <p>{name}</p>
     </div>
     <div>
-      <Image src={photo} alt={name} style={{ width: "100%" }} />
+      <Image src={photo} alt={name} style={{ width: "100%" }} data-id="larguraAltura" />
     </div>
   </ProductContainer>
 }
