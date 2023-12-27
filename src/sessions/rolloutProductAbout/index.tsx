@@ -46,7 +46,7 @@ export const RolloutProductAbout: FC<{image: string, text: ReactNode}> = ({image
   <Container id="sobre">
     <Content>
       <Column30>
-        <ProductImg src={image} alt="product photo" />
+        <ProductImg src={image} alt="product photo" loading="lazy" />
       </Column30>
       <Column70>
         {text}

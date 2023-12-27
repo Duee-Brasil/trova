@@ -135,10 +135,10 @@ export const OtherProducts: FC = () => (
           <p>Sua textura única, tons de verde variando entre o claro e o escuro e o efeito vibrante quando em contato com a água são características que garantem sofisticação e exclusividade para seu projeto.</p>
           <LinkButton to="/pietrazafferina">Saber mais</LinkButton>
         </ProductDescription>
-        <ProductImg src={PietraZafferina1} alt="pietra zafferina" />
-        <ProductImg src={PietraZafferina2} alt="pietra zafferina" />
-        <ProductImg src={PietraZafferina3} alt="pietra zafferina" />
-        <ProductImg src={PietraZafferina4} alt="pietra zafferina" />
+        <ProductImg src={PietraZafferina1} alt="pietra zafferina" loading="lazy" />
+        <ProductImg src={PietraZafferina2} alt="pietra zafferina" loading="lazy" />
+        <ProductImg src={PietraZafferina3} alt="pietra zafferina" loading="lazy" />
+        <ProductImg src={PietraZafferina4} alt="pietra zafferina" loading="lazy" />
       </ProductLine>
       <ProductLine>
         <ProductDescription>
@@ -146,10 +146,10 @@ export const OtherProducts: FC = () => (
           <p>Sua composição clara, granulada e homogênea permite a aplicação do Itaúnas Innovare em diferentes projetos de decoração, trazendo sofisticação e sutileza aos ambientes.</p>
           <LinkButton to="/itaunastec">Saber mais</LinkButton>
         </ProductDescription>
-        <ProductImg src={ItaunasTec1} alt="itaunas tec" />
-        <ProductImg src={ItaunasTec2} alt="itaunas tec" />
-        <ProductImg src={ItaunasTec3} alt="itaunas tec" />
-        <ProductImg src={ItaunasTec4} alt="itaunas tec" />
+        <ProductImg src={ItaunasTec1} alt="itaunas tec" loading="lazy" />
+        <ProductImg src={ItaunasTec2} alt="itaunas tec" loading="lazy" />
+        <ProductImg src={ItaunasTec3} alt="itaunas tec" loading="lazy" />
+        <ProductImg src={ItaunasTec4} alt="itaunas tec" loading="lazy" />
       </ProductLine>
       </Content>
   </Container>
