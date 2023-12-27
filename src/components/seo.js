@@ -81,7 +81,7 @@ function Seo({ title }) {
       <link rel="canonical" href="https://trovabrasil.com/" />
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" as="script"
         type="text/javascript"
-        defer></script>
+        async></script>
 
       <meta
         name="facebook-domain-verification"
