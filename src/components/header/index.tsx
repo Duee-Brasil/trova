@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { menuLinks } from "../../utils/menulinks"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import Logo from "../../images/_logos/logo_white.png"
+import Logo from "../../images/_logos/logo_white.webp"
 
 const Container = styled.header<{ isOpen: boolean }>`
   background-color: #4c6f9c;
