@@ -7,6 +7,14 @@ module.exports = {
     siteUrl: `https://letgodoy.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://trovabrasil.com',
+        sitemap: 'https://trovabrasil.com/sitemap.xml', 
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
