@@ -1,0 +1,8 @@
+# _config.yml
+
+# Configurações de cabeçalhos HTTP para controle de cache
+headers:
+  - 'X-Content-Type-Options: nosniff'
+  - 'X-Frame-Options: SAMEORIGIN'
+  - 'X-XSS-Protection: 1; mode=block'
+  - 'Cache-Control: public, max-age=2592000' # Cache por 1 mês (30 dias)
