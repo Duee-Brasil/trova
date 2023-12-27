@@ -25,7 +25,7 @@ exports.onCreateNode = ({ node, actions }, _args) => {
       const imagePath = path.resolve(frontmatter.image);
 
       // Cria uma cópia em cache da imagem
-      const imageCachePath = path.join(process.cwd(), "public", "images", "cache", path.basename(imagePath));
+      const imageCachePath = path.join(process.cwd(), "public", "src/images", "src/fonts", "cache", path.basename(imagePath));
 
       if (!fs.existsSync(imageCachePath)) {
         sharp(imagePath)
