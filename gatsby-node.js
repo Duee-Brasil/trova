@@ -8,7 +8,6 @@
 //   })
 // }
 
-
 // gatsby-node.js
 
 const path = require("path");
@@ -21,38 +20,48 @@ exports.onCreateNode = ({ node, actions }, _args) => {
   if (node.internal.type === "Mdx") {
     const { frontmatter, content } = node;
 
-    if (frontmatter.image) {
-      const imagePath = path.resolve(frontmatter.image);
+    // Função para verificar se a extensão é uma imagem
+    const isImage = (filePath) => /\.(png|jpg|jpeg|gif|webp|svg)$/i.test(filePath);
 
-      // Cria uma cópia em cache da imagem
-      const imageCachePath = path.join(process.cwd(), "static", "public", "src/images", "src/fonts", "cache", path.basename(imagePath));
+    // Função para verificar se a extensão é uma fonte
+    const isFont = (filePath) => /\.(woff|woff2|ttf|otf)$/i.test(filePath);
 
-      if (!fs.existsSync(imageCachePath)) {
-        sharp(imagePath)
+    // Função para verificar se a extensão é um vídeo
+    const isVideo = (filePath) => /\.(mp4|webm|ogg)$/i.test(filePath);
+
+    const processFile = (filePath, cachePath) => {
+      if (!fs.existsSync(cachePath)) {
+        sharp(filePath)
           .resize({ width: 800 })
-          .toFile(imageCachePath);
+          .toFile(cachePath);
       }
+      // Atualiza o conteúdo do MDX com o caminho do arquivo em cache
+      node.content = content.replace(filePath, cachePath);
+    };
 
-      // Atualiza o conteúdo do MDX com o caminho da imagem em cache
-      node.content = content.replace(frontmatter.image, imageCachePath);
+    if (frontmatter.image && isImage(frontmatter.image)) {
+      const imagePath = path.resolve(frontmatter.image);
+      const imageCachePath = path.join(process.cwd(), "static", "public", "src/images", "src/fonts", "cache", path.basename(imagePath));
+      processFile(imagePath, imageCachePath);
     }
 
     if (frontmatter.fonts) {
       const fonts = frontmatter.fonts.split(",");
-
-      // Cria uma cópia em cache de cada fonte
       for (const font of fonts) {
         const fontPath = path.resolve(font);
-
-        const fontCachePath = path.join(process.cwd(), "public", "fonts", "cache", path.basename(fontPath));
-
-        if (!fs.existsSync(fontCachePath)) {
-          fs.copyFileSync(fontPath, fontCachePath);
+        const fontCachePath = path.join(process.cwd(), "static", "public", "src/images", "src/fonts", "cache", path.basename(fontPath));
+        if (isFont(fontPath)) {
+          processFile(fontPath, fontCachePath);
         }
       }
-
       // Atualiza o conteúdo do MDX com os caminhos das fontes em cache
-      frontmatter.fonts = fonts.map((font) => path.join("public", "fonts", "cache", path.basename(font)));
+      frontmatter.fonts = fonts.map((font) => path.join("static", "public", "src/images", "src/fonts", "cache", path.basename(font)));
+    }
+
+    if (frontmatter.video && isVideo(frontmatter.video)) {
+      const videoPath = path.resolve(frontmatter.video);
+      const videoCachePath = path.join(process.cwd(), "static", "public", "src/images", "src/fonts", "cache", path.basename(videoPath));
+      processFile(videoPath, videoCachePath);
     }
 
     createNodeField({
