@@ -64,8 +64,18 @@ function Seo({ title }) {
     >
         <link rel="dns-prefetch" href="https://gstatic.com" crossorigin />
         <link rel="dns-prefetch" href="https://googleapis.com" crossorigin />
+        
+        <link rel="dns-prefetch" href="googletagmanager.com" crossorigin /> 
+        <link rel="dns-prefetch" href="google-analytics.com" crossorigin />
+        <link rel="dns-prefetch" href="unpkg.com" crossorigin />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="preconnect" href="www.googletagmanager.com"  crossorigin />  
+        <link rel="preconnect" href="www.google-analytics.com"  crossorigin />
+        <link rel="preconnect" href="unpkg.com"  crossorigin />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
           rel="stylesheet"
