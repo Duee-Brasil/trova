@@ -11,25 +11,50 @@
 
 // gatsby-node.js
 
-exports.onPostBuild = async function ({ cache, graphql }, { query }) {
-    const cacheKey = "cache-site";
-    const twentyFourHoursInMilliseconds = 24 * 60 * 60 * 1000; // 86400000
-    let obj = await cache.get(cacheKey);
-  
-    if (!obj) {
-      obj = { created: Date.now() };
-      const data = await graphql(query);
-      obj.data = data;
-    } else if (Date.now() > obj.lastChecked + twentyFourHoursInMilliseconds) {
-      /* Reload after a day */
-      const data = await graphql(query);
-      obj.data = data;
+const path = require("path");
+const fs = require("fs");
+const sharp = require("sharp");
+
+exports.onCreateNode = (node, _args) => {
+  if (node.internal.type === "Mdx") {
+    const { frontmatter, content } = node;
+
+    if (frontmatter.image) {
+      const imagePath = path.resolve(frontmatter.image);
+
+      // Cria uma cópia em cache da imagem
+      const imageCachePath = path.join(process.cwd(), "public", "images", "cache", fs.basename(imagePath));
+
+      if (!fs.existsSync(imageCachePath)) {
+        sharp(imagePath)
+          .resize({ width: 800 })
+          .toFile(imageCachePath);
+      }
+
+      // Atualiza o conteúdo do MDX com o caminho da imagem em cache
+      content = content.replace(frontmatter.image, imageCachePath);
     }
-  
-    obj.lastChecked = Date.now();
-  
-    await cache.set(cacheKey, obj);
-  
-    /* Do something with data ... */
-  };
+
+    if (frontmatter.fonts) {
+      const fonts = frontmatter.fonts.split(",");
+
+      // Cria uma cópia em cache de cada fonte
+      for (const font of fonts) {
+        const fontPath = path.resolve(font);
+
+        const fontCachePath = path.join(process.cwd(), "public", "fonts", "cache", fs.basename(fontPath));
+
+        if (!fs.existsSync(fontCachePath)) {
+          fs.copyFileSync(fontPath, fontCachePath);
+        }
+      }
+    }
+
+    // Atualiza o conteúdo do MDX com os caminhos das fontes em cache
+    frontmatter.fonts = fonts.map((font) => path.join("public", "fonts", "cache", fs.basename(font)));
+
+    node.content = content;
+    node.frontmatter = frontmatter;
+  }
+};
   
