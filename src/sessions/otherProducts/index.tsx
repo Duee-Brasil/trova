@@ -5,10 +5,10 @@ import { Link } from "gatsby"
 
 import { Title, Image, Container } from "../../components"
 
-import PietraZafferina1 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2.webp'
-import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3.webp'
-import PietraZafferina3 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4.webp'
-import PietraZafferina4 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5.webp'
+import PietraZafferina1 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2 - 250 364.webp'
+import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3 - 250 364.webp'
+import PietraZafferina3 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4 - 250 364.webp'
+import PietraZafferina4 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5 - 250 364.webp'
 
 import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 4.jpg'
 import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 6.jpg'
