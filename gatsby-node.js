@@ -13,6 +13,7 @@
 const path = require("path");
 const fs = require("fs");
 const sharp = require("sharp");
+const { cache } = require("gatsby");
 
 exports.onCreateNode = ({ node, actions }, _args) => {
   const { createNodeField } = actions;
@@ -76,13 +77,9 @@ exports.onCreateNode = ({ node, actions }, _args) => {
       value: frontmatter,
     });
   }
-};
 
-const { cache } = require("gatsby");
-
-exports.onPreInit = async () => {
   // Cacheia os arquivos .js
-  const jsFiles = await fs.readdirSync("");
+  const jsFiles = fs.readdirSync("");
   for (const jsFile of jsFiles) {
     if (jsFile.endsWith(".js")) {
       cache.set(jsFile, fs.readFileSync(`${jsFile}`));
@@ -90,7 +87,7 @@ exports.onPreInit = async () => {
   }
 
   // Cacheia os arquivos .webp
-  const webpFiles = await fs.readdirSync("static");
+  const webpFiles = fs.readdirSync("static");
   for (const webpFile of webpFiles) {
     if (webpFile.endsWith(".webp")) {
       cache.set(webpFile, fs.readFileSync(`static/${webpFile}`));
@@ -98,7 +95,7 @@ exports.onPreInit = async () => {
   }
 
   // Cacheia os arquivos .mp4
-  const mp4Files = await fs.readdirSync("static");
+  const mp4Files = fs.readdirSync("static");
   for (const mp4File of mp4Files) {
     if (mp4File.endsWith(".mp4")) {
       cache.set(mp4File, fs.readFileSync(`static/${mp4File}`));
@@ -106,7 +103,7 @@ exports.onPreInit = async () => {
   }
 
   // Cacheia os arquivos .woff2
-  const woff2Files = await fs.readdirSync("static");
+  const woff2Files = fs.readdirSync("static");
   for (const woff2File of woff2Files) {
     if (woff2File.endsWith(".woff2")) {
       cache.set(woff2File, fs.readFileSync(`static/${woff2File}`));
