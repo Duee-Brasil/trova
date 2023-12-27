@@ -15,7 +15,9 @@ const path = require("path");
 const fs = require("fs");
 const sharp = require("sharp");
 
-exports.onCreateNode = (node, _args) => {
+exports.onCreateNode = ({ node, actions }, _args) => {
+  const { createNodeField } = actions;
+
   if (node.internal.type === "Mdx") {
     const { frontmatter, content } = node;
 
@@ -23,7 +25,7 @@ exports.onCreateNode = (node, _args) => {
       const imagePath = path.resolve(frontmatter.image);
 
       // Cria uma cópia em cache da imagem
-      const imageCachePath = path.join(process.cwd(), "public", "images", "cache", fs.basename(imagePath));
+      const imageCachePath = path.join(process.cwd(), "public", "images", "cache", path.basename(imagePath));
 
       if (!fs.existsSync(imageCachePath)) {
         sharp(imagePath)
@@ -32,7 +34,7 @@ exports.onCreateNode = (node, _args) => {
       }
 
       // Atualiza o conteúdo do MDX com o caminho da imagem em cache
-      content = content.replace(frontmatter.image, imageCachePath);
+      node.content = content.replace(frontmatter.image, imageCachePath);
     }
 
     if (frontmatter.fonts) {
@@ -42,19 +44,27 @@ exports.onCreateNode = (node, _args) => {
       for (const font of fonts) {
         const fontPath = path.resolve(font);
 
-        const fontCachePath = path.join(process.cwd(), "public", "fonts", "cache", fs.basename(fontPath));
+        const fontCachePath = path.join(process.cwd(), "public", "fonts", "cache", path.basename(fontPath));
 
         if (!fs.existsSync(fontCachePath)) {
           fs.copyFileSync(fontPath, fontCachePath);
         }
       }
+
+      // Atualiza o conteúdo do MDX com os caminhos das fontes em cache
+      frontmatter.fonts = fonts.map((font) => path.join("public", "fonts", "cache", path.basename(font)));
     }
 
-    // Atualiza o conteúdo do MDX com os caminhos das fontes em cache
-    frontmatter.fonts = fonts.map((font) => path.join("public", "fonts", "cache", fs.basename(font)));
+    createNodeField({
+      node,
+      name: "content",
+      value: node.content,
+    });
 
-    node.content = content;
-    node.frontmatter = frontmatter;
+    createNodeField({
+      node,
+      name: "frontmatter",
+      value: frontmatter,
+    });
   }
 };
-  
