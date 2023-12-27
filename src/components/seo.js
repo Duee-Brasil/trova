@@ -97,7 +97,7 @@ function Seo({ title }) {
       <meta name="copyright"content="@letgodoy"></meta>
       <meta name="url" content="https://trovabrasil.com"></meta>
       <meta name="identifier-URL" content="https://trovabrasil.com"></meta>
-      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="Cache-Control" content="max-age=360000"></meta>
     </Helmet>
   )
 }
