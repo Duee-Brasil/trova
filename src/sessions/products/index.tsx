@@ -10,10 +10,10 @@ import Navona2 from "../../images/_fotos Navona/02.webp"
 import Navona3 from "../../images/_fotos Navona/03.webp"
 import Navona4 from "../../images/_fotos Navona/04.webp"
 
-import Romano1 from "../../images/_fotos Romano Premium/05 - 202 135.png"
-import Romano2 from "../../images/_fotos Romano Premium/06 - 202 135.png"
-import Romano3 from "../../images/_fotos Romano Premium/07 - 202 135.png"
-import Romano4 from "../../images/_fotos Romano Premium/08 - 202 135.png"
+import Romano1 from "../../images/_fotos Romano Premium/05 - 202 135.webp"
+import Romano2 from "../../images/_fotos Romano Premium/06 - 202 135.webp"
+import Romano3 from "../../images/_fotos Romano Premium/07 - 202 135.webp"
+import Romano4 from "../../images/_fotos Romano Premium/08 - 202 135.webp"
 
 import PietraZafferina1 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2.png'
 import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3.png'
