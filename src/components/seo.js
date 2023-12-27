@@ -83,6 +83,23 @@ function Seo({ title }) {
           type="text/css"
           media="all"
         />
+
+<script type="text-javascript"> {`
+   
+    function loadFontAsync() {
+      var link = document.createElement('link');
+      link.href = 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';
+      link.rel = 'stylesheet';
+      link.as = 'style';
+      link.type = 'text/css';
+      link.media = 'all';
+      document.head.appendChild(link);
+    }
+
+    window.addEventListener('load', loadFontAsync);
+    `}
+    </script>
+
         <link
           rel="stylesheet"
           href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
