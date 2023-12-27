@@ -10,11 +10,11 @@ import {
   RolloutProductCompare,
   RolloutProductTitle,
 } from "../sessions"
-import AboutProductImg from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina1.png'
-import ApplyProductImg1 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2.png'
-import ApplyProductImg2 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3.png'
-import ApplyProductImg3 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4.png'
-import ApplyProductImg4 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5.png'
+import AboutProductImg from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina1.webp'
+import ApplyProductImg1 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2.webp'
+import ApplyProductImg2 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3.webp'
+import ApplyProductImg3 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4.webp'
+import ApplyProductImg4 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5.webp'
 
 const PietraZafferina = () => {
 
