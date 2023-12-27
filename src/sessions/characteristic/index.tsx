@@ -3,10 +3,10 @@ import styled from "styled-components"
 
 import { Container, Image, Title } from "../../components"
 
-import Charc1 from "../../images/_icones caracteristicas/01.png"
-import Charc2 from "../../images/_icones caracteristicas/02.png"
-import Charc3 from "../../images/_icones caracteristicas/03.png"
-import Charc4 from "../../images/_icones caracteristicas/04.png"
+import Charc1 from "../../images/_icones caracteristicas/01.webp"
+import Charc2 from "../../images/_icones caracteristicas/02.webp"
+import Charc3 from "../../images/_icones caracteristicas/03.webp"
+import Charc4 from "../../images/_icones caracteristicas/04.webp"
 
 const Content = styled.div`
   width: 100%;

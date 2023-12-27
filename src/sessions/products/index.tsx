@@ -5,10 +5,10 @@ import { Link } from "gatsby"
 
 import { Title, Image, Container } from "../../components"
 
-import Navona1 from "../../images/_fotos Navona/01.png"
-import Navona2 from "../../images/_fotos Navona/02.png"
-import Navona3 from "../../images/_fotos Navona/03.png"
-import Navona4 from "../../images/_fotos Navona/04.png"
+import Navona1 from "../../images/_fotos Navona/01.webp"
+import Navona2 from "../../images/_fotos Navona/02.webp"
+import Navona3 from "../../images/_fotos Navona/03.webp"
+import Navona4 from "../../images/_fotos Navona/04.webp"
 
 import Romano1 from "../../images/_fotos Romano Premium/05 - 202 135.png"
 import Romano2 from "../../images/_fotos Romano Premium/06 - 202 135.png"
