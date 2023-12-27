@@ -77,3 +77,23 @@ exports.onCreateNode = ({ node, actions }, _args) => {
     });
   }
 };
+
+const { cache } = require("gatsby");
+
+exports.onPreInit = async () => {
+  // Realiza uma consulta GraphQL
+  const posts = await graphql(`
+    {
+      allPost {
+        edges {
+          node {
+            title
+          }
+        }
+      }
+    }
+  `);
+
+  // Armazena os resultados da consulta no cache
+  cache.set("posts", posts);
+};
