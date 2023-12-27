@@ -10,10 +10,10 @@ import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra 
 import PietraZafferina3 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4 - 250 364.webp'
 import PietraZafferina4 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5 - 250 364.webp'
 
-import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 4.jpg'
-import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 6.jpg'
-import ItaunasTec3 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 7.jpg'
-import ItaunasTec4 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 8.jpg'
+import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 4.webp'
+import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 6.webp'
+import ItaunasTec3 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 7.webp'
+import ItaunasTec4 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 8.webp'
 
 const Content = styled.div`
   width: 100%;
@@ -146,10 +146,10 @@ export const OtherProducts: FC = () => (
           <p>Sua composição clara, granulada e homogênea permite a aplicação do Itaúnas Innovare em diferentes projetos de decoração, trazendo sofisticação e sutileza aos ambientes.</p>
           <LinkButton to="/itaunastec">Saber mais</LinkButton>
         </ProductDescription>
-        <ProductImg src={ItaunasTec1} alt="itaunas tec" loading="lazy" />
-        <ProductImg src={ItaunasTec2} alt="itaunas tec" loading="lazy" />
-        <ProductImg src={ItaunasTec3} alt="itaunas tec" loading="lazy" />
-        <ProductImg src={ItaunasTec4} alt="itaunas tec" loading="lazy" />
+        <ProductImg src={ItaunasTec1} alt="itaunas tec" loading="lazy" data-id="larguraAltura" />
+        <ProductImg src={ItaunasTec2} alt="itaunas tec" loading="lazy" data-id="larguraAltura" />
+        <ProductImg src={ItaunasTec3} alt="itaunas tec" loading="lazy" data-id="larguraAltura" />
+        <ProductImg src={ItaunasTec4} alt="itaunas tec" loading="lazy" data-id="larguraAltura" />
       </ProductLine>
       </Content>
   </Container>
