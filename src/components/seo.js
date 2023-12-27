@@ -20,7 +20,7 @@ function Seo({ title }) {
   const metaDescription = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
-  return (    
+  return (
     <Helmet
       htmlAttributes={{
         lang: "pt-br"
@@ -117,6 +117,21 @@ function Seo({ title }) {
           @import url('https://unpkg.com/swiper@8/swiper-bundle.min.css');
         `}
       </style>
+
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Trova Brasil / Poesia Scolpita in Pietra" />
+      <meta property="og:description" content="Trova - Poesia Scolpita in Pietra - Travertinos importados com rigoroso controle de qualidade, garantia de segurança e durabilidade." />
+      <meta property="og:url" content="https://trovabrasil.com/" />
+      <meta property="og:image" content="src/images/_logos/logo_blue.png" /> <!-- Substitua pelo URL da imagem a ser exibida no Open Graph -->
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@trovabrasil" />
+      <meta name="twitter:title" content="Trova Brasil / Poesia Scolpita in Pietra" />
+      <meta name="twitter:description" content="Trova - Poesia Scolpita in Pietra - Travertinos importados com rigoroso controle de qualidade, garantia de segurança e durabilidade." />
+      <meta name="twitter:image" content="src/images/_logos/logo_blue.png" /> <!-- Substitua pelo URL da imagem a ser exibida no Twitter -->
+
+
 
     </Helmet>
   )
