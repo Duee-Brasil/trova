@@ -143,7 +143,7 @@ export const OtherProducts: FC = () => (
       <ProductLine>
         <ProductDescription>
           <ProductTitle text="Itaúnas Tec" />
-          <p>Sua composição clara, granulada e homogênea permite a aplicação do Itaúnas Innovare em diferentes projetos de decoração, trazendo sofisticação e sutileza aos ambientes.</p>
+          <p>Sua composição clara, granulada e homogênea permite a aplicação do Itaúnas Tec em diferentes projetos de decoração, trazendo sofisticação e sutileza aos ambientes.</p>
           <LinkButton to="/itaunastec">Saber mais</LinkButton>
         </ProductDescription>
         <ProductImg src={ItaunasTec1} alt="itaunas tec" loading="lazy" data-id="larguraAltura" />

@@ -33,7 +33,7 @@ const ItaunasTec = () => {
   ]
 
   return (
-    <Layout type="lp">
+    <Layout type="common">
       <Seo title="Trova Brasil | Itaúnas Tec" />
       <RolloutProductTitle productName="Itaúnas Tec" />
       <RolloutProductAbout image={AboutProductImg} text={<>

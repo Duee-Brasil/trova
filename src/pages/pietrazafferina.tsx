@@ -26,7 +26,7 @@ const PietraZafferina = () => {
   ]
 
   return (
-    <Layout type = "lp">
+    <Layout type = "common">
       <Seo title="Trova Brasil | Pietra Zafferina" />
       <RolloutProductTitle productName="Pietra Zafferina" />
       <RolloutProductAbout image={AboutProductImg} text={<>
