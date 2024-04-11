@@ -154,10 +154,10 @@ export const Contact: FC = () => {
     <Content>
       <Column>
         <p>
-          <a href="https://api.whatsapp.com/send?phone=5511970693793"><FontAwesomeIcon icon={faWhatsapp} style={{ margin: "auto 0.5rem" }} /> +55 11 97069-3793</a> / <a href="tel:1125327158"><FontAwesomeIcon icon={faPhone} style={{ margin: "auto 0.5rem" }} /> +55 11 2532-7158</a>
+          <a href="https://api.whatsapp.com/send?phone=5511970693793" aria-label="Conversar por WhastApp com Trova Brasil"><FontAwesomeIcon icon={faWhatsapp} style={{ margin: "auto 0.5rem" }} /> +55 11 97069-3793</a> / <a href="tel:1125327158"><FontAwesomeIcon icon={faPhone} style={{ margin: "auto 0.5rem" }} /> +55 11 2532-7158</a>
         </p>
         <p>
-          <a href="mailto:contato@trovabrasil.com"><FontAwesomeIcon icon={faEnvelope} style={{ margin: "auto 0.5rem" }} /> contato@trovabrasil.com</a>
+          <a href="mailto:contato@trovabrasil.com" aria-label="Enviar email para Trova Brasil"><FontAwesomeIcon icon={faEnvelope} style={{ margin: "auto 0.5rem" }} /> contato@trovabrasil.com</a>
         </p>
       </Column>
       <Column>

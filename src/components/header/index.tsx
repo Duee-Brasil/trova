@@ -103,7 +103,7 @@ const Header: FC<{ type: "common" | "lp" }> = ({ type }: { type: "common" | "lp"
   return (
     <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
       <LogoContainer>
-        <a href='https://trovabrasil.com'><Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} data-id="larguraAltura" /></a>
+        <a href='https://trovabrasil.com' aria-label="Trova Brasil"><Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} data-id="larguraAltura" /></a>
       </LogoContainer>
       <LinksContainer isOpen={isOpen}>
         {menuLinks.map(link => {

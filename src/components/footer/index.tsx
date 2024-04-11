@@ -49,11 +49,11 @@ const Footer = () => {
   return (
   <Container>
     <Paragraph>
-      <a href="https://facebook.com/trovabrasil"><FontAwesomeIcon icon={faFacebookSquare} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
-      <a href="https://instagram.com/trovatravertino"><FontAwesomeIcon icon={faInstagram} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
-      <a href="https://br.pinterest.com/trovatravertino/_created/"><FontAwesomeIcon icon={faPinterest} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
+      <a href="https://facebook.com/trovabrasil" aria-label="Facebook Trova Brasil"><FontAwesomeIcon icon={faFacebookSquare} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
+        <a href="https://instagram.com/trovatravertino" aria-label="Instagram Trova Brasil"><FontAwesomeIcon icon={faInstagram} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
+        <a href="https://br.pinterest.com/trovatravertino/_created/" aria-label="Pinterest Trova Brasil"><FontAwesomeIcon icon={faPinterest} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
     </Paragraph>
-    <Paragraph>Produzido por <a href="https://dueebrasil.com.br">Duee Brasil</a></Paragraph>
+      <Paragraph>Produzido por <a href="https://dueebrasil.com.br" aria-label="Duee Brasil">Duee Brasil</a></Paragraph>
     <Paragraph>© Trova Brasil {new Date().getFullYear()}. Todos os direitos reservados</Paragraph>
   </Container>
 );

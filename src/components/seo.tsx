@@ -22,7 +22,9 @@ export const SEO: HeadFC = () => {
 
   return (
     <>
+      <html lang="pt-br" />
       <title>{defaultTitle}</title>
+      <link rel="icon" href={image} />
       <meta name="description" content={description} />
       <meta name="copyright" content="©2024 Duee Brasil - https://github.com/letgodoy" />
       <meta name="url" content="https://trovabrasil.com" />
