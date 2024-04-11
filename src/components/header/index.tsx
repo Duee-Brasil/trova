@@ -21,7 +21,7 @@ const Container = styled.header<{ isOpen: boolean }>`
   width: 100%;
 
   @media screen and (max-width: 768px){
-    ${({ isOpen }) => isOpen && `
+    ${({ isOpen }: { isOpen: boolean }) => isOpen && `
       height: 100vh;
       overflow-x: hidden;
       overflow-y: auto;
@@ -50,7 +50,7 @@ const LinksContainer = styled.div<{ isOpen: boolean }>`
   @media screen and (max-width: 768px){
     display: none;
 
-    ${({ isOpen }) => isOpen && `
+    ${({ isOpen }: { isOpen: boolean }) => isOpen && `
         width: 100%;
         height: 100%;
         flex: 1;
@@ -82,7 +82,7 @@ const LinksText = styled.a`
   }
 `
 
-const Header: FC<{ type: "common" | "lp" }> = ({ type }) => {
+const Header: FC<{ type: "common" | "lp" }> = ({ type }: { type: "common" | "lp" }) => {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -90,7 +90,7 @@ const Header: FC<{ type: "common" | "lp" }> = ({ type }) => {
     e.preventDefault()
 
     if (type === 'lp') {
-      const path = `${document.location.origin}/${link}`
+      const path = `https://trovabrasil.com/${link}`
 
       navigate(path, {
         replace: true 
@@ -103,11 +103,11 @@ const Header: FC<{ type: "common" | "lp" }> = ({ type }) => {
   return (
     <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
       <LogoContainer>
-        <a href={document.location.origin}><Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} data-id="larguraAltura" /></a>
+        <a href='https://trovabrasil.com'><Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} data-id="larguraAltura" /></a>
       </LogoContainer>
       <LinksContainer isOpen={isOpen}>
         {menuLinks.map(link => {
-          return <LinksText onClick={(e) => blockLink(e, link.link)} href={"https://trovabrasil.com/#" + link.name.toLowerCase().replace(" ", "").replace("-", "")} key={link.name}>{link.name}</LinksText>
+          return <LinksText onClick={(e: any) => blockLink(e, link.link)} href={"https://trovabrasil.com/#" + link.name.toLowerCase().replace(" ", "").replace("-", "")} key={link.name}>{link.name}</LinksText>
         })}
       </LinksContainer>
     </Container>
