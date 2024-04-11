@@ -1,10 +1,11 @@
-import { Image } from "../../components"
-import React, { FC, useCallback, useState } from "react"
+import { Image } from ".."
+import React, { FC, useState } from "react"
 import styled from "styled-components"
 import { menuLinks } from "../../utils/menulinks"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import Logo from "../../images/_logos/logo_white.webp"
+import Logo from "../../images/_logos/logo_white.png"
+import { navigate } from "gatsby";
 
 const Container = styled.header<{ isOpen: boolean }>`
   background-color: #4c6f9c;
@@ -86,29 +87,29 @@ const Header: FC<{ type: "common" | "lp" }> = ({ type }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const blockLink = (e: any, link: any) => {
-      
+    e.preventDefault()
 
-      const userAgent = navigator.userAgent;
-      console.log(userAgent)
+    if (type === 'lp') {
+      const path = `${document.location.origin}/${link}`
 
-      // if(userAgent.match(/safari/i)){
-        
-      // } else {
-        e.preventDefault()
-        scrollTo(link)
-      // }
+      navigate(path, {
+        replace: true 
+      });
+    } else {
+      scrollTo(link)
+    }
   }
 
   return (
-    <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} style={type === "lp" ? {justifyContent: 'center', textAlign: 'center'} : undefined}>
-      <LogoContainer style={type === "lp" ? { justifyContent: 'center', textAlign: 'center', justifySelf: 'center' } : undefined}>
-        <Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} data-id="larguraAltura" />
+    <Container isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+      <LogoContainer>
+        <a href={document.location.origin}><Image src={Logo} alt={"Trova logo"} style={{ width: "132px" }} data-id="larguraAltura" /></a>
       </LogoContainer>
-      {type === "common" ? <LinksContainer isOpen={isOpen}>
+      <LinksContainer isOpen={isOpen}>
         {menuLinks.map(link => {
           return <LinksText onClick={(e) => blockLink(e, link.link)} href={"https://trovabrasil.com/#" + link.name.toLowerCase().replace(" ", "").replace("-", "")} key={link.name}>{link.name}</LinksText>
         })}
-      </LinksContainer> : null}
+      </LinksContainer>
     </Container>
   )
 }

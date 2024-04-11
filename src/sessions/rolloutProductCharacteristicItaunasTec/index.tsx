@@ -1,12 +1,13 @@
 import React, { FC, ReactNode } from "react"
 import styled from "styled-components"
 
-import { Container, Image, Title } from "../../components"
+import { Image, Title } from "../../components"
 
 import Charc1 from "../../images/_fotos Itaunas Tec/icone relogio.png"
 import Charc2 from "../../images/_fotos Itaunas Tec/icone setas.png"
 import Charc3 from "../../images/_fotos Itaunas Tec/icone lampada.png"
 import Charc4 from "../../images/_fotos Itaunas Tec/icone estrela.png"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -45,7 +46,7 @@ const Attribute = ({text, image}: {text: ReactNode, image: string}) => {
 }
 
 export const RolloutProductCharacteristicItaunasTec: FC = () => (
-  <Container>
+  <div style={Container}>
     <Title title={"Características"} />
     <Content>
       <Attribute text={<p>O tratamento antioxidante, que isola o óxido de ferro (Fe2O3) dos outros componentes, garante durabilidade e qualidade superior. O material não sofre com as manchas causadas pela oxidação e mantém a estética original por muito mais tempo.</p>} image={Charc1} />
@@ -53,5 +54,5 @@ export const RolloutProductCharacteristicItaunasTec: FC = () => (
       <Attribute text={<p>Por ser aplicada com um acabamento liso, a pedra Itaúnas Tec oferece praticidade e um ótimo acabamento para superfícies. Prático e funcional, é uma excelente opção para pisos e revestimentos.</p>} image={Charc3} />
       <Attribute text={<p>Sua beleza única e marcante chama atenção pelos seus veios naturais e claros, resultado da sua formação geológica. Os grãos finos e médios conferem à pedra uma estética leve e agradável.</p>} image={Charc4} />
     </Content>
-  </Container>
+  </div>
 )

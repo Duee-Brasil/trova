@@ -1,7 +1,8 @@
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Container, Title } from "../../components"
+import { Title } from "../../components"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   margin-top: 4rem;
@@ -25,12 +26,12 @@ const ProductTileLine = styled.div`
 `
 
 export const RolloutProductTitle: FC<{ productName: string}> = ({productName}) => (
-  <Container id="inicio">
+  <div style={Container} id="inicio">
     <Title title={"lançamento"} style={{ marginTop: '5rem' }} />
     <Content>
       <ProductTileLine></ProductTileLine>
       <ProductTileText className="destaque">{productName}</ProductTileText>
       <ProductTileLine></ProductTileLine>
     </Content>
-  </Container> 
+  </div> 
 )

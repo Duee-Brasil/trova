@@ -1,7 +1,8 @@
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Container, Title } from "../../components"
+import { Title } from "../../components"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   margin-top: 4rem;
@@ -45,9 +46,10 @@ const BarContent = styled.div`
 
 const BarText = styled.div`
   border-top: 2px solid #4c6f9c;
-  width: 95%;
+  width: calc(100% - 4ch);
   text-transform: uppercase;
   transition: 0.25s;
+  padding-right: 1rem;
 
   &:before {
         /* box-shadow: inset 6.5em 0 0 0 #4c6f9c; */
@@ -73,7 +75,7 @@ const Bar = ({ text, percentage }: { text: string, percentage: string }) => {
 }
 
 export const About: FC = () => (
-  <Container id="sobreatrova">
+  <div style={Container} id="sobreatrova">
     <Title title={"Sobre a Trova"} />
     <Content>
       <Column>
@@ -98,5 +100,5 @@ export const About: FC = () => (
         <Bar text="revestimento para seu projeto" percentage="100" />
       </Column>
     </Content>
-  </Container>
+  </div>
 )

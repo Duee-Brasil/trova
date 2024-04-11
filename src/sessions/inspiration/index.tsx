@@ -2,7 +2,7 @@
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Title, Image, Container } from "../../components"
+import { Title, Image } from "../../components"
 
 import PisoExternoI from "../../images/_inspire-se/01_Piso Externo/icone.png"
 import PisoExternoP from "../../images/_inspire-se/01_Piso Externo/foto.jpg"
@@ -33,6 +33,7 @@ import BancadaBanheiroP from "../../images/_inspire-se/09_Bancada de Banheiro/fo
 
 import LareiraI from "../../images/_inspire-se/10_Lareira/icone.png"
 import LareiraP from "../../images/_inspire-se/10_Lareira/foto.jpg"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -47,7 +48,7 @@ const Content = styled.div`
 `
 
 const ProductContainer = styled.div`
-  flex: 100%;
+  width: 100%;
   margin: 0;
   padding: 2rem 1rem;
   display: flex;
@@ -57,11 +58,18 @@ const ProductContainer = styled.div`
   column-gap: 1rem;
   border-bottom: 1px solid rgba(76, 111, 156, 0.2);
   font-size: 0.7rem;
+  min-width: 300px;
+  max-width: 50%;
+
+  div {
+    flex: 4;
+  }
 
   div:first-child {
-    width: 24%;
+    flex: 1;
     justify-content: center;
     text-align: center;
+    max-width: 16ch;
 
     p {
       text-transform: uppercase;
@@ -69,28 +77,10 @@ const ProductContainer = styled.div`
       text-overflow: ellipsis;
       overflow: hidden;
     }
-  }
-
-  div:last-child {
-    width: 76%;
-  }
-
-  @media (min-width: 576px) { //maior que phones
-    flex: 100%;
-  }
-
-  @media (min-width: 768px) { //maior que tablets
-    flex: 40%;
-    font-size: 0.8rem;
-  }
-
-  @media (min-width: 992px) { //maior que laptops
-    flex: 40%;
-    font-size: initial;
-  }
-
-  @media (min-width: 1200px) { //maior que desktops
-    flex: 40%;
+      @media (max-width: 768px) { //menor que tablets
+      font-size: 0.7rem;
+      max-width: 8ch;
+    }
   }
 `
 
@@ -101,13 +91,14 @@ const Product = ({ icon, name, photo }: { icon: string, name: string, photo: str
       <p>{name}</p>
     </div>
     <div>
-      <Image src={photo} alt={name} style={{ width: "100%" }} data-id="larguraAltura" />
+      <Image src={photo} alt={name} style={{ width: "100%", height: 'auto' }} data-id="larguraAltura" /> 
     </div>
+    
   </ProductContainer>
 }
 
 export const Inspiration: FC = () => (
-  <Container id="inspirese">
+  <div style={Container} id="inspirese">
     <Title title={"Inspire-se"} />
     <Content>
       <Product
@@ -171,5 +162,5 @@ export const Inspiration: FC = () => (
         data-id="larguraAltura"
       />
     </Content>
-  </Container>
+  </div>
 )

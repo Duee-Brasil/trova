@@ -1,12 +1,13 @@
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Container, Image, Title } from "../../components"
+import { Image, Title } from "../../components"
 
-import Charc1 from "../../images/_icones caracteristicas/01.webp"
-import Charc2 from "../../images/_icones caracteristicas/02.webp"
-import Charc3 from "../../images/_icones caracteristicas/03.webp"
-import Charc4 from "../../images/_icones caracteristicas/04.webp"
+import Charc1 from "../../images/_icones caracteristicas/01.png"
+import Charc2 from "../../images/_icones caracteristicas/02.png"
+import Charc3 from "../../images/_icones caracteristicas/03.png"
+import Charc4 from "../../images/_icones caracteristicas/04.png"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -51,7 +52,7 @@ const Attribute = ({text, image}: {text: string, image: string}) => {
 }
 
 export const Characteristic: FC = () => (
-  <Container>
+  <div style={Container}>
     <Title title={"Características"} />
     <Content>
       <Attribute text={"O Travertino é atérmico, sendo perfeito para projetos que precisam ser arejados, áreas internas, externas e, claro, fogos de chão e lareiras."} image={Charc1} data-id="larguraAltura" />
@@ -59,5 +60,5 @@ export const Characteristic: FC = () => (
       <Attribute text={"Além da qualidade superior, o travertino da Trova é versátil, elegante, seguro e durável. Podendo ser aplicados de forma natural, bruta, sem brilho, resina ou qualquer outro produto."} image={Charc3} data-id="larguraAltura" />
       <Attribute text={"Garantimos a uniformidade e homogeneidade do projeto, entregando peças em ladrilhos, com a mesma padronagem de cor e de veios."} image={Charc4} data-id="larguraAltura" />
     </Content>
-  </Container>
+  </div>
 )

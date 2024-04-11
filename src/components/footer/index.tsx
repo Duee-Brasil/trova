@@ -33,18 +33,18 @@ const Paragraph = styled.p`
 
 const Footer = () => {
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const scriptElement = document.createElement('script');
+  //   const scriptElement = document.createElement('script');
 
-    scriptElement.textContent = " const todasAsImagens = document.querySelectorAll('[data-id=larguraAltura]'); todasAsImagens.forEach((imagem) => { const largura = imagem.clientWidth; const altura = imagem.clientHeight; imagem.setAttribute('width', largura.toString()+'px'); imagem.setAttribute('height', altura.toString()+'px'); }); ";
+  //   scriptElement.textContent = "const todasAsImagens = document.querySelectorAll('[data-id=larguraAltura]'); todasAsImagens.forEach((imagem) => { const largura = imagem.clientWidth; const altura = imagem.clientHeight; imagem.setAttribute('width', largura.toString()+'px'); imagem.setAttribute('height', altura.toString()+'px'); }); ";
 
-    document.body.appendChild(scriptElement);
+  //   document?.body?.appendChild(scriptElement);
 
-    return () => {
-      document.body.removeChild(scriptElement);
-    };
-  }, []); 
+  //   return () => {
+  //     document.body.removeChild(scriptElement);
+  //   };
+  // }, []); 
   
   return (
   <Container>

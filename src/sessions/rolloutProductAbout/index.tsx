@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from "react"
 import styled from "styled-components"
-
-import { Container, Title } from "../../components"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
 margin: auto;
@@ -43,7 +42,7 @@ const ProductImg = styled.img`
 `
 
 export const RolloutProductAbout: FC<{image: string, text: ReactNode}> = ({image, text}) => (
-  <Container id="sobre">
+  <div style={Container} id="sobre">
     <Content>
       <Column30>
         <ProductImg src={image} alt="product photo" loading="lazy" />
@@ -52,5 +51,5 @@ export const RolloutProductAbout: FC<{image: string, text: ReactNode}> = ({image
         {text}
       </Column70>
     </Content>
-  </Container>
+  </div>
 )

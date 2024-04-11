@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { FC } from "react"
 import styled from "styled-components"
 
-import { Button, Container, Title } from "../../components"
+import { Button, Title } from "../../components"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -148,7 +149,7 @@ export const Contact: FC = () => {
     //   .catch((error) => alert(error));
   };
 
-  return <Container id="contato">
+  return <div style={Container} id="contato">
     <Title title={"Entre em contato"} />
     <Content>
       <Column>
@@ -183,5 +184,5 @@ export const Contact: FC = () => {
         </form>
       </Column>
     </Content>
-  </Container>
+  </div>
 }

@@ -23,12 +23,16 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     max-width: 100vw;
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: #fff;
     color: #606060;
     font-family: 'Lato', sans-serif;
     font-stretch: expanded;
     overflow-y: scroll;
+  }
+
+  div {
+    max-width: 100%;
   }
 
   * {
@@ -45,15 +49,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Main = styled.main`
-  min-height: 100vh;
-`
+export const Container = {
+  padding: '2rem 2rem',
+  maxWidth: '1440px',
+  margin: 'auto',
+  scrollSnapAlign: 'center',
+}
 
-export const Container = styled.div`
-  padding: 2rem 2rem;
-  max-width: 1440px;
-  margin: auto;
-  scroll-snap-align: center;
+const Main = styled.main`
+  max-width: 100vw;
+  min-height: 100dvh;
 `
 
 const Wppbutton = styled.a`
@@ -74,7 +79,10 @@ const Wppbutton = styled.a`
   }
 `
 
-const Layout: FC<{ type?: "common" | "lp", children: ReactElement | Array<ReactElement> }> = ({ type = "common", children }) => {
+export const Layout: FC<{ 
+  type?: "common" | "lp", 
+  children: ReactElement | Array<ReactElement> 
+}> = ({ type = "common", children }) => {
 
   return (
     <>
@@ -98,5 +106,3 @@ const Layout: FC<{ type?: "common" | "lp", children: ReactElement | Array<ReactE
     </>
   )
 }
-
-export default Layout

@@ -1,29 +1,20 @@
 
 import React, { FC } from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
-import { Title, Image, Container } from "../../components"
 
-import Navona1 from "../../images/_fotos Navona/01.webp"
-import Navona2 from "../../images/_fotos Navona/02.webp"
-import Navona3 from "../../images/_fotos Navona/03.webp"
-import Navona4 from "../../images/_fotos Navona/04.webp"
+import Navona1 from "../../images/_fotos Navona/01.png"
+import Navona2 from "../../images/_fotos Navona/02.png"
+import Navona3 from "../../images/_fotos Navona/03.png"
+import Navona4 from "../../images/_fotos Navona/04.png"
 
-import Romano1 from "../../images/_fotos Romano Premium/05 - 202 135.webp"
-import Romano2 from "../../images/_fotos Romano Premium/06 - 202 135.webp"
-import Romano3 from "../../images/_fotos Romano Premium/07 - 202 135.webp"
-import Romano4 from "../../images/_fotos Romano Premium/08 - 202 135.webp"
+import Romano1 from "../../images/_fotos Romano Premium/05 - 202 135.png"
+import Romano2 from "../../images/_fotos Romano Premium/06 - 202 135.png"
+import Romano3 from "../../images/_fotos Romano Premium/07 - 202 135.png"
+import Romano4 from "../../images/_fotos Romano Premium/08 - 202 135.png"
 
-import PietraZafferina1 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2.png'
-import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3.png'
-import PietraZafferina3 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4.png'
-import PietraZafferina4 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5.png'
-
-import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 4.jpg'
-import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 6.jpg'
-import ItaunasTec3 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 7.jpg'
-import ItaunasTec4 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 8.jpg'
+import { Title } from "../../components"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -73,6 +64,7 @@ const ProductImg = styled.img`
   height: auto;
   min-width: 100px;
   object-fit: cover;
+  width: 100%;
 
   @media (min-width: 576px) { //maior que phones
     width: 100%;
@@ -111,23 +103,6 @@ const ProductTileLine = styled.div`
   background-color: #4c6f9c;
 `
 
-const LinkButton = styled(Link)`
-    background-color: transparent;
-    border: 1px solid #4c6f9c;
-    font-size: 0.8rem;
-    padding: 0.7rem 1.3rem;
-    transition: 0.25s;
-    color: #4c6f9c;
-    cursor: pointer;
-    margin-left: 1rem;
-
-    &:hover,
-    &:focus {
-        box-shadow: inset 9em 0 0 0 #4c6f9c;
-        color: white;
-    }
-`
-
 const ProductTitle = ({ text }: { text: string }) => {
   return <ProductTileContent>
     <ProductTileText className="destaque">{text}</ProductTileText>
@@ -136,7 +111,7 @@ const ProductTitle = ({ text }: { text: string }) => {
 }
 
 export const Products: FC = () => (
-  <Container id="produtos">
+  <div style={Container} id="produtos">
     <Title title={"Nossos produtos"} />
     <Content>
       <p>A TROVA trabalha com o travertino Romano PREMIUM e o Navona, pois são os melhores travertinos encontrados na natureza, por causa da sua composição e formação geológica. Ambos têm procedência da mesma região.</p>
@@ -163,5 +138,5 @@ export const Products: FC = () => (
       <p>Podem ser aplicados na sua forma natural, bruta, sem brilho, resina ou quaisquer outros produtos, sendo colocados em áreas internas ou externas. Uma das principais características do nosso travertino é que ele é atérmico, ou seja, é indicado especialmente para áreas de lazer,  pois, mesmo sob o sol intenso, não absorve calor.</p>
       <p>Sua textura especial torna os produtos antiderrapantes. Além dos benefícios térmicos, são muito mais resistentes e duráveis que qualquer produto cimentício, deixando seu ambiente bonito e sofisticado por muito mais tempo.</p>
     </Content>
-  </Container>
+  </div>
 )

@@ -1,14 +1,5 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import {
-  Contact,
-  RolloutProductAbout,
-  RolloutProductApply,
-  RolloutProductCharacteristicItaunasTec,
-  RolloutProductTitle,
-} from "../sessions"
 import AboutProductImg from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - Foto 1.jpg'
 import ApplyProductImg1 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 2.jpg'
 import ApplyProductImg2 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 3.jpg'
@@ -19,6 +10,13 @@ import ApplyProductImg6 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 2
 import ApplyProductImg7 from '../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 8.jpg'
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Layout } from "../components/layout"
+import { RolloutProductTitle } from "../sessions/rolloutProductTitle"
+import { RolloutProductAbout } from "../sessions/rolloutProductAbout"
+import { RolloutProductApply } from "../sessions/rolloutProductApply"
+import { RolloutProductCharacteristicItaunasTec } from "../sessions/rolloutProductCharacteristicItaunasTec"
+import { Contact } from "../sessions/contact"
+import { SEO } from "../components/seo"
 
 const ItaunasTec = () => {
 
@@ -33,8 +31,7 @@ const ItaunasTec = () => {
   ]
 
   return (
-    <Layout type="common">
-      <Seo title="Trova Brasil | Itaúnas Tec" />
+    <Layout type="lp">
       <RolloutProductTitle productName="Itaúnas Tec" />
       <RolloutProductAbout image={AboutProductImg} text={<>
         <p>O Itaúnas Tec, que encanta com seus tons mais claros, grãos finos e acabamento liso, chega à Trova Brasil com uma nova proposta, que vai além da beleza.</p>
@@ -50,3 +47,5 @@ const ItaunasTec = () => {
 }
 
 export default ItaunasTec
+
+export const Head = SEO

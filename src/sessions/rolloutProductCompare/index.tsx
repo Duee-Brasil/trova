@@ -1,12 +1,13 @@
 import React, { FC, ReactNode } from "react"
 import styled from "styled-components"
 
-import { Container, Image, Title } from "../../components"
+import { Image, Title } from "../../components"
 
 import Charc1 from "../../images/_fotos Pietra Zafferina/icone relogio.png"
 import Charc2 from "../../images/_fotos Pietra Zafferina/icone cadeado.png"
 import Charc3 from "../../images/_fotos Pietra Zafferina/icone engrenagem.png"
 import Charc4 from "../../images/_fotos Pietra Zafferina/icone energia.png"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -49,7 +50,7 @@ const Attribute = ({text, image}: {text: ReactNode, image: string}) => {
 }
 
 export const RolloutProductCompare: FC = () => (
-  <Container>
+  <div style={Container}>
     <Title title={"Compare"} />
     <Content>
       <p>A Pietra Zafferina tem características estéticas semelhantes à pedra Hijau, como seu aspecto natural e cores que remetem ao mar. Porém apresentam diferenças significativas em termos de durabilidade, segurança e economia.</p>
@@ -62,5 +63,5 @@ export const RolloutProductCompare: FC = () => (
       <Attribute text={<><p><span>Pietra Zafferina:</span> Apresenta propriedades térmicas que mantêm a água aquecida, resultando em economia de até 40% nos custos com aquecimento.</p>
         <p><span>Pedra Hijau:</span> Exige mão-de-obra qualificada para sua colocação e cuidados especiais na limpeza, que podem gerar altos custos.</p></>} image={Charc4} />
     </Content>
-  </Container>
+  </div>
 )

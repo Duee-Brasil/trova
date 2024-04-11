@@ -2,7 +2,8 @@ import React, { FC } from "react"
 import { stores } from "../../utils/stores"
 import styled from "styled-components"
 
-import { Container, Title } from "../../components"
+import { Title } from "../../components"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   margin-top: 4rem;
@@ -36,7 +37,7 @@ const Column = styled.div`
 `
 
 export const Find: FC = () => (
-  <Container id="ondeencontrar">
+  <div style={Container} id="ondeencontrar">
     <Title title={"Onde encontrar"} />
       {stores.map((store, i) => 
           <Content key={i}>
@@ -55,5 +56,5 @@ export const Find: FC = () => (
           </Content>
         )
       }
-  </Container>
+  </div>
 )

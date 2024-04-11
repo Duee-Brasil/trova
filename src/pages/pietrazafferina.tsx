@@ -1,20 +1,18 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import {
-  Contact,
-  RolloutProductAbout,
-  RolloutProductApply,
-  RolloutProductCharacteristicPietraZafferina,
-  RolloutProductCompare,
-  RolloutProductTitle,
-} from "../sessions"
-import AboutProductImg from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina1.webp'
-import ApplyProductImg1 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2.webp'
-import ApplyProductImg2 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3.webp'
-import ApplyProductImg3 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4.webp'
-import ApplyProductImg4 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5.webp'
+import AboutProductImg from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina1.png'
+import ApplyProductImg1 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2.png'
+import ApplyProductImg2 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3.png'
+import ApplyProductImg3 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4.png'
+import ApplyProductImg4 from '../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5.png'
+import { Layout } from "../components/layout"
+import { RolloutProductTitle } from "../sessions/rolloutProductTitle"
+import { RolloutProductAbout } from "../sessions/rolloutProductAbout"
+import { RolloutProductApply } from "../sessions/rolloutProductApply"
+import { RolloutProductCharacteristicPietraZafferina } from "../sessions/rolloutProductCharacteristicPietraZafferina"
+import { RolloutProductCompare } from "../sessions/rolloutProductCompare"
+import { Contact } from "../sessions/contact"
+import { SEO } from "../components/seo"
 
 const PietraZafferina = () => {
 
@@ -26,8 +24,7 @@ const PietraZafferina = () => {
   ]
 
   return (
-    <Layout type = "common">
-      <Seo title="Trova Brasil | Pietra Zafferina" />
+    <Layout type = "lp">
       <RolloutProductTitle productName="Pietra Zafferina" />
       <RolloutProductAbout image={AboutProductImg} text={<>
         <p>Com características únicas e marcantes, a Pietra Zafferina é o novo produto da Trova Brasil. Extraída de áreas geológicas específicas, ela se destaca por detalhes exclusivos que a tornam verdadeiramente singular.</p>
@@ -44,3 +41,5 @@ const PietraZafferina = () => {
 }
 
 export default PietraZafferina
+
+export const Head = SEO

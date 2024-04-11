@@ -1,12 +1,13 @@
 import React, { FC, ReactNode } from "react"
 import styled from "styled-components"
 
-import { Container, Image, Title } from "../../components"
+import { Image, Title } from "../../components"
 
 import Charc1 from "../../images/_fotos Pietra Zafferina/icone cadeado.png"
 import Charc2 from "../../images/_fotos Pietra Zafferina/icone energia.png"
 import Charc3 from "../../images/_fotos Pietra Zafferina/icone estrela.png"
 import Charc4 from "../../images/_fotos Pietra Zafferina/icone setas.png"
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -45,7 +46,7 @@ const Attribute = ({text, image}: {text: ReactNode, image: string}) => {
 }
 
 export const RolloutProductCharacteristicPietraZafferina: FC = () => (
-  <Container>
+  <div style={Container}>
     <Title title={"Características"} />
     <Content>
       <Attribute text={<p>Superfície natural que oferece aderência suficiente para tornar a pedra antiderrapante quando seca, garantindo segurança e mantendo um aspecto agradável e único. É indicado principalmente para áreas aquáticas.</p>} image={Charc1} />
@@ -53,5 +54,5 @@ export const RolloutProductCharacteristicPietraZafferina: FC = () => (
       <Attribute text={<p>Sua textura única, tons de verde variando entre o claro e o escuro e o efeito vibrante quando em contato com a água são características que garantem sofisticação e exclusividade para seu projeto. Uma estética tropical, que traz movimento para a composição.</p>} image={Charc3} />
       <Attribute text={<p>O coeficiente de dilatação da Pietra Zafferina é extremamente baixo, o que confere uma grande vantagem quando aplicada em espaços que sofrem variação de temperatura. Essa característica impede o risco de rachaduras ou desprendimento da pedra, garantindo assim, maior durabilidade.</p>} image={Charc4} />
     </Content>
-  </Container>
+  </div>
 )

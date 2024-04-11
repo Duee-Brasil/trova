@@ -3,17 +3,18 @@ import React, { FC } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { Title, Image, Container } from "../../components"
+import { Title } from "../../components"
 
-import PietraZafferina1 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2 - 250 364.webp'
-import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3 - 250 364.webp'
-import PietraZafferina3 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4 - 250 364.webp'
-import PietraZafferina4 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5 - 250 364.webp'
+import PietraZafferina1 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zafferina2 - 250 364.png'
+import PietraZafferina2 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina3 - 250 364.png'
+import PietraZafferina3 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina4 - 250 364.png'
+import PietraZafferina4 from '../../images/_fotos Pietra Zafferina/Fotos_Pietra Zfferina5 - 250 364.png'
 
-import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 4.webp'
-import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 6.webp'
-import ItaunasTec3 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 7.webp'
-import ItaunasTec4 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 8.webp'
+import ItaunasTec1 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 4.jpg'
+import ItaunasTec2 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 6.jpg'
+import ItaunasTec3 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 7.jpg'
+import ItaunasTec4 from '../../images/_fotos Itaunas Tec/Fotos_Itaunas Tec - 250 367 - Foto 8.jpg'
+import { Container } from "../../components/layout"
 
 const Content = styled.div`
   width: 100%;
@@ -33,10 +34,12 @@ const ProductLine = styled.div`
   width: 100%;
   margin: 2rem 1rem;
   justify-content: center;
+  row-gap: 30px;
 `
 
 const ProductDescription = styled.div`
   flex: 100%;
+
   p {
     padding: 1rem;
   }
@@ -61,8 +64,9 @@ const ProductDescription = styled.div`
 const ProductImg = styled.img`
   border: 2px solid rgb(76, 111, 156);
   height: auto;
-  min-width: 100px;
+  min-width: 200px;
   object-fit: cover;
+  width: 100%;
 
   @media (min-width: 576px) { //maior que phones
     width: 100%;
@@ -126,7 +130,7 @@ const ProductTitle = ({ text }: { text: string }) => {
 }
 
 export const OtherProducts: FC = () => (
-  <Container id="outrosprodutos">
+  <div style={Container} id="outrosprodutos">
     <Title title={"Outros produtos"} />
     <Content>
       <ProductLine>
@@ -138,7 +142,7 @@ export const OtherProducts: FC = () => (
         <ProductImg src={PietraZafferina1} alt="pietra zafferina" loading="lazy" data-id="larguraAltura" />
         <ProductImg src={PietraZafferina2} alt="pietra zafferina" loading="lazy" data-id="larguraAltura" />
         <ProductImg src={PietraZafferina3} alt="pietra zafferina" loading="lazy" data-id="larguraAltura" />
-        <ProductImg src={PietraZafferina4} alt="pietra zafferina" loading="lazy" data-id="larguraAltura" />
+        <ProductImg src={PietraZafferina4} alt="pietra zafferina" loading="lazy" data-id="larguraAltura" />       
       </ProductLine>
       <ProductLine>
         <ProductDescription>
@@ -152,5 +156,5 @@ export const OtherProducts: FC = () => (
         <ProductImg src={ItaunasTec4} alt="itaunas tec" loading="lazy" data-id="larguraAltura" />
       </ProductLine>
       </Content>
-  </Container>
+  </div>
 )

@@ -1,25 +1,21 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import {
-  About,
-  Characteristic,
-  Contact,
-  Find,
-  Hero,
-  Inspiration,
-  OtherProducts,
-  Products,
-} from "../sessions"
-
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { SEO } from "../components/seo";
+import { Layout } from "../components/layout";
+import { Hero } from "../sessions";
+import { About } from "../sessions/about";
+import { Products } from "../sessions/products";
+import { Characteristic } from "../sessions/characteristic";
+import { OtherProducts } from "../sessions/otherProducts";
+import { Inspiration } from "../sessions/inspiration";
+import { Find } from "../sessions/find";
+import { Contact } from "../sessions/contact";
 
-const Index = () => {
+const IndexPage = () => {
 
   return (
     <Layout>
-      <Seo title="Trova Brasil" />
       <Hero />
       <About />
       <Products />
@@ -32,4 +28,6 @@ const Index = () => {
   )
 }
 
-export default Index
+export default IndexPage
+
+export const Head = SEO

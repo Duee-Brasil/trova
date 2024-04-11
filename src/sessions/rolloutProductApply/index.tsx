@@ -1,7 +1,7 @@
-import React, { FC, ReactNode } from "react"
+import React, { FC } from "react"
 import styled from "styled-components"
-
-import { Container, Title } from "../../components"
+import { Title } from "../../components";
+import { Container } from "../../components/layout";
 
 const numImagesPerRow = 5;
 
@@ -31,12 +31,12 @@ const AttributeContainer = styled.div`
 `
 
 export const RolloutProductApply: FC<{images: Array<string>}> = ({images}) => (
-  <Container>
+  <div style={Container}>
     <Title title={"Aplicações"} />
     <Content>
       {images.map((image, i) => {
         return <AttributeContainer><img src={image} alt={i.toString()} loading="lazy" /></AttributeContainer>
       })}
     </Content>
-  </Container>
+  </div>
 )
