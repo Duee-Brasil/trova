@@ -1,6 +1,9 @@
 import React, { FC } from "react"
 import styled from "styled-components";
 import HeroVideo from "../../images/Home Trova_1.mp4"
+import PisoExternoP from "../../images/_inspire-se/01_Piso Externo/foto.jpg"
+import { isMobile } from "../../utils/identify-device"
+import { Image } from "../../components"
 
 const Container = styled.div`
 display: flex;
@@ -22,11 +25,15 @@ export const Hero: FC = () => {
 
   return (
     <Container id="inicio">
-      {/* <Video controls={false} autoPlay muted loop>
-        {/* <source src={HeroVideo} type="video/mp4" /> */}
-        {/* <source src={"../../../static/Home Trova_1.mp4"} type="video/mp4" />
-      </Video> */}
-      <Video src={HeroVideo} controls={false} autoPlay muted loop />
+      {isMobile() ? 
+        <Image 
+        src={PisoExternoP} 
+        alt={'Exemplo de aplicação do travertino Trova'} 
+        style={{ width: "100%", height: "auto" }} 
+        data-id="larguraAltura"
+      /> : 
+        <Video src={HeroVideo} controls={false} autoPlay muted loop poster="PisoExternoP" />}
+      
     </Container>
   );
 }
