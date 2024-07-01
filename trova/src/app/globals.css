@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@layer utilities {
+  @font-face {
+    font-family: 'Adam';
+    font-style: bold;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/Adam-Bold.ttf') format('truetype');
+  }
+
+  .user-select-none {
+    -webkit-user-select: none;
+    user-select: none
+  }
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-normal font-title
+  }
+  p {
+    @apply p-4 font-montserrat
+  }
+  strong {
+    @apply text-primary font-normal
+  }
+  * {
+    @apply box-border
+  }
+
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply m-0 p-0 w-screen min-h-dvh bg-white text-text overflow-y-auto overflow-x-hidden font-lato
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  }
+}
