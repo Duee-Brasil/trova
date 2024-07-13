@@ -98,7 +98,7 @@ export default function Itaunas() {
           <CarouselImages list={imgsList} />
         </div>
         <div className="w-full text-2xl">
-          <h1 className="border-primary font-lato w-screen border-b-4 text-6xl leading-loose">
+          <h1 className="w-screen border-b-4 border-primary font-lato text-6xl leading-loose">
             Itaúnas Tec
           </h1>
           <p>
@@ -128,7 +128,7 @@ export default function Itaunas() {
         </p>
       </div>
       <div className="relative w-screen">
-        <div className="bg-primary absolute -z-50 h-[300px] w-screen" />
+        <div className="absolute -z-50 h-[300px] w-screen bg-primary" />
       </div>
       <div className="w-full max-w-screen-2xl">
         <ScrollableComponent>
@@ -143,7 +143,7 @@ export default function Itaunas() {
         </ScrollableComponent>
       </div>
       <div className="w-full max-w-screen-2xl">
-        <h1 className="border-primary font-lato w-full self-start border-b-4 text-right text-6xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
+        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-6xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Aplicações e Projetos
         </h1>
 

@@ -91,13 +91,13 @@ const qualityList = [
 
 export default function Travertino() {
   return (
-    <main className="flex  min-h-full w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
+    <main className="flex min-h-full w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
       <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 md:grid-cols-2">
         <div className="h-auto w-full">
           <CarouselImages list={imgsList} />
         </div>
         <div className="w-full text-2xl">
-          <h1 className="border-primary font-lato w-screen border-b-4 text-6xl leading-loose">
+          <h1 className="w-screen border-b-4 border-primary font-lato text-6xl leading-loose">
             Mármore Travertino
           </h1>
           <p>
@@ -135,7 +135,7 @@ export default function Travertino() {
         </div>
       </div>
       <div className="relative w-screen">
-        <div className="bg-primary absolute -z-50 h-[300px] w-screen" />
+        <div className="absolute -z-50 h-[300px] w-screen bg-primary" />
       </div>
 
       <div className="w-full max-w-screen-2xl">
@@ -151,7 +151,7 @@ export default function Travertino() {
         </ScrollableComponent>
       </div>
       <div className="w-full max-w-screen-2xl">
-        <h1 className="border-primary font-lato w-full self-start border-b-4 text-right text-6xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
+        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-6xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Aplicações e Projetos
         </h1>
 

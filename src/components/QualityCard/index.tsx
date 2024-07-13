@@ -17,7 +17,7 @@ export const QualityCard: FC<IQualityCard> = ({ image, label, text }) => {
         height={109}
         className="mx-auto my-4"
       />
-      <h3 className="font-lato text-center text-4xl">{label}</h3>
+      <h3 className="text-center font-lato text-4xl">{label}</h3>
       <div className="w-full text-balance text-2xl">{text}</div>
     </div>
   )

@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/leticiagodoy/Documents/cod/trova/trova/src/app/layout\":[\"static/media/4de1fea1a954a5b6-s.p.woff2\",\"static/media/45f5089fd2655ea0-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

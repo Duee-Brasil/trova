@@ -1,8 +1,9 @@
 'use client'
 import { FC, useEffect, useRef, useState } from 'react'
-import { Button } from '../Button'
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
+import { Button } from '../Button'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const ScrollableComponent: FC<{ children: any }> = ({ children }) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [isAtStart, setIsAtStart] = useState(true)

@@ -10,7 +10,7 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary m-0 w-screen justify-center px-4 py-2 text-white">
+    <footer className="m-0 w-screen justify-center bg-primary px-4 py-2 text-white">
       <div className="m-auto flex max-w-screen-2xl flex-row flex-wrap items-center justify-center gap-12 p-6 md:justify-between">
         <div className="px-16">
           <Image
@@ -20,7 +20,7 @@ export const Footer = () => {
             height={150}
             className="w-64"
           />
-          <div className="font-lato flex items-center text-lg">
+          <div className="flex items-center font-lato text-lg">
             <IoLocationSharp />
             <span className="ml-2">
               Alameda Joaquim Eugênio de Lima, 696 - Jardins

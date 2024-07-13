@@ -7,7 +7,8 @@ import Image from 'next/image'
 import { IoLocationSharp } from 'react-icons/io5'
 
 export default function Contato() {
-  const handleSubmit = (e: any) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = (e?: any) => {
     e.preventDefault()
 
     const formData = new FormData(e.currentTarget)

@@ -1,4 +1,4 @@
-import { ClassAttributes, TextareaHTMLAttributes, JSX } from 'react'
+import { ClassAttributes, JSX, TextareaHTMLAttributes } from 'react'
 
 export const TextArea = (
   props: JSX.IntrinsicAttributes &

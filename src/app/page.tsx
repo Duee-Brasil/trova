@@ -1,6 +1,6 @@
-import { LinkButton } from '@/components/LinkButton'
 import { CarouselImages } from '@/components/CarouselImages'
 import { IconCard } from '@/components/IconCard'
+import { LinkButton } from '@/components/LinkButton'
 import { Title } from '@/components/Title'
 import { wppLink } from '@/utils/contants'
 import { inspirationList } from '@/utils/inspirationList'
@@ -76,7 +76,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="border-primary grid w-full grid-cols-1 content-stretch justify-stretch gap-16 border-2 p-4 align-middle md:grid-cols-3 md:gap-4">
+      <div className="grid w-full grid-cols-1 content-stretch justify-stretch gap-16 border-2 border-primary p-4 align-middle md:grid-cols-3 md:gap-4">
         <div className="justify-center self-stretch text-4xl uppercase">
           <Image
             src="/images/pedra solta T4.png"
