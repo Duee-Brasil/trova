@@ -1,24 +1,15 @@
-import React, { ButtonHTMLAttributes, FC } from "react"
-import styled from "styled-components"
+import { ButtonHTMLAttributes, ClassAttributes, JSX } from 'react'
 
-const Styled = styled.button`
-    background-color: transparent;
-    border: 3px solid #4c6f9c;
-    font-size: 1.1rem;
-    padding: 0.7rem 1.3rem;
-    transition: 0.25s;
-    color: #4c6f9c;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        box-shadow: inset 6.5em 0 0 0 #4c6f9c;
-        color: white;
-    }
-`
-
-export const Button: FC<ButtonHTMLAttributes<{}>> = (props) => {
-    return (
-        <Styled {...props} />
-    )
+export const Button = ({
+  className,
+  ...props
+}: JSX.IntrinsicAttributes &
+  ClassAttributes<HTMLButtonElement> &
+  ButtonHTMLAttributes<HTMLButtonElement>) => {
+  return (
+    <button
+      className={`border-primary bg-primary hover:text-primary border-4 p-8 text-4xl text-white hover:bg-white hover:bg-opacity-60 disabled:border-none disabled:bg-slate-100 disabled:text-slate-300 ${className}`}
+      {...props}
+    />
+  )
 }

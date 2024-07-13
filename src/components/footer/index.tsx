@@ -1,62 +1,55 @@
-import { faFacebookSquare, faInstagram, faPinterest } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import React, { useEffect } from "react"
-import styled from "styled-components"
+import { wppLink } from '@/utils/contants'
+import Image from 'next/image'
+import Link from 'next/link'
+import {
+  IoLocationSharp,
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoWhatsapp,
+} from 'react-icons/io5'
 
-const Container = styled.footer`
-  background-color: #4c6f9c;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  width: 100%;
-`
-
-const Paragraph = styled.p`
-  color: white;
-  font-size: 0.6rem;
-
-  a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-
-    &:visited {
-      color: white;
-    }
-  }
-
-
-`
-
-const Footer = () => {
-
-  // useEffect(() => {
-
-  //   const scriptElement = document.createElement('script');
-
-  //   scriptElement.textContent = "const todasAsImagens = document.querySelectorAll('[data-id=larguraAltura]'); todasAsImagens.forEach((imagem) => { const largura = imagem.clientWidth; const altura = imagem.clientHeight; imagem.setAttribute('width', largura.toString()+'px'); imagem.setAttribute('height', altura.toString()+'px'); }); ";
-
-  //   document?.body?.appendChild(scriptElement);
-
-  //   return () => {
-  //     document.body.removeChild(scriptElement);
-  //   };
-  // }, []); 
-  
+export const Footer = () => {
   return (
-  <Container>
-    <Paragraph>
-      <a href="https://facebook.com/trovabrasil" aria-label="Facebook Trova Brasil"><FontAwesomeIcon icon={faFacebookSquare} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
-        <a href="https://instagram.com/trovatravertino" aria-label="Instagram Trova Brasil"><FontAwesomeIcon icon={faInstagram} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
-        <a href="https://br.pinterest.com/trovatravertino/_created/" aria-label="Pinterest Trova Brasil"><FontAwesomeIcon icon={faPinterest} color="white" fontSize={"1.5rem"} style={{ margin: "auto 1rem" }} /></a>
-    </Paragraph>
-      <Paragraph>Produzido por <a href="https://dueebrasil.com.br" aria-label="Duee Brasil">Duee Brasil</a></Paragraph>
-    <Paragraph>© Trova Brasil {new Date().getFullYear()}. Todos os direitos reservados</Paragraph>
-  </Container>
-);
-};
+    <footer className="bg-primary m-0 w-screen justify-center px-4 py-2 text-white">
+      <div className="m-auto flex max-w-screen-2xl flex-row flex-wrap items-center justify-center gap-12 p-6 md:justify-between">
+        <div className="px-16">
+          <Image
+            src="/images/logos/logo_white.png"
+            alt="Trova Brasil"
+            width={200}
+            height={150}
+            className="w-64"
+          />
+          <div className="font-lato flex items-center text-lg">
+            <IoLocationSharp />
+            <span className="ml-2">
+              Alameda Joaquim Eugênio de Lima, 696 - Jardins
+            </span>
+          </div>
+        </div>
 
-export default Footer
+        <div className="flex flex-row flex-nowrap justify-around gap-16 px-8 text-6xl">
+          <a href="https://facebook.com/trovabrasil" target="_blanc">
+            <span className="hidden size-0">facebook</span>
+            <IoLogoFacebook />
+          </a>
+          <a href="https://instagram.com/trovatravertino" target="_blanc">
+            <span className="hidden size-0">instagram</span>
+            <IoLogoInstagram />
+          </a>
+          <a href={wppLink} target="_blanc">
+            <span className="hidden size-0">whatsapp</span>
+            <IoLogoWhatsapp />
+          </a>
+        </div>
+
+        <div className="flex flex-col items-start justify-end gap-2 px-16 text-sm uppercase">
+          <Link href="/">Home</Link>
+          <Link href="/produtos">Produtos</Link>
+          <Link href="/">Onde encontrar</Link>
+          <Link href="/contato">Contato</Link>
+        </div>
+      </div>
+    </footer>
+  )
+}

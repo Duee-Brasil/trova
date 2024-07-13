@@ -1,48 +1,27 @@
-import React, { FC } from "react"
-import styled from "styled-components"
+import { FC } from 'react'
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 2rem;
-  margin-top: 3rem;
-`
-
-const Ornament = `
-border-color: #4c6f9c;
-border-style: solid;
-border-width: 3px;
-width: 40px;
-height: 15px;   
-`
-
-const SupDraw = styled.div`
-  ${Ornament};
-  border-bottom: none;
-`
-
-const InfDraw = styled.div`
-  ${Ornament};
-  border-top: none;
-`
-const Text = styled.h2`
-  margin: 0.2rem;
-  padding: 0;
-  line-height: 1.2rem;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  font-weight: normal;
-`
-
-export const Title: FC<{ title: string, style?: any }> = ({ title, style }) => {
+export const Title: FC<{ label: string; align?: 'left' | 'right' }> = ({
+  label,
+  align,
+}) => {
   return (
-    <Container style={{...style}}>
-      <SupDraw />
-      <Text className="destaque">{title}</Text>
-      <InfDraw />
-    </Container>
+    <div className="flex w-screen items-center justify-center gap-10">
+      {align === 'left' ? (
+        <div className="w-32 self-start" />
+      ) : (
+        <div className="flex-1 self-start border-t-4 border-primary" />
+      )}
+      <div className="flex flex-col items-center justify-center">
+        <div className="h-12 w-24 border-4 border-b-0 border-solid border-primary" />
+        <div className="user-select-none my-2 text-4xl text-white">trova</div>
+        <h2 className="absolute my-2 text-4xl uppercase">{label}</h2>
+        <div className="h-12 w-24 border-4 border-t-0 border-solid border-primary" />
+      </div>
+      {align === 'right' ? (
+        <div className="w-32 self-start" />
+      ) : (
+        <div className="flex-1 self-end border-t-4 border-primary" />
+      )}
+    </div>
   )
 }
