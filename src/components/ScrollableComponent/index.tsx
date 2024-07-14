@@ -1,7 +1,7 @@
 'use client'
 import { FC, useEffect, useRef, useState } from 'react'
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
-import { Button } from '../ButtonDefault'
+import { ButtonDefault } from '../ButtonDefault'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const ScrollableComponent: FC<{ children: any }> = ({ children }) => {
@@ -32,7 +32,7 @@ export const ScrollableComponent: FC<{ children: any }> = ({ children }) => {
     const container = scrollContainerRef.current
     if (container) {
       container.addEventListener('scroll', handleScroll)
-      handleScroll() // Check initial state
+      handleScroll()
     }
 
     return () => {
@@ -51,22 +51,22 @@ export const ScrollableComponent: FC<{ children: any }> = ({ children }) => {
         {children}
       </div>
       <div className="my-8 flex w-full justify-between">
-        <Button
+        <ButtonDefault
           onClick={() => scrollHorizontally(-100)}
           hidden={isAtStart && isAtEnd}
           disabled={isAtStart}
           className="self-start rounded-full px-2 py-2"
         >
           <GoChevronLeft />
-        </Button>
-        <Button
+        </ButtonDefault>
+        <ButtonDefault
           onClick={() => scrollHorizontally(100)}
           hidden={isAtStart && isAtEnd}
           disabled={isAtEnd}
           className="self-end rounded-full px-2 py-2"
         >
           <GoChevronRight />
-        </Button>
+        </ButtonDefault>
       </div>
     </div>
   )
