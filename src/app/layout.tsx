@@ -1,5 +1,5 @@
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
+import { PageFooter } from '@/components/PageFooter'
+import { PageHeader } from '@/components/PageHeader'
 import type { Metadata } from 'next'
 import { Lato, Montserrat } from 'next/font/google'
 import './globals.css'
@@ -30,9 +30,9 @@ export default function RootLayout({
     <html lang="pt-br" className={`${lato.variable} ${montserrat.variable}`}>
       <body className={lato.className}>
         <div className="m-0 flex h-dvh w-screen flex-col items-center gap-y-20 p-0">
-          <Header />
+          <PageHeader />
           {children}
-          <Footer />
+          <PageFooter />
         </div>
       </body>
     </html>

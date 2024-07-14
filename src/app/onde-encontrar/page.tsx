@@ -1,5 +1,5 @@
 import { ProductCard } from '@/components/ProductCard'
-import { Title } from '@/components/Title'
+import { SessionTitle } from '@/components/SessionTitle'
 
 const productsList = [
   {
@@ -47,7 +47,7 @@ const productsList = [
 export default function OndeEncontrar() {
   return (
     <main className="flex h-full w-screen flex-col items-center justify-start gap-16 p-8">
-      <Title label="Onde encontrar" align="left" />
+      <SessionTitle label="Onde encontrar" align="left" />
 
       <div className="grid w-full max-w-screen-2xl grid-cols-1 items-baseline gap-4 p-4 md:grid-cols-3 md:gap-16">
         {productsList.map((product, index) => (

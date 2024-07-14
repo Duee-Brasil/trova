@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, ClassAttributes, JSX } from 'react'
 
-export const Button = ({
+export const ButtonDefault = ({
   className,
   ...props
 }: JSX.IntrinsicAttributes &

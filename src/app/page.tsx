@@ -1,7 +1,7 @@
 import { CarouselImages } from '@/components/CarouselImages'
 import { IconCard } from '@/components/IconCard'
 import { LinkButton } from '@/components/LinkButton'
-import { Title } from '@/components/Title'
+import { SessionTitle } from '@/components/SessionTitle'
 import { wppLink } from '@/utils/contants'
 import { inspirationList } from '@/utils/inspirationList'
 import Image from 'next/image'
@@ -44,7 +44,7 @@ export default function Home() {
         <CarouselImages list={imgsList} />
       </div>
 
-      <Title label="Sobre a trova" />
+      <SessionTitle label="Sobre a trova" />
       <div className="flex w-full flex-row flex-wrap">
         <div className="basis-full text-2xl md:basis-1/2">
           <p>
@@ -134,7 +134,7 @@ export default function Home() {
           className="aspect-video h-auto w-3/4 2xl:w-1/2"
         ></iframe>
       </div>
-      <Title label="Inspire-se" />
+      <SessionTitle label="Inspire-se" />
       <div className="grid w-full grid-cols-1 md:grid-cols-2">
         {inspirationList.map((item, index) => {
           return <IconCard {...item} key={index} />

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const Header = () => {
+export const PageHeader = () => {
   return (
     <header className="m-0 flex w-screen flex-row justify-between bg-primary px-20 py-2 text-2xl text-white">
       <div>

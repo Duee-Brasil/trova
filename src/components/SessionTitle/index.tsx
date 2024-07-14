@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-export const Title: FC<{ label: string; align?: 'left' | 'right' }> = ({
+export const SessionTitle: FC<{ label: string; align?: 'left' | 'right' }> = ({
   label,
   align,
 }) => {

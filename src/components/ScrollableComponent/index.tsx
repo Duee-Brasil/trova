@@ -1,7 +1,7 @@
 'use client'
 import { FC, useEffect, useRef, useState } from 'react'
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
-import { Button } from '../Button'
+import { Button } from '../ButtonDefault'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const ScrollableComponent: FC<{ children: any }> = ({ children }) => {

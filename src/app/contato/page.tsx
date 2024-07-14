@@ -1,8 +1,8 @@
 'use client'
-import { Button } from '@/components/Button'
+import { ButtonDefault } from '@/components/ButtonDefault'
 import { Input } from '@/components/Input'
+import { SessionTitle } from '@/components/SessionTitle'
 import { TextArea } from '@/components/TextArea'
-import { Title } from '@/components/Title'
 import Image from 'next/image'
 import { IoLocationSharp } from 'react-icons/io5'
 
@@ -49,7 +49,7 @@ export default function Contato() {
         />
       </div>
 
-      <Title label="entre em contato" align="left" />
+      <SessionTitle label="entre em contato" align="left" />
 
       <div className="grid w-full max-w-screen-2xl grid-cols-1 items-baseline gap-4 p-16 text-3xl md:grid-cols-2 md:gap-16">
         <div className="gap-16">
@@ -114,9 +114,13 @@ export default function Contato() {
               />
             </div>
 
-            <Button type="submit" id="send_form" className="rounded-full">
+            <ButtonDefault
+              type="submit"
+              id="send_form"
+              className="rounded-full"
+            >
               Enviar
-            </Button>
+            </ButtonDefault>
           </form>
         </div>
       </div>

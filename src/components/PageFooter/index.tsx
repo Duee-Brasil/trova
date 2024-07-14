@@ -8,7 +8,7 @@ import {
   IoLogoWhatsapp,
 } from 'react-icons/io5'
 
-export const Footer = () => {
+export const PageFooter = () => {
   return (
     <footer className="m-0 w-screen justify-center bg-primary px-4 py-2 text-white">
       <div className="m-auto flex max-w-screen-2xl flex-row flex-wrap items-center justify-center gap-12 p-6 md:justify-between">
