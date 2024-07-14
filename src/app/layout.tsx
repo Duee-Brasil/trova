@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={`${lato.variable} ${montserrat.variable}`}>
       <body className={lato.className}>
-        <div className="m-0 flex h-dvh w-screen flex-col items-center gap-y-20 p-0">
+        <div className="m-0 flex h-dvh w-screen flex-col items-center p-0">
           <PageHeader />
           {children}
           <PageFooter />

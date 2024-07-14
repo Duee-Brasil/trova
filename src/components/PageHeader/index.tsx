@@ -17,7 +17,7 @@ export const PageHeader = () => {
       <div className="inline-flex flex-1 items-center justify-end gap-12 uppercase">
         <Link href="/">Home</Link>
         <Link href="/produtos">Produtos</Link>
-        <Link href="/">Onde encontrar</Link>
+        <Link href="/onde-encontrar">Onde encontrar</Link>
         <Link href="/contato">Contato</Link>
       </div>
     </header>

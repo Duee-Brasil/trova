@@ -46,7 +46,7 @@ export const PageFooter = () => {
         <div className="flex flex-col items-start justify-end gap-2 px-16 text-sm uppercase">
           <Link href="/">Home</Link>
           <Link href="/produtos">Produtos</Link>
-          <Link href="/">Onde encontrar</Link>
+          <Link href="/onde-encontrar">Onde encontrar</Link>
           <Link href="/contato">Contato</Link>
         </div>
       </div>
