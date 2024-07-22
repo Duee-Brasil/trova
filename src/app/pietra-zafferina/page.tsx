@@ -106,7 +106,7 @@ const qualityList = [
 export default function PietraZafferina() {
   return (
     <main className="flex min-h-full w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 md:grid-cols-2">
+      <div className="grid w-full  max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
         <div className="h-auto w-full">
           <CarouselImages list={imgsList} />
         </div>
@@ -130,7 +130,7 @@ export default function PietraZafferina() {
           <WppButton />
         </div>
       </div>
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 md:grid-cols-2">
+      <div className="grid w-full  max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
         <div>
           <p>
             A beleza da pedra de piscina Pietra Zafferina não apenas encanta,
@@ -155,7 +155,7 @@ export default function PietraZafferina() {
         <div className="absolute -z-50 h-[300px] w-screen bg-primary" />
       </div>
 
-      <div className="flex w-full max-w-screen-2xl gap-8">
+      <div className="flex w-full  max-w-screen-xl gap-8">
         <ScrollableComponent>
           {qualityList.map((item, index) => (
             <QualityCard
@@ -167,7 +167,7 @@ export default function PietraZafferina() {
           ))}
         </ScrollableComponent>
       </div>
-      <div className="w-full max-w-screen-2xl">
+      <div className="w-full  max-w-screen-xl">
         <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Compare
         </h1>
@@ -278,7 +278,7 @@ export default function PietraZafferina() {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-screen-2xl">
+      <div className="w-full  max-w-screen-xl">
         <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Aplicações e Projetos
         </h1>

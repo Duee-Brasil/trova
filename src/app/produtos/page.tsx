@@ -48,7 +48,7 @@ export default function Produtos() {
     <main className="flex min-h-full w-screen flex-col items-center justify-start gap-16 p-8">
       <SessionTitle label="Nossos produtos" align="left" />
 
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 items-baseline gap-4 p-4 md:grid-cols-3 md:gap-16">
+      <div className="grid w-full  max-w-screen-xl grid-cols-1 items-baseline gap-4 p-4 md:grid-cols-3 md:gap-16">
         {productsList.map((product, index) => (
           <ProductCard {...product} key={index} />
         ))}

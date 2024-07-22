@@ -93,7 +93,7 @@ const qualityList = [
 export default function Itaunas() {
   return (
     <main className="flex min-h-full w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 md:grid-cols-2">
+      <div className="grid w-full  max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
         <div className="h-auto w-full rounded-none">
           <CarouselImages list={imgsList} />
         </div>
@@ -114,7 +114,7 @@ export default function Itaunas() {
           <WppButton />
         </div>
       </div>
-      <div className="w-full max-w-screen-2xl">
+      <div className="w-full  max-w-screen-xl">
         <p>
           A singularidade do nosso processo reside na separação do óxido de
           ferro (Fe2O3), conhecido como hematita, um diferencial que não apenas
@@ -130,7 +130,7 @@ export default function Itaunas() {
       <div className="relative w-screen">
         <div className="absolute -z-50 h-[300px] w-screen bg-primary" />
       </div>
-      <div className="w-full max-w-screen-2xl">
+      <div className="w-full  max-w-screen-xl">
         <ScrollableComponent>
           {qualityList.map((item, index) => (
             <QualityCard
@@ -142,7 +142,7 @@ export default function Itaunas() {
           ))}
         </ScrollableComponent>
       </div>
-      <div className="w-full max-w-screen-2xl">
+      <div className="w-full  max-w-screen-xl">
         <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Aplicações e Projetos
         </h1>

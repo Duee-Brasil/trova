@@ -51,7 +51,7 @@ export default function Contato() {
 
       <SessionTitle label="entre em contato" align="left" />
 
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 items-baseline gap-4 p-16 md:grid-cols-2 md:gap-16">
+      <div className="grid w-full  max-w-screen-xl grid-cols-1 items-baseline gap-4 p-16 md:grid-cols-2 md:gap-16">
         <div className="gap-16">
           <p>+55 11 97069-3793</p>
           <p>+55 11 2532-7158</p>

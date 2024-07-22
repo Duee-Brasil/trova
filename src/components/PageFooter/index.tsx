@@ -11,7 +11,7 @@ import {
 export const PageFooter = () => {
   return (
     <footer className="m-0 w-screen justify-center bg-primary px-4 py-2 text-white">
-      <div className="m-auto flex max-w-screen-2xl flex-row flex-wrap items-center justify-center gap-12 p-4 md:justify-between">
+      <div className="m-auto flex  max-w-screen-xl flex-row flex-wrap items-center justify-center gap-12 p-4 md:justify-between">
         <div className="px-16">
           <Image
             src="/images/logos/logo_white.png"

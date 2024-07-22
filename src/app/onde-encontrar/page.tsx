@@ -8,7 +8,7 @@ export default function OndeEncontrar() {
       <SessionTitle label="Onde encontrar" align="left" />
 
       {stores.map((stores, index) => (
-        <div key={index} className="w-full max-w-screen-2xl my-16">
+        <div key={index} className="w-full  max-w-screen-xl my-16">
           <h4 className="w-full text-balance text-xl font-lato mb-20">
             {stores.title}
           </h4>

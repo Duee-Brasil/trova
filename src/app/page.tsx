@@ -39,7 +39,7 @@ const imgsList = [
 
 export default function Home() {
   return (
-    <main className="m-auto flex w-full max-w-screen-2xl flex-col items-center justify-center gap-16 p-8">
+    <main className="m-auto flex w-full  max-w-screen-xl flex-col items-center justify-center gap-16 p-8">
       <div className="-mt-8 h-36 w-screen md:h-64 lg:h-[21rem]">
         <CarouselImages list={imgsList} />
       </div>
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
       </div>
       <div className="my-16 h-[32rem] w-screen items-center justify-center bg-[url('/images/TROVA_110.png')] bg-cover align-middle">
-        <div className="m-auto flex h-full max-w-screen-2xl flex-wrap items-center justify-around p-16">
+        <div className="m-auto flex h-full  max-w-screen-xl flex-wrap items-center justify-around p-16">
           <LinkButton href={wppLink} target="_blank">
             Faça seu orçamento
           </LinkButton>
