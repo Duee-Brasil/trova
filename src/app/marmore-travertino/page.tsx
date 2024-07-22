@@ -96,8 +96,8 @@ export default function Travertino() {
         <div className="h-auto w-full">
           <CarouselImages list={imgsList} />
         </div>
-        <div className="w-full text-2xl">
-          <h1 className="w-screen border-b-4 border-primary font-lato text-6xl leading-loose">
+        <div className="w-full">
+          <h1 className="w-screen border-b-4 border-primary font-lato text-xl leading-loose">
             Mármore Travertino
           </h1>
           <p>
@@ -117,16 +117,16 @@ export default function Travertino() {
           <WppButton />
         </div>
       </div>
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 text-2xl md:grid-cols-2">
+      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 md:grid-cols-2">
         <div>
-          <h3 className="font-lato text-4xl">Romano Premium</h3>
+          <h3 className="font-lato text-lg">Romano Premium</h3>
           <p>
             São pedras com tonalidade clara e homogênea, entre palha e areia,
             possui veios sutis e furinhos mais discretos.
           </p>
         </div>
         <div>
-          <h3 className="font-lato text-4xl">Navona</h3>
+          <h3 className="font-lato text-lg">Navona</h3>
           <p>
             Sua cor é mais clara, chamada “cor de osso”. Possui veios ondulados
             e mais discretos. Com menos espaços ocos e mais uniforme, esse tipo
@@ -151,11 +151,11 @@ export default function Travertino() {
         </ScrollableComponent>
       </div>
       <div className="w-full max-w-screen-2xl">
-        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-6xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
+        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Aplicações e Projetos
         </h1>
 
-        <p className="text-2xl">
+        <p>
           A aplicação do mármore Travertino da Trova pode ser realizada em
           diferentes espaços, como piso, escada externa, lavabo, bancada de
           banheiro, lareira, revestimentos de piscina e parede.

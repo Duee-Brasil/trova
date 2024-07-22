@@ -45,8 +45,8 @@ export default function Home() {
       </div>
 
       <SessionTitle label="Sobre a trova" />
-      <div className="flex w-full flex-row flex-wrap">
-        <div className="basis-full text-2xl md:basis-1/2">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="w-full">
           <p>
             A Trova é especializada na importação do{' '}
             <strong>Travertino Romano</strong>.
@@ -60,7 +60,7 @@ export default function Home() {
             Nossos produtos são <strong>exclusivos</strong> no mercado nacional.
           </p>
         </div>
-        <div className="basis-full text-2xl md:basis-1/2">
+        <div className="w-full">
           <p>
             A seleção de todas nossas pedras, <strong>Travertino</strong>(Navona
             e Romano Premium), <strong>Pietra Zafferina</strong> e{' '}
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
       </div>
       <div className="grid w-full grid-cols-1 content-stretch justify-stretch gap-16 border-2 border-primary p-4 align-middle md:grid-cols-3 md:gap-4">
-        <div className="justify-center self-stretch text-4xl uppercase">
+        <div className="justify-center self-stretch text-xl uppercase">
           <Image
             src="/images/pedra solta T4.png"
             alt="mármore travertino"
@@ -85,11 +85,11 @@ export default function Home() {
             height={500}
             className="m-auto max-w-full"
           />
-          <div className="m-0 w-full translate-y-10 p-0 text-center">
+          <div className="m-0 w-full translate-y-8 p-0 text-center">
             <span className="bg-white px-4">mármore travertino</span>
           </div>
         </div>
-        <div className="justify-center self-end text-4xl uppercase">
+        <div className="justify-center self-end text-xl uppercase">
           <Image
             src="/images/pedra solta.png"
             alt="pietra zafferina"
@@ -97,11 +97,11 @@ export default function Home() {
             height={500}
             className="m-auto max-w-full"
           />
-          <div className="m-0 w-full translate-y-10 p-0 text-center">
+          <div className="m-0 w-full translate-y-8 p-0 text-center">
             <span className="bg-white px-4">pietra zafferina</span>
           </div>
         </div>
-        <div className="justify-center self-stretch text-4xl uppercase">
+        <div className="justify-center self-stretch text-xl uppercase">
           <Image
             src="/images/pedra solta IT2.png"
             alt="itaúnas tec"
@@ -109,12 +109,12 @@ export default function Home() {
             height={500}
             className="m-auto max-w-full"
           />
-          <div className="m-0 w-full translate-y-10 p-0 text-center">
+          <div className="m-0 w-full translate-y-8 p-0 text-center">
             <span className="bg-white px-4">itaúnas tec</span>
           </div>
         </div>
       </div>
-      <div className="my-16 h-[40rem] w-screen items-center justify-center bg-[url('/images/TROVA_110.png')] bg-cover align-middle">
+      <div className="my-16 h-[32rem] w-screen items-center justify-center bg-[url('/images/TROVA_110.png')] bg-cover align-middle">
         <div className="m-auto flex h-full max-w-screen-2xl flex-wrap items-center justify-around p-16">
           <LinkButton href={wppLink} target="_blank">
             Faça seu orçamento

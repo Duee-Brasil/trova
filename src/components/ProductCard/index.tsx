@@ -22,7 +22,7 @@ export const ProductCard: FC<IProductCard> = ({ image, label, text, link }) => {
       <Link href={link} className="as-button w-full">
         {label}
       </Link>
-      <div className="w-full text-balance text-2xl">{text}</div>
+      <div className="w-full text-balance">{text}</div>
     </div>
   )
 }

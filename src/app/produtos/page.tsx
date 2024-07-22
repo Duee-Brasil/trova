@@ -21,10 +21,9 @@ const productsList = [
     text: (
       <p>
         A <strong>Pietra Zafferina</strong> tem características únicas, se
-        tornando perfeita para
-        <strong>revestimentos de piscinas</strong>. Seus tons esverdeados criam
-        movimento quando em contato com a água, evidenciando uma{' '}
-        <strong>estética tropical</strong>.
+        tornando perfeita para <strong>revestimentos de piscinas</strong>. Seus
+        tons esverdeados criam movimento quando em contato com a água,
+        evidenciando uma <strong>estética tropical</strong>.
       </p>
     ),
     link: '/pietra-zafferina',
@@ -46,7 +45,7 @@ const productsList = [
 
 export default function Produtos() {
   return (
-    <main className="flex h-full w-screen flex-col items-center justify-start gap-16 p-8">
+    <main className="flex min-h-full w-screen flex-col items-center justify-start gap-16 p-8">
       <SessionTitle label="Nossos produtos" align="left" />
 
       <div className="grid w-full max-w-screen-2xl grid-cols-1 items-baseline gap-4 p-4 md:grid-cols-3 md:gap-16">

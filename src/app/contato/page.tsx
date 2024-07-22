@@ -38,7 +38,7 @@ export default function Contato() {
   }
 
   return (
-    <main className="flex h-full w-screen flex-col items-center gap-16 p-8">
+    <main className="flex w-screen flex-col items-center gap-16 p-8">
       <div className="-mx-8 -mt-8 w-screen">
         <Image
           src="/images/contato-hero.png"
@@ -51,16 +51,16 @@ export default function Contato() {
 
       <SessionTitle label="entre em contato" align="left" />
 
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 items-baseline gap-4 p-16 text-3xl md:grid-cols-2 md:gap-16">
+      <div className="grid w-full max-w-screen-2xl grid-cols-1 items-baseline gap-4 p-16 md:grid-cols-2 md:gap-16">
         <div className="gap-16">
           <p>+55 11 97069-3793</p>
           <p>+55 11 2532-7158</p>
           <p>contato@trovabrasil.com</p>
-          <div className="my-4 -ml-14 flex items-center">
-            <IoLocationSharp className="text-[4rem]" />
+          <div className="my-4 -ml-11 flex items-center">
+            <IoLocationSharp className="text-[2rem]" />
             <div className="ml-2">
               <p className="m-0 p-0">São Paulo - SP</p>
-              <p className="m-0 p-0 text-2xl">
+              <p className="m-0 p-0">
                 Alameda Joaquim Eugênio de Lima, 696 - Jardins
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function Contato() {
             data-netlify="true"
             onSubmit={handleSubmit}
             id="contact_form"
-            className="flex w-full flex-col gap-12 text-3xl"
+            className="flex w-full flex-col gap-12"
           >
             <div>
               <Input

@@ -110,8 +110,8 @@ export default function PietraZafferina() {
         <div className="h-auto w-full">
           <CarouselImages list={imgsList} />
         </div>
-        <div className="w-full text-2xl">
-          <h1 className="w-screen border-b-4 border-primary font-lato text-6xl leading-loose">
+        <div className="w-full">
+          <h1 className="w-screen border-b-4 border-primary font-lato text-xl leading-loose">
             Pietra Zafferina
           </h1>
           <p>
@@ -130,7 +130,7 @@ export default function PietraZafferina() {
           <WppButton />
         </div>
       </div>
-      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 text-2xl md:grid-cols-2">
+      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-16 md:grid-cols-2">
         <div>
           <p>
             A beleza da pedra de piscina Pietra Zafferina não apenas encanta,
@@ -168,11 +168,11 @@ export default function PietraZafferina() {
         </ScrollableComponent>
       </div>
       <div className="w-full max-w-screen-2xl">
-        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-6xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
+        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Compare
         </h1>
 
-        <p className="text-2xl">
+        <p>
           O piso para piscina Pietra Zafferina tem características estéticas
           semelhantes à pedra Hijau, como seu aspecto natural e cores que
           remetem ao mar. Porém apresentam diferenças significativas em termos
@@ -201,13 +201,13 @@ export default function PietraZafferina() {
               alt="durabilidade"
               width={109}
               height={109}
-              className="mx-auto my-4"
+              className="mx-auto my-4 w-20"
             />
-            <div className="w-full text-balance text-2xl">
+            <div className="w-full text-balance">
               <p>
-                Pietra Zafferina: Apresenta um coeficiente de dilatação
-                extremamente baixo, o que a torna ideal para espaços sujeitos a
-                variações de temperatura.
+                <strong>Pietra Zafferina</strong>: Apresenta um coeficiente de
+                dilatação extremamente baixo, o que a torna ideal para espaços
+                sujeitos a variações de temperatura.
               </p>
               <p>
                 Pedra Hijau: Por ser uma pedra vulcânica, a Hijau é mais
@@ -222,13 +222,13 @@ export default function PietraZafferina() {
               alt="eficiente"
               width={109}
               height={109}
-              className="mx-auto my-4"
+              className="mx-auto my-4 w-20"
             />
-            <div className="w-full text-balance text-2xl">
+            <div className="w-full text-balance">
               <p>
-                Pietra Zafferina: Apresenta propriedades térmicas que mantêm a
-                água aquecida, resultando em economia de até 40% nos custos com
-                aquecimento.
+                <strong>Pietra Zafferina</strong>: Apresenta propriedades
+                térmicas que mantêm a água aquecida, resultando em economia de
+                até 40% nos custos com aquecimento.
               </p>
               <p>
                 Pedra Hijau: Exige mão-de-obra qualificada para sua colocação e
@@ -242,12 +242,13 @@ export default function PietraZafferina() {
               alt="segurança"
               width={109}
               height={109}
-              className="mx-auto my-4"
+              className="mx-auto my-4 w-20"
             />
-            <div className="w-full text-balance text-2xl">
+            <div className="w-full text-balance">
               <p>
-                Pietra Zafferina: Possui uma superfície natural que oferece
-                aderência suficiente para ser antiderrapante quando seca.
+                <strong>Pietra Zafferina</strong>: Possui uma superfície natural
+                que oferece aderência suficiente para ser antiderrapante quando
+                seca.
               </p>
               <p>
                 Pedra Hijau: Sua dilatação também pode afetar a segurança,
@@ -261,12 +262,13 @@ export default function PietraZafferina() {
               alt="acabamento"
               width={109}
               height={109}
-              className="mx-auto my-4"
+              className="mx-auto my-4 w-20"
             />
-            <div className="w-full text-balance text-2xl">
+            <div className="w-full text-balance">
               <p>
-                Pietra Zafferina: Requer menos manutenção, devido à sua
-                resistência à dilatação e suas propriedades térmicas.
+                <strong>Pietra Zafferina</strong>: Requer menos manutenção,
+                devido à sua resistência à dilatação e suas propriedades
+                térmicas.
               </p>
               <p>
                 Pedra Hijau: Pode absorver impurezas, como óleos e protetor
@@ -277,11 +279,11 @@ export default function PietraZafferina() {
         </div>
       </div>
       <div className="w-full max-w-screen-2xl">
-        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-6xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
+        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
           Aplicações e Projetos
         </h1>
 
-        <p className="text-2xl">
+        <p>
           A Pietra Zafferina conta com diferentes possibilidades de aplicação,
           sendo elas, revestimentos para piscinas, pontes, espelhos d’ água,
           fachadas e áreas externas.

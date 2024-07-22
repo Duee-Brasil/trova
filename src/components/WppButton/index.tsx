@@ -13,11 +13,11 @@ export const WppButton = ({
       <a
         href={wppLink}
         target="_blank"
-        className={`rounded-full border-4 border-green-500 bg-white px-8 py-4 text-3xl text-green-500 hover:bg-green-500 hover:text-white ${className}`}
+        className={`rounded-full border-2 border-green-500 bg-white px-8 py-2 text-lg text-green-500 hover:bg-green-500 hover:text-white ${className}`}
         {...props}
       >
-        <div className="flex flex-row gap-4">
-          <IoLogoWhatsapp className="text-4xl" /> Entre em contato
+        <div className="flex flex-row gap-4 font-bold items-center">
+          <IoLogoWhatsapp className="text-2xl" /> Entre em contato
         </div>
       </a>
     </div>

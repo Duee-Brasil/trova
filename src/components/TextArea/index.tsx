@@ -7,7 +7,7 @@ export const TextArea = (
 ) => {
   return (
     <textarea
-      className="w-full rounded-lg border-4 border-primary bg-white p-10 text-3xl"
+      className="w-full rounded-lg border-2 border-primary bg-white p-6"
       {...props}
     />
   )
