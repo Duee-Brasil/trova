@@ -1,9 +1,10 @@
 import { ProductCard } from '@/components/ProductCard'
 import { SessionTitle } from '@/components/SessionTitle'
+import { ProductsTypes } from '@/utils/contants'
 
 const productsList = [
   {
-    image: '/images/travertino.png',
+    type: ProductsTypes.travertino,
     label: 'Mármore Travertino',
     text: (
       <p>
@@ -16,7 +17,7 @@ const productsList = [
     link: '/marmore-travertino',
   },
   {
-    image: '/images/pietra.png',
+    type: ProductsTypes.pietra,
     label: 'Pietra Zafferina',
     text: (
       <p>
@@ -29,7 +30,7 @@ const productsList = [
     link: '/pietra-zafferina',
   },
   {
-    image: '/images/itauna.png',
+    type: ProductsTypes.itaunas,
     label: 'Itaúnas Tec',
     text: (
       <p>
@@ -45,10 +46,10 @@ const productsList = [
 
 export default function Produtos() {
   return (
-    <main className="flex min-h-full w-screen flex-col items-center justify-start gap-16 p-8">
+    <main className="flex flex-1 w-screen flex-col items-center justify-start gap-16 p-8">
       <SessionTitle label="Nossos produtos" align="left" />
 
-      <div className="grid w-full  max-w-screen-xl grid-cols-1 items-baseline gap-4 p-4 md:grid-cols-3 md:gap-16">
+      <div className="grid w-full max-w-screen-xl grid-cols-1 items-baseline gap-4 p-4 md:grid-cols-3 md:gap-16">
         {productsList.map((product, index) => (
           <ProductCard {...product} key={index} />
         ))}

@@ -76,7 +76,25 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="grid w-full grid-cols-1 content-stretch justify-stretch gap-16 border-2 border-primary p-4 align-middle md:grid-cols-3 md:gap-4">
+      <div className="hidden md:grid w-full grid-cols-1 content-stretch justify-stretch gap-4 align-middle">
+        <Image
+          src="/images/pedra solta.png"
+          alt="pietra zafferina"
+          width={1920}
+          height={500}
+          className="m-auto max-w-full"
+        />
+        <div className="justify-around text-xl uppercase w-full flex">
+          <span className="bg-white px-4 flex-1 text-center">
+            mármore travertino
+          </span>
+          <span className="bg-white px-4 flex-1 text-center">
+            pietra zafferina
+          </span>
+          <span className="bg-white px-4 flex-1 text-center">itaúnas tec</span>
+        </div>
+      </div>
+      <div className="grid md:hidden w-full grid-cols-1 content-stretch justify-stretch gap-16 p-4 align-middle">
         <div className="justify-center self-stretch text-xl uppercase">
           <Image
             src="/images/pedra solta T4.png"
@@ -91,7 +109,7 @@ export default function Home() {
         </div>
         <div className="justify-center self-end text-xl uppercase">
           <Image
-            src="/images/pedra solta.png"
+            src="/images/pedra solta pietra.png"
             alt="pietra zafferina"
             width={500}
             height={500}

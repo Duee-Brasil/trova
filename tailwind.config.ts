@@ -1,5 +1,5 @@
-import type { Config } from 'tailwindcss'
 import flowbite from 'flowbite-react/tailwind'
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -28,10 +28,10 @@ const config: Config = {
       },
       keyframes: {
         scroll7: {
-          '100%': { transform: 'translate3d(calc(-400px * 7), 0, 0)' },
+          '100%': { transform: 'translate3d(calc(-50px * 7), 0, 0)' },
         },
         scroll6: {
-          '100%': { transform: 'translate3d(calc(-400px * 6), 0, 0)' },
+          '100%': { transform: 'translate3d(calc(-50px * 6), 0, 0)' },
         },
         pause: {
           '0%': { animationPlayState: 'paused' },

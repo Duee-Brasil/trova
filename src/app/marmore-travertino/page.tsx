@@ -3,25 +3,7 @@ import { InfinityCarousel } from '@/components/InfinityCarousel'
 import { QualityCard } from '@/components/QualityCard'
 import { ScrollableComponent } from '@/components/ScrollableComponent'
 import { WppButton } from '@/components/WppButton'
-
-const imgsList = [
-  {
-    src: '/images/travertino/carousel/1.png',
-    name: 'chapas de travertino',
-  },
-  {
-    src: '/images/travertino/carousel/2.png',
-    name: 'aplicação do travertino na piscina',
-  },
-  {
-    src: '/images/travertino/carousel/3.png',
-    name: 'detalhe do travertino como piso interno',
-  },
-  {
-    src: '/images/travertino/carousel/4.png',
-    name: 'aplicação do travertino como piso externo',
-  },
-]
+import { imgsList } from '@/utils/contants'
 
 const infinityList = [
   {
@@ -93,8 +75,8 @@ export default function Travertino() {
   return (
     <main className="flex min-h-full w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
       <div className="grid w-full  max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
-        <div className="h-auto w-full">
-          <CarouselImages list={imgsList} />
+        <div className="aspect-square w-full">
+          <CarouselImages list={imgsList['travertino']} />
         </div>
         <div className="w-full">
           <h1 className="w-screen border-b-4 border-primary font-lato text-xl leading-loose">
@@ -151,7 +133,7 @@ export default function Travertino() {
         </ScrollableComponent>
       </div>
       <div className="w-full  max-w-screen-xl">
-        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
+        <h1 className="w-1/2 md:w-1/3 self-start border-b-4 border-primary font-lato text-xl leading-loose">
           Aplicações e Projetos
         </h1>
 

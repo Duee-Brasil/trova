@@ -3,21 +3,7 @@ import { InfinityCarousel } from '@/components/InfinityCarousel'
 import { QualityCard } from '@/components/QualityCard'
 import { ScrollableComponent } from '@/components/ScrollableComponent'
 import { WppButton } from '@/components/WppButton'
-
-const imgsList = [
-  {
-    src: '/images/itauna-tec/carousel/01.png',
-    name: 'detalhe itaúnas',
-  },
-  {
-    src: '/images/itauna-tec/carousel/02.png',
-    name: 'referencia de aspecto itaúnas',
-  },
-  {
-    src: '/images/itauna-tec/carousel/03.png',
-    name: 'chapas de itaúnas',
-  },
-]
+import { imgsList } from '@/utils/contants'
 
 const infinityList = [
   {
@@ -94,8 +80,8 @@ export default function Itaunas() {
   return (
     <main className="flex min-h-full w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
       <div className="grid w-full  max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
-        <div className="h-auto w-full rounded-none">
-          <CarouselImages list={imgsList} />
+        <div className="aspect-square w-full rounded-none">
+          <CarouselImages list={imgsList['itaunas']} />
         </div>
         <div className="w-full">
           <h1 className="w-screen border-b-4 border-primary font-lato text-xl leading-loose">
@@ -143,7 +129,7 @@ export default function Itaunas() {
         </ScrollableComponent>
       </div>
       <div className="w-full  max-w-screen-xl">
-        <h1 className="w-full self-start border-b-4 border-primary text-right font-lato text-xl leading-loose lg:-translate-x-1/3 xl:-translate-x-1/2 2xl:-translate-x-2/3">
+        <h1 className="w-1/2 md:w-1/3 self-start border-b-4 border-primary font-lato text-xl leading-loose">
           Aplicações e Projetos
         </h1>
 
