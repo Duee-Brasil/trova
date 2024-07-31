@@ -14,7 +14,7 @@ export const ProductCard: FC<IProductCard> = ({ type, label, text, link }) => {
   return (
     <div className="flex w-full flex-col items-center gap-4">
       <div className="aspect-square w-full">
-        <CarouselImages list={imgsList[type]} />
+        <CarouselImages list={imgsList[type]} square />
       </div>
 
       <Link href={link} className="as-button w-full">

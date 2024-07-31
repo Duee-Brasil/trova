@@ -7,7 +7,7 @@ export const SessionTitle: FC<{ label: string; align?: 'left' | 'right' }> = ({
   return (
     <div className="flex w-screen items-center justify-center gap-8">
       {align === 'left' ? (
-        <div className="w-24 self-start" />
+        <div className="w-14 self-start" />
       ) : (
         <div className="flex-1 self-start border-t-2 border-primary" />
       )}
@@ -18,7 +18,7 @@ export const SessionTitle: FC<{ label: string; align?: 'left' | 'right' }> = ({
         <div className="h-10 w-20 border-2 border-t-0 border-solid border-primary" />
       </div>
       {align === 'right' ? (
-        <div className="w-24 self-start" />
+        <div className="w-14 self-start" />
       ) : (
         <div className="flex-1 self-end border-t-2 border-primary" />
       )}

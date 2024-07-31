@@ -6,10 +6,12 @@ export const InfinityCarousel: FC<{
   size?: string
 }> = ({ list, size }) => {
   const animationClass =
-    size === '6' ? 'animate-scroll6  h-full' : 'animate-scroll7  h-full'
+    size === '6'
+      ? 'animate-scroll6 h-full w-auto aspect-square'
+      : 'animate-scroll7 h-full w-auto aspect-square'
 
   return (
-    <div className="relative h-[400px] w-full overflow-hidden">
+    <div className="relative h-56 md:h-[400px] w-full overflow-hidden">
       <div className="flex flex-row gap-4">
         {list.map((item) => (
           <Image

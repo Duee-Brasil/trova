@@ -42,7 +42,7 @@
   }
 
   body {
-    @apply m-0 p-0 w-screen h-dvh bg-white text-text overflow-y-auto overflow-x-hidden font-lato flex flex-col
+    @apply m-0 p-0 w-screen min-h-dvh bg-white text-text overflow-y-auto overflow-x-hidden font-lato flex flex-col
   }
 
   a {

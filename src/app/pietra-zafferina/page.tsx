@@ -91,10 +91,10 @@ const qualityList = [
 
 export default function PietraZafferina() {
   return (
-    <main className="flex min-h-full w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
+    <main className="flex flex-1 w-screen flex-col items-center gap-16 overflow-x-hidden p-8">
       <div className="grid w-full  max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
         <div className="aspect-square w-full">
-          <CarouselImages list={imgsList['pietra']} />
+          <CarouselImages list={imgsList['pietra']} square />
         </div>
         <div className="w-full">
           <h1 className="w-screen border-b-4 border-primary font-lato text-xl leading-loose">
@@ -116,7 +116,7 @@ export default function PietraZafferina() {
           <WppButton />
         </div>
       </div>
-      <div className="grid w-full  max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
+      <div className="grid w-full max-w-screen-xl grid-cols-1 gap-16 md:grid-cols-2">
         <div>
           <p>
             A beleza da pedra de piscina Pietra Zafferina não apenas encanta,
@@ -154,7 +154,7 @@ export default function PietraZafferina() {
         </ScrollableComponent>
       </div>
       <div className="w-full  max-w-screen-xl">
-        <h1 className="w-1/2 md:w-1/3 self-start border-b-4 border-primary font-lato text-xl leading-loose">
+        <h1 className="w-full md:w-1/2 lg:w-1/3 self-start border-b-4 border-primary font-lato text-xl leading-loose">
           Compare
         </h1>
 
@@ -265,7 +265,7 @@ export default function PietraZafferina() {
         </div>
       </div>
       <div className="w-full  max-w-screen-xl">
-        <h1 className="w-1/2 md:w-1/3 self-start border-b-4 border-primary font-lato text-xl leading-loose">
+        <h1 className="w-full md:w-1/2 lg:w-1/3 self-start border-b-4 border-primary font-lato text-xl leading-loose">
           Aplicações e Projetos
         </h1>
 

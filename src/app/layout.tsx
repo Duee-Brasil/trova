@@ -1,5 +1,6 @@
 import { PageFooter } from '@/components/PageFooter'
 import { PageHeader } from '@/components/PageHeader'
+import { ThemeModeScript } from 'flowbite-react'
 import type { Metadata } from 'next'
 import { Lato, Montserrat } from 'next/font/google'
 import './globals.css'
@@ -28,8 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={`${lato.variable} ${montserrat.variable}`}>
+      <head>
+        <ThemeModeScript />
+      </head>
       <body className={lato.className}>
-        <div className="m-0 flex h-dvh w-screen flex-col items-center p-0">
+        <div className="m-0 min-h-dvh max-w-screen p-0 overflow-x-hidden flex flex-col flex-wrap">
           <PageHeader />
           {children}
           <PageFooter />

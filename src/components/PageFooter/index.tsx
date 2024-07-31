@@ -10,9 +10,9 @@ import {
 
 export const PageFooter = () => {
   return (
-    <footer className="m-0 w-screen justify-center bg-primary px-4 py-2 text-white">
-      <div className="m-auto flex  max-w-screen-xl flex-row flex-wrap items-center justify-center gap-12 p-4 md:justify-between">
-        <div className="px-16">
+    <footer className="m-0 w-screen justify-center bg-primary px-4 py-2 text-white h-fit">
+      <div className="m-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-center gap-12 md:justify-between">
+        <div className="px-4 md:px-8 lg:px-16">
           <Image
             src="/images/logos/logo_white.png"
             alt="Trova Brasil"
@@ -43,7 +43,7 @@ export const PageFooter = () => {
           </a>
         </div>
 
-        <div className="flex flex-col items-start justify-end gap-2 px-16 text-sm uppercase">
+        <div className="flex flex-col items-start justify-end gap-2 px-4 md:px-8 lg:px-16 text-sm uppercase">
           <Link href="/">Home</Link>
           <Link href="/produtos">Produtos</Link>
           <Link href="/onde-encontrar">Onde encontrar</Link>

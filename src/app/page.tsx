@@ -39,13 +39,13 @@ const imgsList = [
 
 export default function Home() {
   return (
-    <main className="m-auto flex w-full  max-w-screen-xl flex-col items-center justify-center gap-16 p-8">
+    <main className="w-full overflow-x-hidden m-auto flex flex-col items-center justify-center gap-16 p-8">
       <div className="-mt-8 h-36 w-screen md:h-64 lg:h-[21rem]">
         <CarouselImages list={imgsList} />
       </div>
 
       <SessionTitle label="Sobre a trova" />
-      <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-xl">
         <div className="w-full">
           <p>
             A Trova é especializada na importação do{' '}
@@ -76,7 +76,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="hidden md:grid w-full grid-cols-1 content-stretch justify-stretch gap-4 align-middle">
+      <div className="hidden md:grid w-full grid-cols-1 max-w-screen-xl content-stretch justify-stretch gap-4 align-middle">
         <Image
           src="/images/pedra solta.png"
           alt="pietra zafferina"
@@ -94,7 +94,7 @@ export default function Home() {
           <span className="bg-white px-4 flex-1 text-center">itaúnas tec</span>
         </div>
       </div>
-      <div className="grid md:hidden w-full grid-cols-1 content-stretch justify-stretch gap-16 p-4 align-middle">
+      <div className="grid md:hidden w-full grid-cols-1 content-stretch max-w-screen-xl justify-stretch gap-16 p-4 align-middle">
         <div className="justify-center self-stretch text-xl uppercase">
           <Image
             src="/images/pedra solta T4.png"
@@ -149,11 +149,11 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
-          className="aspect-video h-auto w-3/4 2xl:w-1/2"
+          className="aspect-video h-auto w-3/4 max-w-screen-xl"
         ></iframe>
       </div>
       <SessionTitle label="Inspire-se" />
-      <div className="grid w-full grid-cols-1 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 max-w-screen-xl">
         {inspirationList.map((item, index) => {
           return <IconCard {...item} key={index} />
         })}

@@ -9,7 +9,7 @@ export interface IQualityCard {
 
 export const QualityCard: FC<IQualityCard> = ({ image, label, text }) => {
   return (
-    <div className="flex min-w-96 max-w-[450px] flex-1 flex-col gap-4 border-2 border-neutral-400 bg-white p-12">
+    <div className="flex min-w-64 max-w-[450px] flex-1 flex-col gap-3 border-2 border-neutral-400 bg-white p-10">
       <Image
         src={image}
         alt={label}
