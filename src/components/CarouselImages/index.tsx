@@ -22,7 +22,7 @@ export const CarouselImages: FC<{
           key={index}
           src={item.src}
           alt={item.name}
-          className={`w-full rounded-none ${square && 'aspect-square'}`}
+          className={`w-full h-full rounded-none ${square && 'aspect-square'}`}
           width={600}
           height={300}
         />
