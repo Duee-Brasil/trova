@@ -4,6 +4,7 @@ import { QualityCard } from '@/components/QualityCard'
 import { ScrollableComponent } from '@/components/ScrollableComponent'
 import { WppButton } from '@/components/WppButton'
 import { imgsList } from '@/utils/contants'
+import Image from 'next/image'
 
 const infinityList = [
   {
@@ -138,8 +139,20 @@ export default function Itaunas() {
           pisos, paredes e escadas.
         </p>
       </div>
-      <div className="h-auto w-screen">
+      <div className="h-auto w-screen hidden md:block">
         <InfinityCarousel list={infinityList} size="6" />
+      </div>
+      <div className="aspect-video w-screen md:hidden flex overflow-x-auto gap-2">
+        {infinityList.map((item, index) => (
+          <Image
+            key={index}
+            src={item.src}
+            alt={item.name}
+            className={`w-[90%] rounded-none aspect-video`}
+            width={600}
+            height={300}
+          />
+        ))}
       </div>
     </main>
   )

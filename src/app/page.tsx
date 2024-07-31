@@ -39,8 +39,8 @@ const imgsList = [
 
 export default function Home() {
   return (
-    <main className="w-full overflow-x-hidden m-auto flex flex-col items-center justify-center gap-16 p-8">
-      <div className="-mt-8 h-36 w-screen md:h-64 lg:h-[21rem]">
+    <main className="w-full overflow-x-hidden m-auto flex flex-col items-center justify-center gap-16 p-8 pt-0 mt-0">
+      <div className="h-32 w-screen md:h-64 lg:h-[21rem]">
         <CarouselImages list={imgsList} />
       </div>
 

@@ -165,18 +165,20 @@ export default function PietraZafferina() {
           de durabilidade, segurança e economia.
         </p>
 
-        <div className="my-16 flex w-full flex-row justify-center gap-8">
+        <div className="p-8 md:p-16 grid grid-cols-1 md:grid-cols-2 w-full justify-center gap-8 max-w-screen-xl">
           <Image
             src="/images/pietra/compare-1.png"
             alt="pietra zafferina"
             width={536}
             height={536}
+            className="w-full max-w-[536px] aspect-square"
           />
           <Image
             src="/images/pietra/compare-2.png"
             alt="pedra hijau"
             width={536}
             height={536}
+            className="w-full max-w-[536px] aspect-square"
           />
         </div>
 
@@ -275,8 +277,20 @@ export default function PietraZafferina() {
           fachadas e áreas externas.
         </p>
       </div>
-      <div className="h-auto w-screen">
+      <div className="h-auto w-screen hidden md:block">
         <InfinityCarousel list={infinityList} />
+      </div>
+      <div className="aspect-video w-screen md:hidden flex overflow-x-auto gap-2">
+        {infinityList.map((item, index) => (
+          <Image
+            key={index}
+            src={item.src}
+            alt={item.name}
+            className={`w-[90%] rounded-none aspect-video`}
+            width={600}
+            height={300}
+          />
+        ))}
       </div>
     </main>
   )
