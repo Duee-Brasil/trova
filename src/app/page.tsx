@@ -62,8 +62,8 @@ export default function Home() {
         </div>
         <div className="w-full">
           <p>
-            A seleção de todas nossas pedras, <strong>Travertino</strong> (Navona
-            e Romano Premium), <strong>Pietra Zafferina</strong> e{' '}
+            A seleção de todas nossas pedras, <strong>Travertino</strong>{' '}
+            (Navona e Romano Premium), <strong>Pietra Zafferina</strong> e{' '}
             <strong>Itaúnas Tec</strong> é feita pessoalmente, garantindo
             procedência e um material de{' '}
             <strong>padrão estético superior e homogêneo</strong>.
