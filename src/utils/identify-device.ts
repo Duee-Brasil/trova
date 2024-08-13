@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
 export const isMobile = () => {
   let detection = false
@@ -6,7 +7,7 @@ export const isMobile = () => {
     detection = navigator.userAgentData.mobile
   }
 
-  if (typeof navigator !== "undefined" && !detection) {
+  if (typeof navigator !== 'undefined' && !detection) {
     if (
       navigator.userAgent.match(/Android/i) ||
       navigator.userAgent.match(/webOS/i) ||

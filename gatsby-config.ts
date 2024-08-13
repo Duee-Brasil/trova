@@ -1,13 +1,11 @@
-import { GatsbyConfig } from "gatsby";
-
-const config: GatsbyConfig = {
+const config = {
   siteMetadata: {
     title: `Trova Brasil / Poesia Scolpita in Pietra`,
     description: `
     Trova - Poesia Scolpita in Pietra - Travertinos importados com rigoroso controle de qualidade, garantia de segurança e durabilidade.`,
     author: `@pistoletzzz`,
     siteUrl: `https://trovabrasil.com`,
-    image: "src/images/_logos/logo_blue.png",
+    image: 'src/images/_logos/logo_blue.png',
   },
   graphqlTypegen: true,
   plugins: [
@@ -58,4 +56,4 @@ const config: GatsbyConfig = {
   ],
 }
 
-export default config;
+export default config

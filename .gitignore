@@ -31,7 +31,6 @@ bower_components
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
-public
 
 # Dependency directories
 node_modules/
@@ -68,3 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+.next
+out
