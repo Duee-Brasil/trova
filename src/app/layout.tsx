@@ -55,7 +55,47 @@ export const metadata: Metadata = {
   },
   generator: 'Next.js',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Next.js', 'React', 'JavaScript'],
+  keywords: [
+    'Next.js',
+    'React',
+    'JavaScript',
+    'marmores granitos e pedras',
+    'mármore travertino',
+    'piso de marmore',
+    'revestimento externo',
+    'revestimento de piso',
+    'piso e revestimento',
+    'piso pedra',
+    'Piso Travertino',
+    'Marmore Granito',
+    'Loja de Pisos',
+    'Loja de Revestimentos',
+    'Revestimento Interno',
+    'Loja de Pedras Naturais',
+    'Trova Brasil',
+    'Granito',
+    'Travertino',
+    'Natural',
+    'Natureza',
+    'Trova travertino',
+    'Travertino Navona',
+    'Navona',
+    'Travertino Preço',
+    'Preço Trova',
+    'Trova Marmore',
+    'Marmore Trova',
+    'Trova Granito',
+    'Granito Trova',
+    'Projetos Trova',
+    'Contato Trova',
+    'Travertino Romano',
+    'Romano',
+    'Cerâmica Natural',
+    'Vidraria Natural',
+    'Vitrina Natural',
+    'Concreto Natural',
+    'Polimérico Natural',
+  ],
   authors: [{ name: 'Leticia Godoy', url: 'https://github.com/letgodoy' }],
   creator: 'Duee Brasil',
   publisher: 'Leticia Godoy',
@@ -100,6 +140,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: 'https://trovabrasil.com',
+  },
 }
 
 
@@ -112,9 +155,90 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={`${lato.variable} ${montserrat.variable}`}>
       <head>
+        <meta
+          name="copyright"
+          content="©2024 Duee Brasil - https://github.com/letgodoy"
+        />
+        <meta name="url" content="https://trovabrasil.com" />
+        <meta name="identifier-url" content="https://trovabrasil.com" />
+        <meta
+          name="facebook-domain-verification"
+          content="za65m80ibiardiepk5vq60o4m8sw2l"
+        />
+        <link rel="canonical" href="https://trovabrasil.com/" />
+        <script
+          src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+          type="text/javascript"
+          async
+        ></script>
+        <link
+          rel="dns-prefetch"
+          href="https://gstatic.com"
+          crossOrigin={'anonymous'}
+        />
+        <link
+          rel="dns-prefetch"
+          href="https://googleapis.com"
+          crossOrigin={'anonymous'}
+        />
+        <link
+          rel="dns-prefetch"
+          href="googletagmanager.com"
+          crossOrigin={'anonymous'}
+        />
+        <link
+          rel="dns-prefetch"
+          href="google-analytics.com"
+          crossOrigin={'anonymous'}
+        />
+        <link rel="dns-prefetch" href="unpkg.com" crossOrigin={'anonymous'} />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossOrigin={'anonymous'}
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={'anonymous'}
+        />
+        <link
+          rel="preconnect"
+          href="www.googletagmanager.com"
+          crossOrigin={'anonymous'}
+        />
+        <link
+          rel="preconnect"
+          href="www.google-analytics.com"
+          crossOrigin={'anonymous'}
+        />
+        <link rel="preconnect" href="unpkg.com" crossOrigin={'anonymous'} />
+        <script type="application/ld+json">
+          {`{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        name: "Trova Brasil",
+        url: "https://trovabrasil.com",
+        address: "contato@trovabrasil.com",
+        sameAs: [
+          "https://facebook.com/trovabrasil",
+          "https://instagram.com/trovatravertino",
+          "https://br.pinterest.com/trovatravertino/_created/",
+        ],
+      }`}
+        </script>
+
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P2MGF7M');</script>
+
         <ThemeModeScript />
       </head>
       <body className={lato.className}>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2MGF7M"
+height="0" width="0" style={{display: "none", visibility:"hidden"}}></iframe></noscript>
         <div className="m-0 min-h-dvh max-w-screen p-0 overflow-x-hidden flex flex-col flex-wrap">
           <PageHeader />
           {children}
