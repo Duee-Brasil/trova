@@ -3,6 +3,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { ThemeModeScript } from 'flowbite-react'
 import type { Metadata, Viewport } from 'next'
 import { Lato, Montserrat } from 'next/font/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 import './globals.css'
 
 const lato = Lato({
@@ -227,18 +228,10 @@ export default function RootLayout({
         ],
       }`}
         </script>
-
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P2MGF7M');</script>
-
         <ThemeModeScript />
       </head>
       <body className={lato.className}>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2MGF7M"
-height="0" width="0" style={{display: "none", visibility:"hidden"}}></iframe></noscript>
+        <GoogleTagManager gtmId="GTM-P2MGF7M" />
         <div className="m-0 min-h-dvh max-w-screen p-0 overflow-x-hidden flex flex-col flex-wrap">
           <PageHeader />
           {children}
