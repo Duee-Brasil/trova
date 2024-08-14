@@ -1,9 +1,9 @@
 import { PageFooter } from '@/components/PageFooter'
 import { PageHeader } from '@/components/PageHeader'
+import { GoogleTagManager } from '@next/third-parties/google'
 import { ThemeModeScript } from 'flowbite-react'
 import type { Metadata, Viewport } from 'next'
 import { Lato, Montserrat } from 'next/font/google'
-import { GoogleTagManager } from '@next/third-parties/google'
 import './globals.css'
 
 const lato = Lato({
@@ -145,8 +145,6 @@ export const metadata: Metadata = {
     canonical: 'https://trovabrasil.com',
   },
 }
-
-
 
 export default function RootLayout({
   children,
