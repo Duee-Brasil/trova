@@ -1,9 +1,11 @@
+import PietraZafferinaImg from '@/assets/images/pedra solta.png'
 import { CarouselImages } from '@/components/CarouselImages'
 import { IconCard } from '@/components/IconCard'
 import { LinkButton } from '@/components/LinkButton'
 import { SessionTitle } from '@/components/SessionTitle'
 import { wppLink } from '@/utils/contants'
 import { inspirationList } from '@/utils/inspirationList'
+import { YouTubeEmbed } from '@next/third-parties/google'
 import Image from 'next/image'
 
 const imgsList = [
@@ -78,10 +80,11 @@ export default function Home() {
       </div>
       <div className="hidden md:grid w-full grid-cols-1 max-w-screen-xl content-stretch justify-stretch gap-4 align-middle">
         <Image
-          src="/images/pedra solta.png"
+          src={PietraZafferinaImg}
           alt="pietra zafferina"
           width={1920}
           height={500}
+          quality={70}
           className="m-auto max-w-full"
         />
         <div className="justify-around text-xl uppercase w-full flex">
@@ -101,6 +104,7 @@ export default function Home() {
             alt="mármore travertino"
             width={500}
             height={500}
+            quality={70}
             className="m-auto max-w-full"
           />
           <div className="m-0 w-full translate-y-8 p-0 text-center">
@@ -113,6 +117,7 @@ export default function Home() {
             alt="pietra zafferina"
             width={500}
             height={500}
+            quality={70}
             className="m-auto max-w-full"
           />
           <div className="m-0 w-full translate-y-8 p-0 text-center">
@@ -125,6 +130,7 @@ export default function Home() {
             alt="itaúnas tec"
             width={500}
             height={500}
+            quality={70}
             className="m-auto max-w-full"
           />
           <div className="m-0 w-full translate-y-8 p-0 text-center">
@@ -141,16 +147,13 @@ export default function Home() {
         </div>
       </div>
       <div className="mb-16 flex h-auto w-screen justify-center">
-        <iframe
-          width="800"
-          height="450"
-          src="https://www.youtube.com/embed/FgT37Fiqk8M"
-          title="Travertino Premium Trova"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="aspect-video h-auto w-3/4 max-w-screen-xl"
-        ></iframe>
+        <div className="aspect-video h-auto w-3/4 max-w-screen-xl">
+          <YouTubeEmbed
+            videoid="FgT37Fiqk8M"
+            height={450}
+            params="controls=0"
+          />
+        </div>
       </div>
       <SessionTitle label="Inspire-se" />
       <div className="grid w-full grid-cols-1 md:grid-cols-2 max-w-screen-xl">

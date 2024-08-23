@@ -25,6 +25,8 @@ export const CarouselImages: FC<{
           className={`w-full h-full rounded-none ${square && 'aspect-square'}`}
           width={600}
           height={300}
+          quality={70}
+          // placeholder="blur"
         />
       ))}
     </Carousel>

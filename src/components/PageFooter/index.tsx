@@ -18,6 +18,8 @@ export const PageFooter = () => {
             alt="Trova Brasil"
             width={200}
             height={150}
+            quality={70}
+            // placeholder="blur"
             className="w-56"
           />
           <div className="flex items-center font-lato text-sm">
@@ -31,15 +33,15 @@ export const PageFooter = () => {
         <div className="flex flex-row flex-nowrap justify-around gap-16 px-8 text-4xl">
           <a href="https://facebook.com/trovabrasil" target="_blanc">
             <span className="hidden size-0">facebook</span>
-            <IoLogoFacebook />
+            <IoLogoFacebook aria-label="facebook" />
           </a>
           <a href="https://instagram.com/trovatravertino" target="_blanc">
             <span className="hidden size-0">instagram</span>
-            <IoLogoInstagram />
+            <IoLogoInstagram aria-label="instagram" />
           </a>
           <a href={wppLink} target="_blanc">
             <span className="hidden size-0">whatsapp</span>
-            <IoLogoWhatsapp />
+            <IoLogoWhatsapp aria-label="whatsapp" />
           </a>
         </div>
 

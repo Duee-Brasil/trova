@@ -171,6 +171,8 @@ export default function PietraZafferina() {
             alt="pietra zafferina"
             width={536}
             height={536}
+            quality={70}
+            // placeholder="blur"
             className="w-full max-w-[536px] aspect-square"
           />
           <Image
@@ -178,6 +180,8 @@ export default function PietraZafferina() {
             alt="pedra hijau"
             width={536}
             height={536}
+            quality={70}
+            // placeholder="blur"
             className="w-full max-w-[536px] aspect-square"
           />
         </div>
@@ -189,6 +193,8 @@ export default function PietraZafferina() {
               alt="durabilidade"
               width={109}
               height={109}
+              quality={70}
+              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -210,6 +216,8 @@ export default function PietraZafferina() {
               alt="eficiente"
               width={109}
               height={109}
+              quality={70}
+              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -230,6 +238,8 @@ export default function PietraZafferina() {
               alt="segurança"
               width={109}
               height={109}
+              quality={70}
+              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -250,6 +260,8 @@ export default function PietraZafferina() {
               alt="acabamento"
               width={109}
               height={109}
+              quality={70}
+              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -289,6 +301,8 @@ export default function PietraZafferina() {
             className={`w-[90%] rounded-none aspect-video`}
             width={600}
             height={300}
+            quality={70}
+            // placeholder="blur"
           />
         ))}
       </div>

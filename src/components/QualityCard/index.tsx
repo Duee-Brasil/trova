@@ -15,6 +15,8 @@ export const QualityCard: FC<IQualityCard> = ({ image, label, text }) => {
         alt={label}
         width={109}
         height={109}
+        quality={50}
+        // placeholder="blur"
         className="mx-auto my-4 w-20"
       />
       <h3 className="text-center font-lato text-lg">{label}</h3>

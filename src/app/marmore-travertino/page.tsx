@@ -4,6 +4,7 @@ import { QualityCard } from '@/components/QualityCard'
 import { ScrollableComponent } from '@/components/ScrollableComponent'
 import { WppButton } from '@/components/WppButton'
 import { imgsList } from '@/utils/contants'
+import { YouTubeEmbed } from '@next/third-parties/google'
 import Image from 'next/image'
 
 const infinityList = [
@@ -156,20 +157,19 @@ export default function Travertino() {
             className={`w-[90%] rounded-none aspect-video`}
             width={600}
             height={300}
+            quality={70}
+            // // placeholder="blur"
           />
         ))}
       </div>
       <div className="mb-16 flex h-auto w-screen justify-center">
-        <iframe
-          width="800"
-          height="450"
-          src="https://www.youtube.com/embed/6iB9bEHn78s?si=uU2vvJO1TKDntd_f"
-          title="Travertino Premium Trova"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="aspect-video h-auto w-3/4 2xl:w-1/2"
-        ></iframe>
+        <div className="aspect-video h-auto w-3/4 2xl:w-1/2">
+          <YouTubeEmbed
+            videoid="6iB9bEHn78s"
+            height={450}
+            params="controls=0"
+          />
+        </div>
       </div>
     </main>
   )

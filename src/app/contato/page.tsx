@@ -45,6 +45,8 @@ export default function Contato() {
           alt="Entre em contato"
           width={1920}
           height={512}
+          quality={70}
+          // // placeholder="blur"
           className="h-auto w-screen"
         />
       </div>

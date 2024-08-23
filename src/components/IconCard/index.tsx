@@ -16,6 +16,8 @@ export const IconCard: FC<IIConCard> = ({ name, icon, image }) => {
           alt={name}
           width={60}
           height={60}
+          quality={50}
+          // placeholder="blur"
           className="m-auto w-[60px]"
         />
         <p className="w-full overflow-hidden text-ellipsis text-balance text-center uppercase">
@@ -28,6 +30,8 @@ export const IconCard: FC<IIConCard> = ({ name, icon, image }) => {
           alt={name}
           width={630}
           height={341}
+          quality={70}
+          // placeholder="blur"
           className="w-full"
         />
       </div>

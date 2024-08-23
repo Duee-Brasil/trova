@@ -151,6 +151,8 @@ export default function Itaunas() {
             className={`w-[90%] rounded-none aspect-video`}
             width={600}
             height={300}
+            quality={70}
+            // // placeholder="blur"
           />
         ))}
       </div>

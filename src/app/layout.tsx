@@ -1,5 +1,6 @@
 import { PageFooter } from '@/components/PageFooter'
 import { PageHeader } from '@/components/PageHeader'
+import { WppButtonFloating } from '@/components/WppButtonFloating'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { ThemeModeScript } from 'flowbite-react'
 import type { Metadata, Viewport } from 'next'
@@ -21,8 +22,8 @@ const montserrat = Montserrat({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  maximumScale: 5,
+  userScalable: true,
   themeColor: 'white',
 }
 
@@ -234,6 +235,7 @@ export default function RootLayout({
           <PageHeader />
           {children}
           <PageFooter />
+          <WppButtonFloating />
         </div>
       </body>
     </html>

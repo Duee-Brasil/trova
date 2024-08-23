@@ -20,6 +20,8 @@ export const InfinityCarousel: FC<{
             key={item.name}
             width={400}
             height={400}
+            quality={50}
+            // placeholder="blur"
             className={animationClass}
           />
         ))}
@@ -30,6 +32,8 @@ export const InfinityCarousel: FC<{
             key={item.name}
             width={400}
             height={400}
+            quality={50}
+            // placeholder="blur"
             className={animationClass}
           />
         ))}

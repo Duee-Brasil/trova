@@ -54,6 +54,8 @@ export const PageHeader = () => {
           alt="Trova Brasil"
           width={200}
           height={150}
+          quality={70}
+          // placeholder="blur"
           className="w-48"
         />
       </Navbar.Brand>
