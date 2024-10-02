@@ -174,6 +174,7 @@ export default function PietraZafferina() {
             quality={70}
             // placeholder="blur"
             className="w-full max-w-[536px] aspect-square"
+            layout="responsive"
           />
           <Image
             src="/images/pietra/compare-2.png"
@@ -183,6 +184,7 @@ export default function PietraZafferina() {
             quality={70}
             // placeholder="blur"
             className="w-full max-w-[536px] aspect-square"
+            layout="responsive"
           />
         </div>
 
@@ -292,13 +294,13 @@ export default function PietraZafferina() {
       <div className="h-auto w-screen hidden md:block">
         <InfinityCarousel list={infinityList} />
       </div>
-      <div className="aspect-video w-screen md:hidden flex overflow-x-auto gap-2">
+      <div className="w-screen md:hidden flex overflow-x-auto gap-2">
         {infinityList.map((item, index) => (
           <Image
             key={index}
             src={item.src}
             alt={item.name}
-            className={`w-[90%] rounded-none aspect-video`}
+            className={`w-[90%] rounded-none aspect-square`}
             width={600}
             height={300}
             quality={70}

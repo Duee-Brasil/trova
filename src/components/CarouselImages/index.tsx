@@ -26,6 +26,7 @@ export const CarouselImages: FC<{
           width={600}
           height={300}
           quality={70}
+          layout="responsive"
           // placeholder="blur"
         />
       ))}

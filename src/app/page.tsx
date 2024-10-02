@@ -7,6 +7,7 @@ import { wppLink } from '@/utils/contants'
 import { inspirationList } from '@/utils/inspirationList'
 import { YouTubeEmbed } from '@next/third-parties/google'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const imgsList = [
   {
@@ -89,12 +90,14 @@ export default function Home() {
         />
         <div className="justify-around text-xl uppercase w-full flex">
           <span className="bg-white px-4 flex-1 text-center">
-            mármore travertino
+            <Link href={'/marmore-travertino'}>mármore travertino</Link>
           </span>
           <span className="bg-white px-4 flex-1 text-center">
-            pietra zafferina
+            <Link href={'/pietra-zafferina'}>pietra zafferina</Link>
           </span>
-          <span className="bg-white px-4 flex-1 text-center">itaúnas tec</span>
+          <span className="bg-white px-4 flex-1 text-center">
+            <Link href={'/itaunas-tec'}>itaúnas tec</Link>
+          </span>
         </div>
       </div>
       <div className="grid md:hidden w-full grid-cols-1 content-stretch max-w-screen-xl justify-stretch gap-16 p-4 align-middle">
@@ -108,7 +111,9 @@ export default function Home() {
             className="m-auto max-w-full"
           />
           <div className="m-0 w-full translate-y-8 p-0 text-center">
-            <span className="bg-white px-4">mármore travertino</span>
+            <span className="bg-white px-4">
+              <Link href={'/marmore-travertino'}>mármore travertino</Link>
+            </span>
           </div>
         </div>
         <div className="justify-center self-end text-xl uppercase">
@@ -121,7 +126,9 @@ export default function Home() {
             className="m-auto max-w-full"
           />
           <div className="m-0 w-full translate-y-8 p-0 text-center">
-            <span className="bg-white px-4">pietra zafferina</span>
+            <span className="bg-white px-4">
+              <Link href={'/pietra-zafferina'}>pietra zafferina</Link>
+            </span>
           </div>
         </div>
         <div className="justify-center self-stretch text-xl uppercase">
@@ -134,7 +141,9 @@ export default function Home() {
             className="m-auto max-w-full"
           />
           <div className="m-0 w-full translate-y-8 p-0 text-center">
-            <span className="bg-white px-4">itaúnas tec</span>
+            <span className="bg-white px-4">
+              <Link href={'/itaunas-tec'}>itaúnas tec</Link>
+            </span>
           </div>
         </div>
       </div>
