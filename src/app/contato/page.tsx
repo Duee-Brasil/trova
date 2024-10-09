@@ -41,7 +41,7 @@ export default function Contato() {
     <main className="flex w-screen flex-col items-center gap-16 p-8">
       <div className="-mx-8 -mt-8 w-screen">
         <Image
-          src="/images/contato-hero.png"
+          src="/images/contato-hero.webp"
           alt="Entre em contato"
           width={1920}
           height={512}

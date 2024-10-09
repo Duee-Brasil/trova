@@ -16,11 +16,12 @@ export const WppButtonFloating = ({
         {...props}
       >
         <Image
-          src="/images/whatsapp.png"
+          src="/images/whatsapp.webp"
           alt="entre em contato"
           width={80}
           height={80}
           quality={50}
+          className="aspect-square"
           // placeholder="blur"
         />
       </a>

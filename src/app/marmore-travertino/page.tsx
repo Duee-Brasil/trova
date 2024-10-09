@@ -9,38 +9,38 @@ import Image from 'next/image'
 
 const infinityList = [
   {
-    src: '/images/travertino/infinito/Prancheta 1.png',
-    name: 'piso externo',
+    src: '/images/travertino/infinito/Prancheta 1.webp',
+    name: 'piso externo 1',
   },
   {
-    src: '/images/travertino/infinito/Prancheta 2.png',
-    name: 'piso interno',
+    src: '/images/travertino/infinito/Prancheta 2.webp',
+    name: 'piso interno 1',
   },
   {
-    src: '/images/travertino/infinito/Prancheta 3.png',
+    src: '/images/travertino/infinito/Prancheta 3.webp',
     name: 'piscina',
   },
   {
-    src: '/images/travertino/infinito/Prancheta 4.png',
+    src: '/images/travertino/infinito/Prancheta 4.webp',
     name: 'area externa',
   },
   {
-    src: '/images/travertino/infinito/Prancheta 5.png',
+    src: '/images/travertino/infinito/Prancheta 5.webp',
     name: 'piso interno',
   },
   {
-    src: '/images/travertino/infinito/Prancheta 6.png',
+    src: '/images/travertino/infinito/Prancheta 6.webp',
     name: 'piso externo',
   },
   {
-    src: '/images/travertino/infinito/Prancheta 7.png',
+    src: '/images/travertino/infinito/Prancheta 7.webp',
     name: 'escada',
   },
 ]
 
 const qualityList = [
   {
-    image: '/images/icones/atermico.png',
+    image: '/images/icones/atermico.webp',
     label: 'Atérmico',
     text: (
       <p>
@@ -51,7 +51,7 @@ const qualityList = [
     ),
   },
   {
-    image: '/images/icones/qualidade.png',
+    image: '/images/icones/qualidade.webp',
     label: 'Qualidade Superior',
     text: (
       <p>
@@ -62,7 +62,7 @@ const qualityList = [
     ),
   },
   {
-    image: '/images/icones/antiderrapante.png',
+    image: '/images/icones/antiderrapante.webp',
     label: 'Antiderrapante',
     text: (
       <p>
@@ -146,7 +146,10 @@ export default function Travertino() {
         </p>
       </div>
       <div className="h-auto w-screen hidden md:block">
-        <InfinityCarousel list={infinityList} />
+        <InfinityCarousel
+          size={infinityList.length.toString()}
+          list={infinityList}
+        />
       </div>
       <div className="aspect-video w-screen md:hidden flex overflow-x-auto gap-2">
         {infinityList.map((item, index) => (
@@ -154,11 +157,10 @@ export default function Travertino() {
             key={index}
             src={item.src}
             alt={item.name}
-            className={`w-[90%] rounded-none aspect-video`}
+            className={`w-[90%] rounded-none aspect-video object-cover`}
             width={600}
             height={300}
             quality={70}
-            // // placeholder="blur"
           />
         ))}
       </div>
@@ -168,6 +170,7 @@ export default function Travertino() {
             videoid="6iB9bEHn78s"
             height={450}
             params="controls=0"
+            style="margin: auto"
           />
         </div>
       </div>

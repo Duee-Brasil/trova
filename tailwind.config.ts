@@ -22,11 +22,15 @@ const config: Config = {
         montserrat: ['var(--font-montserrat)', 'ui-sans-serif'],
       },
       animation: {
+        scroll8: 'scroll8 10s linear infinite',
         scroll7: 'scroll7 10s linear infinite',
         scroll6: 'scroll6 10s linear infinite',
         pause: 'pause',
       },
       keyframes: {
+        scroll8: {
+          '100%': { transform: 'translate3d(calc(-50px * 8), 0, 0)' },
+        },
         scroll7: {
           '100%': { transform: 'translate3d(calc(-50px * 7), 0, 0)' },
         },

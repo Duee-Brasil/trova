@@ -1,4 +1,3 @@
-import PietraZafferinaImg from '@/assets/images/pedra solta.png'
 import { CarouselImages } from '@/components/CarouselImages'
 import { IconCard } from '@/components/IconCard'
 import { LinkButton } from '@/components/LinkButton'
@@ -11,31 +10,31 @@ import Link from 'next/link'
 
 const imgsList = [
   {
-    src: '/images/carousel/01.png',
+    src: '/images/carousel/01.webp',
     name: 'chapa travertino',
   },
   {
-    src: '/images/carousel/02.png',
+    src: '/images/carousel/02.webp',
     name: 'pietra zafferina na piscina',
   },
   {
-    src: '/images/carousel/03.png',
+    src: '/images/carousel/03.webp',
     name: 'travertino em piso externo',
   },
   {
-    src: '/images/carousel/04.png',
+    src: '/images/carousel/04.webp',
     name: 'pietra zafferina na piscina',
   },
   {
-    src: '/images/carousel/05.png',
+    src: '/images/carousel/05.webp',
     name: 'travertino em escada',
   },
   {
-    src: '/images/carousel/06.png',
+    src: '/images/carousel/06.webp',
     name: 'pietra zafferina na piscina de borda infinita',
   },
   {
-    src: '/images/carousel/07.png',
+    src: '/images/carousel/07.webp',
     name: 'revestimento externo com travertino',
   },
 ]
@@ -81,7 +80,7 @@ export default function Home() {
       </div>
       <div className="hidden md:grid w-full grid-cols-1 max-w-screen-xl content-stretch justify-stretch gap-4 align-middle">
         <Image
-          src={PietraZafferinaImg}
+          src={'/images/pedra solta.webp'}
           alt="pietra zafferina"
           width={1920}
           height={500}
@@ -103,7 +102,7 @@ export default function Home() {
       <div className="grid md:hidden w-full grid-cols-1 content-stretch max-w-screen-xl justify-stretch gap-16 p-4 align-middle">
         <div className="justify-center self-stretch text-xl uppercase">
           <Image
-            src="/images/pedra solta T4.png"
+            src="/images/pedra solta T4.webp"
             alt="mármore travertino"
             width={500}
             height={500}
@@ -118,7 +117,7 @@ export default function Home() {
         </div>
         <div className="justify-center self-end text-xl uppercase">
           <Image
-            src="/images/pedra solta pietra.png"
+            src="/images/pedra solta pietra.webp"
             alt="pietra zafferina"
             width={500}
             height={500}
@@ -133,7 +132,7 @@ export default function Home() {
         </div>
         <div className="justify-center self-stretch text-xl uppercase">
           <Image
-            src="/images/pedra solta IT2.png"
+            src="/images/pedra solta IT2.webp"
             alt="itaúnas tec"
             width={500}
             height={500}
@@ -147,7 +146,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-16 h-[32rem] w-screen items-center justify-center bg-[url('/images/TROVA_110.png')] bg-cover align-middle">
+      <div className="my-16 h-[32rem] w-screen items-center justify-center bg-[url('/images/TROVA_110.webp')] bg-cover align-middle">
         <div className="m-auto flex h-full  max-w-screen-xl flex-wrap items-center justify-around p-16">
           <LinkButton href={wppLink} target="_blank">
             Faça seu orçamento
@@ -156,11 +155,12 @@ export default function Home() {
         </div>
       </div>
       <div className="mb-16 flex h-auto w-screen justify-center">
-        <div className="aspect-video h-auto w-3/4 max-w-screen-xl">
+        <div className="aspect-video h-auto w-3/4 max-w-screen-xl items-center">
           <YouTubeEmbed
             videoid="FgT37Fiqk8M"
             height={450}
             params="controls=0"
+            style="margin: auto"
           />
         </div>
       </div>

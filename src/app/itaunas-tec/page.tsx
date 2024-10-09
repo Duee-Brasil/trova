@@ -8,34 +8,34 @@ import Image from 'next/image'
 
 const infinityList = [
   {
-    src: '/images/itauna-tec/infinito/Prancheta 1.png',
-    name: 'chapas de itaunas',
+    src: '/images/itauna-tec/infinito/Prancheta 1.webp',
+    name: 'chapas de itaunas 1',
   },
   {
-    src: '/images/itauna-tec/infinito/Prancheta 2.png',
-    name: 'chapas de itaunas',
+    src: '/images/itauna-tec/infinito/Prancheta 2.webp',
+    name: 'chapas de itaunas 2',
   },
   {
-    src: '/images/itauna-tec/infinito/Prancheta 3.png',
-    name: 'chapas de itaunas',
+    src: '/images/itauna-tec/infinito/Prancheta 3.webp',
+    name: 'chapas de itaunas 3',
   },
   {
-    src: '/images/itauna-tec/infinito/Prancheta 4.png',
-    name: 'chapas de itaunas',
+    src: '/images/itauna-tec/infinito/Prancheta 4.webp',
+    name: 'chapas de itaunas 4',
   },
   {
-    src: '/images/itauna-tec/infinito/Prancheta 5.png',
-    name: 'chapas de itaunas',
+    src: '/images/itauna-tec/infinito/Prancheta 5.webp',
+    name: 'chapas de itaunas 5',
   },
   {
-    src: '/images/itauna-tec/infinito/Prancheta 6.png',
-    name: 'chapas de itaunas',
+    src: '/images/itauna-tec/infinito/Prancheta 6.webp',
+    name: 'chapas de itaunas 6',
   },
 ]
 
 const qualityList = [
   {
-    image: '/images/icones/durabilidade.png',
+    image: '/images/icones/durabilidade.webp',
     label: 'Durabilidade',
     text: (
       <p>
@@ -47,7 +47,7 @@ const qualityList = [
     ),
   },
   {
-    image: '/images/icones/qualidade.png',
+    image: '/images/icones/qualidade.webp',
     label: 'Qualidade Superior',
     text: (
       <>
@@ -65,7 +65,7 @@ const qualityList = [
     ),
   },
   {
-    image: '/images/icones/acabamento.png',
+    image: '/images/icones/acabamento.webp',
     label: 'Acabamento Prático',
     text: (
       <p>
@@ -140,7 +140,10 @@ export default function Itaunas() {
         </p>
       </div>
       <div className="h-auto w-screen hidden md:block">
-        <InfinityCarousel list={infinityList} size="6" />
+        <InfinityCarousel
+          list={infinityList}
+          size={infinityList.length.toString()}
+        />
       </div>
       <div className="aspect-video w-screen md:hidden flex overflow-x-auto gap-2">
         {infinityList.map((item, index) => (
@@ -148,11 +151,10 @@ export default function Itaunas() {
             key={index}
             src={item.src}
             alt={item.name}
-            className={`w-[90%] rounded-none aspect-video`}
+            className={`w-[90%] rounded-none aspect-video object-cover`}
             width={600}
             height={300}
             quality={70}
-            // // placeholder="blur"
           />
         ))}
       </div>

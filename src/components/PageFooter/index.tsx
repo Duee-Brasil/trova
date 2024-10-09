@@ -14,7 +14,7 @@ export const PageFooter = () => {
       <div className="m-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-center gap-12 md:justify-between">
         <div className="px-4 md:px-8 lg:px-16">
           <Image
-            src="/images/logos/logo_white.png"
+            src="/images/logos/logo_white.webp"
             alt="Trova Brasil"
             width={200}
             height={150}

@@ -18,17 +18,19 @@ export const CarouselImages: FC<{
       }}
     >
       {list.map((item, index) => (
-        <Image
+        <div
           key={index}
-          src={item.src}
-          alt={item.name}
-          className={`w-full h-full rounded-none ${square && 'aspect-square'}`}
-          width={600}
-          height={300}
-          quality={70}
-          layout="responsive"
-          // placeholder="blur"
-        />
+          className={`w-full h-full rounded-none ${square ? 'aspect-square' : undefined}`}
+        >
+          <Image
+            src={item.src}
+            alt={item.name}
+            className={`w-full h-full rounded-none overflow-hidden object-cover ${square ? 'aspect-square' : undefined}`}
+            quality={70}
+            fill={true}
+            priority={true}
+          />
+        </div>
       ))}
     </Carousel>
   )

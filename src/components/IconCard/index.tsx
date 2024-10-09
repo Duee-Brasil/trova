@@ -18,7 +18,7 @@ export const IconCard: FC<IIConCard> = ({ name, icon, image }) => {
           height={60}
           quality={50}
           // placeholder="blur"
-          className="m-auto w-[60px]"
+          className="m-auto w-[60px] aspect-square"
         />
         <p className="w-full overflow-hidden text-ellipsis text-balance text-center uppercase">
           {name}

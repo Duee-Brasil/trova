@@ -50,7 +50,7 @@ export const PageHeader = () => {
     <Navbar fluid theme={theme}>
       <Navbar.Brand as={Link} href="/">
         <Image
-          src="/images/logos/logo_white.png"
+          src="/images/logos/logo_white.webp"
           alt="Trova Brasil"
           width={200}
           height={150}

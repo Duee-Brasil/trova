@@ -213,20 +213,20 @@ export default function RootLayout({
           crossOrigin={'anonymous'}
         />
         <link rel="preconnect" href="unpkg.com" crossOrigin={'anonymous'} />
-        <script type="application/ld+json">
-          {`{
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        name: "Trova Brasil",
-        url: "https://trovabrasil.com",
-        address: "contato@trovabrasil.com",
-        sameAs: [
-          "https://facebook.com/trovabrasil",
-          "https://instagram.com/trovatravertino",
-          "https://br.pinterest.com/trovatravertino/_created/",
-        ],
-      }`}
-        </script>
+        {/* <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'http://schema.org',
+            '@type': 'Organization',
+            name: 'Trova Brasil',
+            url: 'https://trovabrasil.com',
+            address: 'contato@trovabrasil.com',
+            sameAs: [
+              'https://facebook.com/trovabrasil',
+              'https://instagram.com/trovatravertino',
+              'https://br.pinterest.com/trovatravertino/_created/',
+            ],
+          })}
+        </script> */}
         <ThemeModeScript />
       </head>
       <body className={lato.className}>

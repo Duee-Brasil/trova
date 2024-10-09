@@ -8,38 +8,38 @@ import Image from 'next/image'
 
 const infinityList = [
   {
-    src: '/images/pietra/infinito/Prancheta 1.png',
+    src: '/images/pietra/infinito/Prancheta 1.webp',
     name: 'piscina',
   },
   {
-    src: '/images/pietra/infinito/Prancheta 2.png',
+    src: '/images/pietra/infinito/Prancheta 2.webp',
     name: 'interno da piscina',
   },
   {
-    src: '/images/pietra/infinito/Prancheta 3.png',
+    src: '/images/pietra/infinito/Prancheta 3.webp',
     name: 'externo piscina',
   },
   {
-    src: '/images/pietra/infinito/Prancheta 4.png',
+    src: '/images/pietra/infinito/Prancheta 4.webp',
     name: 'borda piscina',
   },
   {
-    src: '/images/pietra/infinito/Prancheta 5.png',
+    src: '/images/pietra/infinito/Prancheta 5.webp',
     name: 'detalhe piso interno piscina',
   },
   {
-    src: '/images/pietra/infinito/Prancheta 6.png',
+    src: '/images/pietra/infinito/Prancheta 6.webp',
     name: 'visao geral piscina',
   },
   {
-    src: '/images/pietra/infinito/Prancheta 7.png',
+    src: '/images/pietra/infinito/Prancheta 7.webp',
     name: 'piscina borda infinita',
   },
 ]
 
 const qualityList = [
   {
-    image: '/images/icones/antiderrapante.png',
+    image: '/images/icones/antiderrapante.webp',
     label: 'Antiderrapante',
     text: (
       <p>
@@ -50,7 +50,7 @@ const qualityList = [
     ),
   },
   {
-    image: '/images/icones/qualidade.png',
+    image: '/images/icones/qualidade.webp',
     label: 'Aquecimento',
     text: (
       <p>
@@ -63,7 +63,7 @@ const qualityList = [
     ),
   },
   {
-    image: '/images/icones/estetica.png',
+    image: '/images/icones/estetica.webp',
     label: 'Estética tropical',
     text: (
       <p>
@@ -75,7 +75,7 @@ const qualityList = [
     ),
   },
   {
-    image: '/images/icones/manutencao.png',
+    image: '/images/icones/manutencao.webp',
     label: 'Pouca manutenção',
     text: (
       <p>
@@ -167,36 +167,31 @@ export default function PietraZafferina() {
 
         <div className="p-8 md:p-16 grid grid-cols-1 md:grid-cols-2 w-full justify-center gap-8 max-w-screen-xl">
           <Image
-            src="/images/pietra/compare-1.png"
+            src="/images/pietra/compare-1.webp"
             alt="pietra zafferina"
             width={536}
             height={536}
             quality={70}
-            // placeholder="blur"
             className="w-full max-w-[536px] aspect-square"
-            layout="responsive"
           />
           <Image
-            src="/images/pietra/compare-2.png"
+            src="/images/pietra/compare-2.webp"
             alt="pedra hijau"
             width={536}
             height={536}
             quality={70}
-            // placeholder="blur"
             className="w-full max-w-[536px] aspect-square"
-            layout="responsive"
           />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex size-full flex-col gap-4 px-8 py-16">
             <Image
-              src="/images/icones/durabilidade.png"
+              src="/images/icones/durabilidade.webp"
               alt="durabilidade"
               width={109}
               height={109}
               quality={70}
-              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -214,12 +209,11 @@ export default function PietraZafferina() {
           </div>
           <div className="flex size-full flex-col gap-4 px-8 py-16">
             <Image
-              src="/images/icones/eficiente.png"
+              src="/images/icones/eficiente.webp"
               alt="eficiente"
               width={109}
               height={109}
               quality={70}
-              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -236,12 +230,11 @@ export default function PietraZafferina() {
           </div>
           <div className="flex size-full flex-col gap-4 px-8 py-16">
             <Image
-              src="/images/icones/segurança.png"
+              src="/images/icones/segurança.webp"
               alt="segurança"
               width={109}
               height={109}
               quality={70}
-              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -258,12 +251,11 @@ export default function PietraZafferina() {
           </div>
           <div className="flex size-full flex-col gap-4 px-8 py-16">
             <Image
-              src="/images/icones/acabamento.png"
+              src="/images/icones/acabamento.webp"
               alt="acabamento"
               width={109}
               height={109}
               quality={70}
-              // placeholder="blur"
               className="mx-auto my-4 w-20"
             />
             <div className="w-full text-balance">
@@ -292,7 +284,10 @@ export default function PietraZafferina() {
         </p>
       </div>
       <div className="h-auto w-screen hidden md:block">
-        <InfinityCarousel list={infinityList} />
+        <InfinityCarousel
+          list={infinityList}
+          size={infinityList.length.toString()}
+        />
       </div>
       <div className="w-screen md:hidden flex overflow-x-auto gap-2">
         {infinityList.map((item, index) => (
@@ -300,11 +295,10 @@ export default function PietraZafferina() {
             key={index}
             src={item.src}
             alt={item.name}
-            className={`w-[90%] rounded-none aspect-square`}
+            className={`w-[90%] rounded-none aspect-square object-cover`}
             width={600}
             height={300}
             quality={70}
-            // placeholder="blur"
           />
         ))}
       </div>
